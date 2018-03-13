@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_partner_property_form" model="ir.ui.view">
+            <field name="name">Partner with closing</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="property_product_pricelist" position="after" >
+                        <field name="commercial_closing" on_change="onchange_commercial_closing(commercial_closing,parent_id)"/>
+                        <field name="effective_closing" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="closing_tree_view">
+            <field name="name">Wineem closing tree view</field>
+            <field name="model">res.partner.closing</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Closings" editable="top" >
+                    <field name="name" />
+                    <field name="description" />
+                    <field name="id_magento" />
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="closing_form_view">
+            <field name="name">Wineem closing form view</field>
+            <field name="model">res.partner.closing</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Closing" >
+                    <separator string="name" colspan="4" />
+                    <field name="name" colspan="4"/>
+                    <separator string="Description" colspan="4" />
+                    <field name="description" colspan="4" nolabel="1"/>
+                    <separator string="Magento Id" colspan="4" />
+                    <field name="id_magento" colspan="4" nolabel="1"/>
+                </form>
+            </field>
+        </record>
+        
+        <record id="closing_tree_action" model="ir.actions.act_window">
+            <field name="name">Closing</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.closing</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="closing_tree_view"/>
+        </record>
+
+<!-- todo liricus:       <menuitem action="closing_tree_action"
+            groups="base.group_extended"
+            id="closing_menu"
+            parent="base.menu_sale_config_sales" sequence="4"/>
+        -->
+       <menuitem action="closing_tree_action"
+            groups="product.group_sale_pricelist"
+            id="closing_menu"
+            parent="base.menu_sale_config_sales" sequence="4"/>
+    </data>
+</openerp>

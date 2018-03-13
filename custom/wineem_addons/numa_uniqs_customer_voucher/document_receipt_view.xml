@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+
+        <record model="ir.ui.view" id="view_document_receipt_tree">
+            <field name="name">numa_ar_base.document_receipt.tree</field>
+            <field name="model">numa_ar_base.document_receipt</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree colors="blue:state in ('draft');gray:state in ('cancel')" string="Customer receipt">
+                    <field name="date"/>
+                    <field name="reference"/>
+                    <field name="partner_id"/>
+                    <field name="journal_id"/>
+                    <field name="state"/>
+                    <field name="cash_total" sum="Total cash"/>
+                    <field name="bt_total" sum="Total transfers"/>
+                    <field name="qm_total" sum="Total retentions"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_document_receipt_form">
+            <field name="name">numa_ar_base.document_receipt.form</field>
+            <field name="model">numa_ar_base.document_receipt</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Customer Receipt">
+                    <group col="6" colspan="4">
+                        <field name="partner_id" required="1" on_change="onchange_partner_id(partner_id, journal_id, date, currency_id, cash_ids, bt_ids, qm_ids,  debt_ids)"/> <!-- doc_ids -->
+                        <field name="date" on_change="onchange_date(date, journal_id)"/>
+                        <field name="journal_id" widget="selection" select="1" domain="[('type','in',['sale','sale_refund'])]" on_change="onchange_journal(journal_id, partner_id, date, currency_id, cash_ids, bt_ids, qm_ids, debt_ids)"/>
+                        <field name="name" colspan="2"/>
+                        <field name="company_id" widget="selection" groups="base.group_multi_company"/>
+                        <field name="reference" select="1"/>
+                        <field name="account_id" widget="selection" domain="[('type','=','receivable')]"/>
+                        <field name="balance" readonly="1"/>
+                        <field name="currency_id" readonly="1"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Cash and notes">
+                            <field name="cash_ids" mode="tree" default_get="{'currency_id':currency_id}" colspan="4" nolabel="1" height="180" on_change="onchange_line_ids(cash_ids, bt_ids, qm_ids, debt_ids)" attrs="{'readonly':['|',('journal_id','=',False),('state','!=','draft')]}">
+                                <tree string="Cash" editable="bottom">
+                                    <field name="currency_id" on_change="onchange_currency_id(currency_id,original_amount,parent.currency_id)"/>
+                                    <field name="exchange_rate" on_change="onchange_exchange_rate(exchange_rate,original_amount)"/>
+                                    <field name="original_amount" on_change="onchange_original_amount(original_amount,exchange_rate)"/>
+                                    <field name="amount" sum="Total efectivo"/>
+                                </tree>
+                                <form string="Cash" col="2">
+                                    <field name="currency_id" on_change="onchange_currency_id(currency_id,original_amount,parent.currency_id)"/>
+                                    <field name="exchange_rate" on_change="onchange_exchange_rate(exchange_rate,original_amount)"/>
+                                    <field name="original_amount" on_change="onchange_original_amount(original_amount,exchange_rate)"/>
+                                    <field name="amount" readonly="1"/>
+                                </form>
+                            </field>
+                            <separator string="Notes" colspan="4"/>
+                            <field name="narration" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="Bank transfers">
+                            <field name="bt_ids" mode="tree" context="{'currency_id':currency_id, 'transfer_date':date}" colspan="4" nolabel="1" height="180" on_change="onchange_line_ids(cash_ids, bt_ids, qm_ids, debt_ids)"  attrs="{'readonly':['|',('journal_id','=',False),('state','!=','draft')]}">
+                                <tree string="Bank transfers" editable="bottom">
+                                    <field name="bank_journal_id" on_change="onchange_bank_journal_id(bank_journal_id)"/>
+                                    <field name="currency_id" on_change="onchange_currency_id(currency_id,original_amount,parent.currency_id)"/>
+                                    <field name="exchange_rate" on_change="onchange_exchange_rate(exchange_rate,original_amount)"/>
+                                    <field name="original_amount" on_change="onchange_original_amount(original_amount,exchange_rate)"/>
+                                    <field name="amount" sum="Total transfers"/>
+                                </tree>
+                                <form string="Bank transfers" col="2">
+                                    <field name="bank_journal_id" on_change="onchange_bank_journal_id(bank_journal_id)"/>
+                                    <field name="currency_id" on_change="onchange_currency_id(currency_id,original_amount,parent.currency_id)"/>
+                                    <field name="exchange_rate" on_change="onchange_exchange_rate(exchange_rate,original_amount)"/>
+                                    <field name="original_amount" on_change="onchange_original_amount(original_amount,exchange_rate)"/>
+                                    <field name="amount" readonly="1"/>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Received retentions">
+                            <field name="qm_ids" colspan="4" nolabel="1" height="180" on_change="onchange_line_ids(cash_ids, bt_ids, qm_ids, debt_ids)" attrs="{'readonly':['|',('journal_id','=',False),('state','!=','draft')]}"> <!-- doc_ids, -->
+                                <tree string="Retentions" editable="bottom">
+                                    <field name="qm_id" on_change="onchange_qm_id(qm_id)" domain="[('type','=','received_retention')]"/>
+                                    <field name="description"/>
+                                    <field name="credit_account_id" domain="[('type','!=','view')]"/>
+                                    <field name="debit_account_id" domain="[('type','!=','view')]"/>
+                                    <field name="analytic_account_id" />
+                                    <field name="amount" sum="Total retentions"/>
+                                </tree>
+                                <form string="Retention" >
+                                    <field name="qm_id" on_change="onchange_qm_id(qm_id)" domain="[('type','=','received_retention')]"/>
+                                    <field name="description" />
+                                    <separator string="Accounting information" colspan="4"/>
+                                    <field name="credit_account_id" domain="[('type','!=','view')]"/>
+                                    <field name="debit_account_id" domain="[('type','!=','view')]"/>
+                                    <field name="analytic_account_id" />
+                                    <field name="amount"/>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Debts" >
+                            <button name="action_reasign_credit" type="object" string="Reasign credit" states="draft" icon="terp-camera_test" colspan="4"/>
+                            <field name="debt_ids" mode="tree" colspan="4" nolabel="1" height="180" context="{'currency_id':currency_id, 'partner_id':partner_id}" on_change="onchange_line_ids(cash_ids, bt_ids, qm_ids, debt_ids)" attrs="{'readonly':['|',('journal_id','=',False),('state','!=','draft')]}"> <!-- doc_ids -->
+                                <tree string="Debts" editable="bottom">
+                                    <field name="account_id"/>
+                                    <field name="name"/>
+                                    <field name="date_original"/>
+                                    <field name="date_due"/>
+                                    <field name="amount_original"/>
+                                    <field name="amount_unreconciled"/>
+                                    <field name="amount" sum="Total debts"/>
+                                    <field name="move_line_id" invisible="1" />
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Move lines" groups="base.group_extended" attrs="{'invisible': [('state','not in',['posted','cancel'])]}">
+                            <group col="6" colspan="4">
+                                <field name="audit"/>
+                            </group>
+                            <separator string="Original movement" colspan="4" />
+                            <field name="move_line_ids" mode="tree" colspan="4" nolabel="1" readonly="1">
+                               <tree string="Move lines">
+                                   <field name="date"/>
+                                   <field name="date_maturity"/>
+                                   <field name="partner_id"/>
+                                   <field name="account_id"/>
+                                   <field name="name"/>
+                                   <field name="debit"/>
+                                   <field name="credit"/>
+                                   <field name="state"/>
+                                   <field name="reconcile_id"/>
+                                   <field name="reconcile_partial_id"/>
+                               </tree>
+                            </field> 
+                            <separator string="Cancel movement" colspan="4"/>
+                            <field name="cancel_move_line_ids" mode="tree" colspan="4" nolabel="1" readonly="1">
+                               <tree string="Cancel move lines">
+                                   <field name="date"/>
+                                   <field name="date_maturity"/>
+                                   <field name="partner_id"/>
+                                   <field name="account_id"/>
+                                   <field name="name"/>
+                                   <field name="debit"/>
+                                   <field name="credit"/>
+                                   <field name="state"/>
+                                   <field name="reconcile_id"/>
+                                   <field name="reconcile_partial_id"/>
+                               </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    <group col="10" colspan="4">
+                        <field name="state"/>
+                        <button name="cancel_receipt" string="Cancel" states="draft"  icon="gtk-cancel"/>
+                        <button name="cancel_receipt" string="Cancel" type="object" states="posted" icon="terp-stock_effects-object-colorize" confirm="Are you sure you want to cancel the receipt?"/>
+                        <button name="action_post" type="object" string="Post" states="draft" icon="terp-camera_test"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_document_receipt_filter" model="ir.ui.view">
+            <field name="name">numa_ar_base.document_receipt.select</field>
+            <field name="model">numa_ar_base.document_receipt</field>
+            <field name="type">search</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <search string="Search receipts">
+                    <group col='8' colspan='4'>
+                        <filter icon="terp-document-new" string="Draft" domain="[('state','=','draft')]" help="Draft receipts"/>
+                        <filter icon="terp-camera_test" string="Post" domain="[('state','=','posted')]" help="Posted receipts"/>
+                        <separator orientation="vertical"/>
+                        <filter icon="terp-gtk-jump-to-ltr" string="To be checked" domain="[('state','=','posted')]" groups="base.group_extended" help="To be checked"/>
+                        <separator orientation="vertical"/>
+                        <field name="date"/>
+                        <field name="partner_id"/>
+                    </group>
+                    <newline/>
+                    <group col='8' colspan='4'>
+                        <field name="journal_id" widget="selection" context="{'journal_id': self, 'set_visible':False}" />
+                    </group>
+                    <newline/>
+                    <group expand="0" string="Extended filters ..." col='8' colspan='4'>
+                        <field name="reference"/>
+                        <field name="name"/>
+                        <field name="narration"/>
+                   </group>
+                   <newline/>
+                    <group expand="0" string="Grouped by..." colspan="4" col="10">
+                        <filter string="Customer" icon="terp-partner" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Journal" icon="terp-folder-orange" domain="[]" context="{'group_by':'journal_id'}"/>
+                        <filter string="State" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="account_cash_statement_graph" model="ir.ui.view">
+            <field name="name">numa_ar_base.document_receipt.graph</field>
+            <field name="model">numa_ar_base.document_receipt</field>
+            <field name="type">graph</field>
+            <field name="arch" type="xml">
+                <graph string="Receipt statistic" type="bar">
+                    <field name="date"/>
+<!--
+                    <field name="amount" operator="+"/>
+-->
+                </graph>
+            </field>
+        </record>
+
+        <record id="action_document_receipt_form" model="ir.actions.act_window">
+            <field name="name">Customer receipts</field>
+            <field name="res_model">numa_ar_base.document_receipt</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_document_receipt_form" id="menu_action_document_receipt_form"
+            parent="account.menu_finance_receivables" sequence="6"/>
+
+        <record model="ir.actions.act_window" id="action_voucher_list">
+            <field name="name">Customer receipts</field>
+            <field name="res_model">numa_ar_base.document_receipt</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,graph</field>
+            <field name="context">{'type':'general'}</field>
+            <field name="view_id" eval="view_document_receipt_tree"/>
+            <field name="search_view_id" ref="view_document_receipt_filter"/>
+        </record>
+        <record id="action_journal_voucher_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="act_window_id" ref="action_voucher_list"/>
+        </record>
+        <record id="action_journal_voucher_form" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_document_receipt_form"/>
+            <field name="act_window_id" ref="action_voucher_list"/>
+        </record>
+        <menuitem action="action_voucher_list" id="menu_encode_entries_by_voucher" parent="account.menu_finance_entries" sequence="6"/>
+
+        <act_window
+            id="act_journal_document_receipt_open"
+            name="Customer receipts"
+            context="{'search_default_journal_id': active_id}"
+            res_model="numa_ar_base.document_receipt"
+            src_model="account.journal"/>
+
+    </data>
+</openerp>

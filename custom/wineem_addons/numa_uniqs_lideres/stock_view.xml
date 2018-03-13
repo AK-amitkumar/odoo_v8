@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Stock picking out Form View -->
+
+
+        <record model="ir.ui.view" id="view_picking_out_tree">
+            <field name="name">Pickings out tree with leader</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.vpicktree" />
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="partner_id" position="after" >
+                        <field name="leader_id"/>
+                        <field name="campaign" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+
+        <record id="view_picking_out_form" model="ir.ui.view">
+            <field name="name">stock.picking.out.form</field>
+            <field name="model">stock.picking</field>
+            <field name="type">form</field>
+       <!-- <field name="inherit_id" ref="stock.view_picking_out_form" />-->
+            <field name="inherit_id" ref="stock.view_picking_form" />
+            <field name="arch" type="xml">
+                <data>
+                    <field name="backorder_id" position="after">
+                        <field name="leader_id"/>
+                        <field name="campaign" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <!--<record model="ir.ui.view" id="view_picking_out_search">-->
+            <!--<field name="name">Pickings out with leader</field>-->
+            <!--<field name="model">stock.picking</field>-->
+
+            <!--<field name="inherit_id" ref="stock.view_picking_out_search"/>-->
+            <!--&lt;!&ndash;<field name="inherit_id" ref="stock.view_picking_internal_search"/>&ndash;&gt;-->
+            <!--<field name="type">search</field>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<data>-->
+                    <!--<field name="partner_id" position="after" >-->
+                        <!--<field name="leader_id" filter_domain="['|','&amp;',('partner_id.is_leader','=',True),('partner_id.name','ilike',self),('leader_id','ilike',self)]" />-->
+                        <!--<field name="campaign" />-->
+                    <!--</field>-->
+                    <!--<field name="name" position="before" >-->
+                        <!--<filter name="no_leader" string="No leader" domain="[('leader_id','=',False),('partner_id.is_leader','=',False)]" />-->
+                        <!--<separator orientation="vertical"/>-->
+                    <!--</field>-->
+                <!--</data>-->
+            <!--</field>-->
+        <!--</record>-->
+
+        <record model="ir.ui.view" id="view_move_tree_reception_picking">
+            <field name="name">Move tree with leader</field>
+            <field name="model">stock.move</field>
+            <!--<field name="inherit_id" ref="stock.view_move_tree_reception_picking" />-->
+            <field name="inherit_id" ref="stock.view_move_tree" />
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="picking_id" position="after" >
+                        <field name="client_partner_id"/>
+                        <field name="rep_mg_group"/>
+                        <field name="leader_id"/>
+                        <field name="campaign" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_move_search_reception_outcoming_picking">
+            <field name="name">Move search with leader</field>
+            <field name="model">stock.move</field>
+      <!-- <field name="inherit_id" ref="stock.view_move_search_reception_outcoming_picking" /> -->
+            <field name="inherit_id" ref="stock.view_move_search" />
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="partner_id" position="after" >
+                        <field name="leader_id" filter_domain="['|','&amp;',('partner_id.is_leader','=',True),('partner_id.name','ilike',self),('leader_id','ilike',self)]"/>
+                        <field name="campaign" />
+                    </field>
+                    <field name="origin" position="before" >
+                        <filter name="no_leader" string="No leader" domain="[('leader_id','=',False),('partner_id.is_leader','=',False)]" />
+                        <separator orientation="vertical"/>
+                    </field>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</openerp>

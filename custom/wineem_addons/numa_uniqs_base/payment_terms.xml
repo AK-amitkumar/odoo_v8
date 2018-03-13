@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--
+        Payment term
+        -->
+		<record id="pago_contado" model="account.payment.term">
+			<field name="note">El pago se realizará a 30 días fecha factura.
+En caso de no respetarse el plazo, no se aplicará el crédito por pago en fecha</field>
+			<field name="name">Pago contado</field>
+		</record>
+        
+		<record id="pago_contado_1" model="account.payment.term.line">
+			<field name="payment_id" ref="pago_contado"/>
+<!--
+			<field name="name">A 7 días</field>
+			<field eval="10" name="sequence"/>
+-->
+			<field eval="7" name="days"/>
+			<field name="value">balance</field>
+		</record>
+
+		<record id="pago_30_dias" model="account.payment.term">
+			<field name="note">El pago se realizará a 30 días fecha factura.
+En caso de no respetarse el plazo, no se aplicará el crédito por pago en fecha</field>
+			<field name="name">Pago 30 días</field>
+		</record>
+		<record id="pago_30_dias_1" model="account.payment.term.line">
+			<field name="payment_id" ref="pago_30_dias"/>
+<!--
+			<field name="name">A 30 días</field>
+			<field eval="10" name="sequence"/>
+-->
+			<field eval="30" name="days"/>
+			<field name="value">balance</field>
+		</record>
+
+		<record id="contado_30_60" model="account.payment.term">
+			<field name="note">Se saldará el 33% al contado, 33% a 30 días y el saldo a 60 días fecha factura.
+De no cumplirse con los términos de pago, se aplicarán los intereses punitorios correspondiente hasta la cancelación total de la deuda</field>
+			<field name="name">Pago contado, 30 y 60 días</field>
+		</record>
+		<record id="contado_30_60_1" model="account.payment.term.line">
+			<field name="payment_id" ref="contado_30_60"/>
+<!--
+			<field name="name">Contado</field>
+			<field eval="5" name="sequence"/>
+-->
+			<field eval="7" name="days"/>
+			<field name="value">procent</field>
+			<field eval="0.33" name="value_amount"/>
+		</record>
+		<record id="contado_30_60_2" model="account.payment.term.line">
+			<field name="payment_id" ref="contado_30_60"/>
+<!--
+			<field name="name">30 días</field>
+			<field eval="10" name="sequence"/>
+-->
+			<field eval="30" name="days"/>
+			<field name="value">procent</field>
+			<field eval="0.33" name="value_amount"/>
+		</record>
+		<record id="contado_30_60_3" model="account.payment.term.line">
+			<field name="payment_id" ref="contado_30_60"/>
+<!--
+			<field name="name">60 días</field>
+			<field eval="20" name="sequence"/>
+-->
+			<field eval="60" name="days"/>
+			<field name="value">balance</field>
+		</record>
+
+		<record id="contado_30_60_90" model="account.payment.term">
+			<field name="note">Se saldará el 25% al contado, 25% a 30 días, el 25% a 60 días y el saldo a 90 días fecha factura.
+De no cumplirse con los términos de pago, se aplicarán los intereses punitorios correspondiente hasta la cancelación total de la deuda</field>
+			<field name="name">Pago contado, 30, 60 y 90 días</field>
+		</record>
+		<record id="contado_30_60_90_1" model="account.payment.term.line">
+			<field name="payment_id" ref="contado_30_60_90"/>
+<!--
+			<field name="name">Contado</field>
+			<field eval="5" name="sequence"/>
+-->
+			<field eval="7" name="days"/>
+			<field name="value">procent</field>
+			<field eval="0.25" name="value_amount"/>
+		</record>
+		<record id="contado_30_60_90_2" model="account.payment.term.line">
+			<field name="payment_id" ref="contado_30_60_90"/>
+<!--
+			<field name="name">30 días</field>
+			<field eval="10" name="sequence"/>
+-->
+			<field eval="30" name="days"/>
+			<field name="value">procent</field>
+			<field eval="0.25" name="value_amount"/>
+		</record>
+		<record id="contado_30_60_90_3" model="account.payment.term.line">
+			<field name="payment_id" ref="contado_30_60_90"/>
+<!--
+			<field name="name">60 días</field>
+			<field eval="15" name="sequence"/>
+-->
+			<field eval="60" name="days"/>
+			<field name="value">procent</field>
+			<field eval="0.25" name="value_amount"/>
+		</record>
+		<record id="contado_30_60_90_4" model="account.payment.term.line">
+			<field name="payment_id" ref="contado_30_60_90"/>
+<!--
+			<field name="name">90 días</field>
+			<field eval="20" name="sequence"/>
+-->
+			<field eval="90" name="days"/>
+			<field name="value">balance</field>
+		</record>
+    </data>
+</openerp>

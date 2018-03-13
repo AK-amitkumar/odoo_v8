@@ -1,0 +1,192 @@
+active,company_id,reconcile,code,id,child_consol_ids,tax_ids,currency_id,name,note,parent_id:id,currency_mode,user_type,type
+VERDADERO,Demo Alfa,,0,alfa_1,,,,ALFA,,,current,View,view
+VERDADERO,Demo Alfa,,1*,alfa_2,,,,ACTIVO,,alfa_1,current,View,view
+VERDADERO,Demo Alfa,,11*,alfa_3,,,,ACTIVO CORRIENTE,,alfa_2,current,View,view
+VERDADERO,Demo Alfa,,1101*,alfa_4,,,,DISPONIBILIDADES,,alfa_3,current,View,view
+VERDADERO,Demo Alfa,,110101*,alfa_5,,,,CAJA,,alfa_4,current,View,view
+VERDADERO,Demo Alfa,,110101001,alfa_6,,,,Caja Moneda Argentina,,alfa_5,current,Cash,other
+VERDADERO,Demo Alfa,,110102*,alfa_7,,,,BANCOS,,alfa_4,current,View,view
+VERDADERO,Demo Alfa,,110102001,alfa_8,,,,Banco Macro Cta. Cte.,,alfa_7,current,Cash,other
+VERDADERO,Demo Alfa,,110102002,alfa_9,,,,Banco Nacion Cta. Cte.,,alfa_7,current,Cash,other
+VERDADERO,Demo Alfa,,110102003,alfa_10,,,,Banco Patagonia Cta. Cte.,,alfa_7,current,Cash,other
+VERDADERO,Demo Alfa,,1102*,alfa_11,,,,CREDITOS POR VENTA,,alfa_3,current,View,view
+VERDADERO,Demo Alfa,,110201*,alfa_12,,,,DEUDORES POR VENTA,,alfa_11,current,View,view
+VERDADERO,Demo Alfa,VERDADERO,11020100333,alfa_13,,,,CARINA NICOLAIDES,,alfa_12,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110201001,alfa_87,,,,Deudores por Ventas Comunes,,alfa_12,current,Cash,other
+VERDADERO,Demo Alfa,VERDADERO,11020100100,alfa_88,,,,SIN MOVIMIENTOS,,alfa_12,current,Cash,receivable
+VERDADERO,Demo Alfa,,110201002,alfa_89,,,,Cheques en Cartera,,alfa_12,current,Cash,other
+VERDADERO,Demo Alfa,,110201003,alfa_90,,,,Cheques Rechazados,,alfa_12,current,Cash,other
+VERDADERO,Demo Alfa,,11020100101,alfa_91,,,,VICTOR HUGO CLAVIJO,,alfa_12,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110202*,alfa_305,,,,OTROS DEUDORES POR VENTAS,,alfa_11,current,View,view
+VERDADERO,Demo Alfa,,110202001,alfa_306,,,,Ds. por Vta. en Gestion Judic.,,alfa_305,current,Receivable,receivable
+VERDADERO,Demo Alfa,,1103*,alfa_307,,,,OTROS CREDITOS CORRIENTES,,alfa_3,current,View,view
+VERDADERO,Demo Alfa,,110301*,alfa_308,,,,ANTICIPOS,,alfa_307,current,View,view
+VERDADERO,Demo Alfa,,110301001,alfa_309,,,,Anticipos a Proveedores,,alfa_308,current,Payable,payable
+VERDADERO,Demo Alfa,,110301002,alfa_310,,,,Deposito Judicial,,alfa_308,current,Payable,payable
+VERDADERO,Demo Alfa,,110301003,alfa_311,,,,Anticipo de Sueldo,,alfa_308,current,Payable,payable
+VERDADERO,Demo Alfa,,110302*,alfa_312,,,,OTROS DEUDORES COMUNES,,alfa_307,current,View,view
+VERDADERO,Demo Alfa,,110302001,alfa_313,,,,Otros Deudores Comunes Cta,,alfa_312,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110303000,alfa_314,,,,VALORES A RENDIR,,alfa_307,current,Payable,payable
+VERDADERO,Demo Alfa,,110304*,alfa_315,,,,ANTICIPOS IMPOSITIVOS,,alfa_307,current,View,view
+VERDADERO,Demo Alfa,,110304001,alfa_316,,,,Iva Credito Fiscal,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304002,alfa_317,,,,Iva Saldo Libre Disponibilidad,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304003,alfa_318,,,,Retenciones Iva,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304004,alfa_319,,,,Retenciones IIBB,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304005,alfa_320,,,,Ret Imp a las Ganancias,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304006,alfa_321,,,,Ret. Comercio e Industria,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304007,alfa_322,,,,Percepciones IVA,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304008,alfa_323,,,,Pago a Cuenta IVA,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304009,alfa_324,,,,Anticipo de Imp. a las Gcias.,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304010,alfa_325,,,,Percepciones IIBB,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304011,alfa_326,,,,IVA Saldo Favor Art 24 1ra parr,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110304012,alfa_327,,,,IVA Saldo Favor Art 24 2da parr,,alfa_315,current,Receivable,receivable
+VERDADERO,Demo Alfa,,110305*,alfa_328,,,,ACCIONISTAS CUENTAS PARTICULAR,,alfa_307,current,View,view
+VERDADERO,Demo Alfa,,110305001,alfa_329,,,,Socio Daniel Giacone,,alfa_328,current,Cash,other
+VERDADERO,Demo Alfa,,110306*,alfa_330,,,,DOCUMENTOS A COBRAR,,alfa_307,current,View,view
+VERDADERO,Demo Alfa,,110306001,alfa_331,,,,Otros Documentos a Cobrar,,alfa_330,current,Receivable,receivable
+VERDADERO,Demo Alfa,,1104*,alfa_332,,,,BIENES DE CAMBIO,,alfa_3,current,View,view
+VERDADERO,Demo Alfa,,110401000,alfa_333,,,,Productos Terminados,,alfa_332,current,Cash,other
+VERDADERO,Demo Alfa,,1105*,alfa_334,,,,STOCK DE INSUMOS,,alfa_3,current,View,view
+VERDADERO,Demo Alfa,,110501000,alfa_335,,,,Stock de Telas,,alfa_334,current,Cash,other
+VERDADERO,Demo Alfa,,110502000,alfa_336,,,,Servicios Activados,,alfa_334,current,Cash,other
+VERDADERO,Demo Alfa,,12*,alfa_337,,,,ACTIVO  NO CORRIENTE,,alfa_2,current,View,view
+VERDADERO,Demo Alfa,,1201*,alfa_338,,,,INSTALACIONES,,alfa_337,current,View,view
+VERDADERO,Demo Alfa,,120101000,alfa_339,,,,Instalaciones Cta,,alfa_338,current,Asset,other
+VERDADERO,Demo Alfa,,1202*,alfa_340,,,,PARQUE INFORMATICO,,alfa_337,current,View,view
+VERDADERO,Demo Alfa,,120201000,alfa_341,,,,Parque Informatico Cta,,alfa_340,current,Asset,other
+VERDADERO,Demo Alfa,,1203*,alfa_342,,,,MUEBLES Y UTILES,,alfa_337,current,View,view
+VERDADERO,Demo Alfa,,120301000,alfa_343,,,,Muebles y utiles Cta,,alfa_342,current,Asset,other
+VERDADERO,Demo Alfa,,2*,alfa_344,,,,PASIVO,,alfa_1,current,View,view
+VERDADERO,Demo Alfa,,21*,alfa_345,,,,PASIVO CORRIENTE,,alfa_344,current,View,view
+VERDADERO,Demo Alfa,,2101*,alfa_346,,,,CUENTAS POR PAGAR,,alfa_345,current,View,view
+VERDADERO,Demo Alfa,,210101*,alfa_347,,,,DEUDAS COMERCIALES,,alfa_346,current,View,view
+VERDADERO,Demo Alfa,,210101001,alfa_348,,,,Proveedores Varios,,alfa_347,current,Payable,payable
+VERDADERO,Demo Alfa,,210101002,alfa_349,,,,Anticipo de Clientes,,alfa_347,current,Payable,payable
+VERDADERO,Demo Alfa,,2102*,alfa_350,,,,PRESTAMOS,,alfa_345,current,View,view
+VERDADERO,Demo Alfa,,2103*,alfa_351,,,,REM. Y CARGAS SOC. A PAGAR,,alfa_345,current,View,view
+VERDADERO,Demo Alfa,,210300001,alfa_352,,,,Sueldos y Jornales a Pagar,,alfa_351,current,Payable,payable
+VERDADERO,Demo Alfa,,210300002,alfa_353,,,,Aportes y Contrib. a Pagar,,alfa_351,current,Payable,payable
+VERDADERO,Demo Alfa,,210300003,alfa_354,,,,Otras Leyes Soc.a Pagar,,alfa_351,current,Payable,payable
+VERDADERO,Demo Alfa,,210300004,alfa_355,,,,Sac a Pagar,,alfa_351,current,Payable,payable
+VERDADERO,Demo Alfa,,2104*,alfa_356,,,,CARGAS FISCALES,,alfa_345,current,View,view
+VERDADERO,Demo Alfa,,210401*,alfa_357,,,,AFIP,,alfa_356,current,View,view
+VERDADERO,Demo Alfa,,210401001,alfa_358,,,,Iva Debito Fiscal Bs. y Ss.,,alfa_357,current,Payable,payable
+VERDADERO,Demo Alfa,,210401002,alfa_359,,,,Ingresos Brutos a Pagar,,alfa_357,current,Payable,payable
+VERDADERO,Demo Alfa,,210401003,alfa_360,,,,Ret. Gcias. a pagar,,alfa_357,current,Payable,payable
+VERDADERO,Demo Alfa,,210401004,alfa_361,,,,IVA Saldo a Pagar,,alfa_357,current,Payable,payable
+VERDADERO,Demo Alfa,,210402*,alfa_362,,,,MUNICIPALIDAD,,alfa_356,current,View,view
+VERDADERO,Demo Alfa,,210402001,alfa_363,,,,Comerc. e Industria a Pagar,,alfa_362,current,Payable,payable
+VERDADERO,Demo Alfa,,3*,alfa_364,,,,PATRIMONIO NETO,,alfa_1,current,View,view
+VERDADERO,Demo Alfa,,310000000,alfa_365,,,,CAPITAL,,alfa_364,current,Equity,other
+VERDADERO,Demo Alfa,,4*,alfa_366,,,,RESULTADOS,,alfa_1,current,View,view
+VERDADERO,Demo Alfa,,41*,alfa_367,,,,INGRESOS,,alfa_366,current,View,view
+VERDADERO,Demo Alfa,,4101*,alfa_368,,,,INGRESOS POR VENTAS,,alfa_367,current,View,view
+VERDADERO,Demo Alfa,,410101000,alfa_369,,IVA-VENTAS,,Ventas Gravadas,,alfa_368,current,Income,other
+VERDADERO,Demo Alfa,,4102*,alfa_370,,,,OTROS INGRESOS,,alfa_367,current,Receivable,view
+VERDADERO,Demo Alfa,,410201000,alfa_371,,,,Intereses Ganados,,alfa_370,current,Income,other
+VERDADERO,Demo Alfa,,410202000,alfa_372,,,,Otras Ganancias,,alfa_370,current,Income,other
+VERDADERO,Demo Alfa,,42*,alfa_373,,,,EGRESOS,,alfa_366,current,View,view
+VERDADERO,Demo Alfa,,4201*,alfa_374,,,,COSTO DE MERCADERIA VENDIDA,,alfa_373,current,View,view
+VERDADERO,Demo Alfa,,420101000,alfa_375,,,,Costo de Mercaderia Vendida Cta,,alfa_374,current,Expense,other
+VERDADERO,Demo Alfa,,4202*,alfa_376,,,,GASTOS DE PRODUCCION,,alfa_373,current,View,view
+VERDADERO,Demo Alfa,,420201000,alfa_377,,,,Sueldos de Produccion,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420202000,alfa_378,,,,Cargas Sociales de Produccion,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420203000,alfa_379,,,,Gratificacion Extraordinaria,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420204000,alfa_380,,,,Horas Extras,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420205000,alfa_381,,,,Soiva y Foniva,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420206000,alfa_382,,,,Refrig y Comida de Produccion,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420207000,alfa_383,,,,Viaticos de prod y fletes int,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420208000,alfa_384,,,,Mobiliario para Produccion,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420209000,alfa_385,,,,Manten. de maquinas de coser,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420210000,alfa_386,,,,Capacitacion de Produccion,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420211000,alfa_387,,,,Discontinuos,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420212000,alfa_388,,,,Utileria,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420213000,alfa_389,,,,Fletes de Materia Prima,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420214000,alfa_390,,,,ImprentaLibreria,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420215000,alfa_391,,,,Insumos Avios,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420216000,alfa_392,,,,Insumos varios para diseno,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420217000,alfa_393,,,,Insumos varios para muestras,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420218000,alfa_394,,,,Control de Calidad,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420219000,alfa_395,,,,Servicio de Confeccion,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420220000,alfa_396,,,,Servicio de Bordado,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420221000,alfa_397,,,,Servicio de Corte,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420222000,alfa_398,,,,Servicio de Estampado,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420223000,alfa_399,,,,Servicio de Lavado,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420224000,alfa_400,,,,Servicio de Tizado,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420225000,alfa_401,,,,Packaging,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420226000,alfa_402,,,,Servicio de Ojal y Boton,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420227000,alfa_403,,,,Disenador Grafico,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420228000,alfa_404,,,,Fotografia,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420229000,alfa_405,,,,Modelos,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420230000,alfa_406,,,,Produccion Catalogo,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420231000,alfa_407,,,,Servicio de Diseno,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420232000,alfa_408,,,,Servicio de Moldes,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420233000,alfa_409,,,,Servicio de Muestras,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,420234000,alfa_410,,,,Diferencia por Ajuste de Stock,,alfa_376,current,Payable,payable
+VERDADERO,Demo Alfa,,4203*,alfa_411,,,,GASTOS DE COMERCIALIZACION,,alfa_373,current,View,view
+VERDADERO,Demo Alfa,,420301000,alfa_412,,,,Sueldos de Ventas,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420302000,alfa_413,,,,Cargas Sociales Ventas,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420303000,alfa_414,,,,Gratif. Extraord. Ventas,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420304000,alfa_415,,,,Comision de Representantes,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420305000,alfa_416,,,,Viaticos de Ventas,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420306000,alfa_417,,,,Refrigerios y Comidas Ventas,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420307000,alfa_418,,,,Presentaciones Comerciales,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420308000,alfa_419,,,,Publicidad,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420309000,alfa_420,,,,Telefonia Movil Ventas,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420310000,alfa_421,,,,NC Ajustes de Cta Cte Clientes,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,420311000,alfa_422,,,,Gastos de Promocion,,alfa_411,current,Payable,payable
+VERDADERO,Demo Alfa,,4204*,alfa_423,,,,GASTOS DE LOGISTICA,,alfa_373,current,View,view
+VERDADERO,Demo Alfa,,420401000,alfa_424,,,,Sueldos de Logistica,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420402000,alfa_425,,,,Cargas Sociales de Logisticas,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420403000,alfa_426,,,,Gratific. Extraord. Logistica,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420404000,alfa_427,,,,Viaticos Logistica,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420405000,alfa_428,,,,Refrig. y Comida Logistica,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420406000,alfa_429,,,,Packaging Log. Cajas+Bol blan,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420407000,alfa_430,,,,Ajustes de Stock,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420408000,alfa_431,,,,Flete Entrega Prendas Encom,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420409000,alfa_432,,,,Rodados Gasoil,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420410000,alfa_433,,,,Rodados Reparaciones,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420411000,alfa_434,,,,Seguros Vehiculos,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420412000,alfa_435,,,,Impuestos  Automotor Patente,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420413000,alfa_436,,,,Lavadero Rodados,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,420414000,alfa_437,,,,Aceites y Lubricantes,,alfa_423,current,Payable,payable
+VERDADERO,Demo Alfa,,4205*,alfa_438,,,,GASTOS DE ADMINISTRACION,,alfa_373,current,View,view
+VERDADERO,Demo Alfa,,420501000,alfa_439,,,,Sueldos de Adm.,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420502000,alfa_440,,,,Cargas Sociales Adm.,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420503000,alfa_441,,,,Gratif. Extraord. Adm.,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420504000,alfa_442,,,,Viaticos Adm.,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420505000,alfa_443,,,,Refrig. y Coimda Adm.,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420506000,alfa_444,,,,Unif. y Ropa de Trabajo Adm,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420507000,alfa_445,,,,Libreria,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420508000,alfa_446,,,,Imprenta Facturas,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420509000,alfa_447,,,,Honorarios y Asesoramiento,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420510000,alfa_448,,,,Insumos Informaticos,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420511000,alfa_449,,,,Programacion y Sistemas,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420512000,alfa_450,,,,Agua y Gas,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420513000,alfa_451,,,,Telefonia Fija e Internet,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420514000,alfa_452,,,,Telefonia Movil Adm.,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420515000,alfa_453,,,,Serv. Postales y Encomiendas,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420516000,alfa_454,,,,Serv. Varios y de Terceros,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420517000,alfa_455,,,,Limpieza y Desinfeccion,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420518000,alfa_456,,,,Dif. de Caja,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420519000,alfa_457,,,,Cursos de Capacitacion Adm.,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420520000,alfa_458,,,,Perdidas por Robo,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420521000,alfa_459,,,,Otros Gastos,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420522000,alfa_460,,,,Alquileres Oficinas,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420523000,alfa_461,,,,Reparaciones Varias,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420524000,alfa_462,,,,Energia Electrica,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,420525000,alfa_463,,,,Seguros,,alfa_438,current,Payable,payable
+VERDADERO,Demo Alfa,,4206*,alfa_464,,,,GASTOS FINANCIEROS,,alfa_373,current,View,view
+VERDADERO,Demo Alfa,,420601000,alfa_465,,,,Intereses Comerciales,,alfa_464,current,Payable,payable
+VERDADERO,Demo Alfa,,420602000,alfa_466,,,,Gastos Bancarios,,alfa_464,current,Payable,payable
+VERDADERO,Demo Alfa,,420603000,alfa_467,,,,Imp. Debitos y Creditos Bancar,,alfa_464,current,Payable,payable
+VERDADERO,Demo Alfa,,420604000,alfa_468,,,,Intereses Financieros,,alfa_464,current,Payable,payable
+VERDADERO,Demo Alfa,,4207*,alfa_469,,,,IMPUESTOS,,alfa_373,current,View,view
+VERDADERO,Demo Alfa,,420701000,alfa_470,,,,Impuestos a los Ing. Brutos,,alfa_469,current,Payable,payable
+VERDADERO,Demo Alfa,,420702000,alfa_471,,,,Impuesto Municipal,,alfa_469,current,Payable,payable
+VERDADERO,Demo Alfa,,420703000,alfa_472,,,,Impuesto a las Ganancias,,alfa_469,current,Payable,payable
+VERDADERO,Demo Alfa,,420704000,alfa_473,,,,Multas,,alfa_469,current,Payable,payable
+VERDADERO,Demo Alfa,,420705000,alfa_474,,,,Intereses Resarcitorios,,alfa_469,current,Payable,payable
+VERDADERO,Demo Alfa,,420706000,alfa_475,,,,Impuestos Internos,,alfa_469,current,Payable,payable
+VERDADERO,Demo Alfa,,4208*,alfa_476,,,,PREVISIONES,,alfa_373,current,View,view
+VERDADERO,Demo Alfa,,420801000,alfa_477,,,,Prevision Sac,,alfa_476,current,Payable,payable

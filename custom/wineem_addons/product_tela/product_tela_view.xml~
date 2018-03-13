@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!-- Siempre las lineas xml van a ir delimitados por la etiqueta openerp-->
+<openerp>
+        <!-- Las etiquetas data tambien delimitan a las record siempre -->
+        <data>
+                <!-- La etiqueta record son la que permitiran mostrar el campo tela en el formulario producto-->
+                <record model='ir.ui.view' id='product_tela_form_view'>
+                        <field name='name'>product.form.tela</field>
+                        <field name='model'>product.product</field>
+                        <field name='inherit_id' ref='product.product_normal_form_view'/>
+                        <field name='type'>form</field>
+                        <field name='arch' type='xml'>
+                                <field name="list_price" position="after"> <!--after: despues del campo list_price -->
+                                        <field name="tela"/> <!-- llamamos al campo coleres con el atributo name de field -->
+                                </field>
+                        </field>
+ 
+                </record>
+        </data>
+</openerp>

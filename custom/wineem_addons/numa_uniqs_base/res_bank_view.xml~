@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="action_bank_account_owner_form" model="ir.actions.act_window">
+            <field name="name">Titulares de cuenta</field>
+            <field name="res_model">res.partner.bank</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_bank_account_owner_form" id="menu_action_bank_account_owner_form"
+            parent="account.menu_configuration_misc" sequence="7" groups="base.group_extended"/>
+
+        <record id="view_partner_bank_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.partner.bank.form</field>
+            <field name="model">res.partner.bank</field>
+       		<field name="inherit_id" ref="base.view_partner_bank_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="owner_name" position="after">
+                    <field name="cuit"/>
+                    <field name="cbu" />
+                </field>
+            </field>
+        </record>
+
+        <record id="view_partner_bank_tree" model="ir.ui.view">
+            <field name="name">numa_ar_base.partner.bank.tree</field>
+            <field name="model">res.partner.bank</field>
+       		<field name="inherit_id" ref="base.view_partner_bank_tree"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <field name="bank_name" position="after">
+                    <field name="owner_name" />
+                    <field name="cuit"/>
+                    <field name="cbu" />
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

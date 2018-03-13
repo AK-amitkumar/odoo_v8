@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+	<!-- Adds all assets in Odoo -->
+        <template id="assets_backend" name="numa_uniqs_custom_picking assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/numa_uniqs_custom_picking/static/src/js/your_file.js"></script>
+            </xpath>
+        </template>
+    </data>
+</openerp>

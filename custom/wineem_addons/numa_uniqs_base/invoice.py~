@@ -1,0 +1,729 @@
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    NUMA
+#    Copyright (C) 2011 NUMA Extreme Systems (<http:www.numaes.com>).
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+import time
+from datetime import datetime, timedelta
+
+from openerp.osv import fields, osv
+from openerp.tools.translate import _
+from openerp import netsvc
+import os
+from tempfile import mkstemp
+
+import logging
+logger = logging.getLogger(__name__)
+
+#Short names for documents
+
+short_name = {
+    '001': 'FC A',
+    '002': 'ND A',
+    '003': 'NC A',
+    '006': 'FC B',
+    '007': 'ND B',
+    '008': 'NC B',
+    '011': 'FC C',
+    '012': 'ND C',
+    '013': 'NC C',
+    '019': 'FC E',
+    '020': 'ND E',
+    '021': 'NC E',
+    '090': 'PRE ',
+    '091': 'PREC',
+}
+
+
+SUPERUSER = 1
+DATEFORMAT = '%Y-%m-%d'
+
+class invoice_mass_shop_change (osv.osv_memory):
+    _name = "account.mass_shop_change"
+    
+    _columns = {
+        'shop': fields.many2one ('sale.shop', 'New shop', required=True),    
+    }
+
+    def action_shop_change (self, cr, uid, ids, context=None):
+        assert ids and len(ids)==1
+        invoice_obj = self.pool.get ('account.invoice')
+        context = context or {}
+
+        invoice_ids = context['active_ids']
+        imsc = self.browse (cr, uid, ids[0], context=context)
+        
+        if invoice_ids:
+            change_ids = []
+            for i in invoice_obj.browse (cr, uid, invoice_ids, context=context):
+                if i.state == 'draft':
+                    change_ids.append(i.id)
+        
+            if change_ids:
+                invoice_obj.write (cr, uid, change_ids, {'shop_id': imsc.shop.id}, context=context)
+
+        return {'type': 'ir.actions.act_window_close'}
+        
+invoice_mass_shop_change()
+
+class account_invoice(osv.osv):
+    _inherit = "account.invoice"
+
+    def _get_default_shop (self, cr, uid, context=None):
+        if not context: context = {}
+
+        company_obj = self.pool.get('res.company')
+        shop_obj = self.pool.get('sale.shop')
+
+        company_id = company_obj._company_default_get(cr, uid, 'account.invoice', context=context)
+        shop_ids = shop_obj.search(cr, uid, [('company_id','=',company_id)])
+        if shop_ids:
+            return shop_ids[0]
+        else:
+            return False    
+
+    _columns = {
+                'rep_id': fields.related('partner_id','parent_id', string='Rep id', type='many2one', relation='res.partner'),
+                'debit_note': fields.boolean ('Debit Note?', help="Generate a debit note instead of an invoice?", readonly=True, states={'draft':[('readonly',False)]}),
+                'shop_id': fields.many2one ('sale.shop', 'Issuing shop', readonly=True, states={'draft':[('readonly',False)]}),
+                'sales_point': fields.many2one('numa_ar_base.afip_sales_point', 'Sales Point'),
+                'afip_invoicing_type': fields.char('AFIP Invoicing Type', size=64),
+                'afip_sales_point': fields.integer ('AFIP point of sales', digits=(4,0), readonly=True, states={'draft':[('readonly',False)]}),
+                'afip_number': fields.integer ('AFIP sequence number', digits=(8,0), readonly=True, states={'draft':[('readonly',False)]}),
+                'afip_invoice_type' : fields.selection([
+                                ('001','001-Factura A'),
+                                ('002','002-Nota de Débito A'),
+                                ('003','003-Nota de Crédito A'),
+                                ('006','006-Factura B'),
+                                ('007','007-Nota de Débito B'),
+                                ('008','008-Nota de Crédito B'),
+                                ('011','011-Factura C'),
+                                ('012','012-Nota de Débito C'),
+                                ('013','013-Nota de Crédito C'),
+                                ('019','019-Factura E'),
+                                ('020','020-Nota de Débito E'),
+                                ('021','021-Nota de Crédito E'),
+                                ('090','090-Presupuesto X'),
+                                ('091','091-Presupuesto NC X'),
+                                ], 'AFIP Invoice type', select=True, readonly=True, states={'draft':[('readonly',False)]}),
+                'afip_concept': fields.selection([
+                                ('1','Productos'),
+                                ('2','Servicios'),
+                                ('3','Productos y Servicios'),
+                                ], 'AFIP Concepts', select=True, required=True, readonly=True, states={'draft':[('readonly',False)]}),
+                'afip_service_start': fields.date('AFIP Service start', readonly=True, states={'draft':[('readonly',False)]}),
+                'afip_service_end': fields.date('AFIP Service start', readonly=True, states={'draft':[('readonly',False)]}),
+                'out_picking': fields.many2one ('stock.picking', 'Based on picking', readonly=True, states={'draft':[('readonly',False)]}),
+    }
+
+
+    _defaults = {
+        'debit_note': False,
+        'shop_id': _get_default_shop,
+        'afip_concept': '1',
+        'afip_service_start': time.strftime('%Y-%m-%d'),
+        'afip_service_end': time.strftime('%Y-%m-%d'),
+   }
+
+    def onchange_shop_id (self, cr, uid, ids, shop_id, part_id, type, invoice_line, currency_id, context=None):
+        if not context: context = {}
+
+        if not shop_id:
+            return False
+
+        shop_obj = self.pool.get('sale.shop')
+        shop = shop_obj.browse(cr, uid, shop_id, context=context)
+
+        vals = self.onchange_company_id (cr, uid, ids, shop.company_id.id, part_id, type, invoice_line, currency_id).get('value', {})
+        vals.update(company_id = shop.company_id.id)
+        return {'value': vals}
+
+
+    def onchange_company_id(self, cr, uid, ids, company_id, part_id, type, invoice_line, currency_id):
+        # Fix behaviour of onchange for shared currencies
+
+        company_obj = self.pool.get('res.company')
+
+        res = super(account_invoice, self).onchange_company_id(cr, uid, ids, company_id, part_id, type, invoice_line, currency_id)
+        if company_id:
+            if not res['value'].get('currency_id', False):
+                company = company_obj.browse(cr, uid, company_id)
+                res['value']['currency_id'] = company.currency_id.id
+
+        return res
+
+    def get_report_name(self, cr, uid, ids, context=None):
+        return 'numa_ar_base.preprinted_invoice'        
+
+    def action_number(self, cr, uid, ids, context=None):
+        if not context:
+            context = {}
+
+        afip_obj = self.pool.get('numa_ar_base.afip')
+        seq_obj = self.pool.get('ir.sequence')
+
+        for inv in self.browse (cr, uid, ids):
+            id = inv.id
+            invtype = inv.type
+            number = inv.number
+            afip_invoice_type = False
+            afip_sales_point = 0
+            afip_number = 0            
+            printer = None
+            dup = False
+            report = None
+            company = inv.company_id
+            sales_point_id = False
+            today = time.strftime('%Y-%m-%d')
+
+            #Process only invoices belonging to Argentinean companies
+            if not (company.partner_id and company.partner_id.legal_country_id and \
+                    company.partner_id.legal_country_id.code == "AR"):
+                super (account_invoice, self).action_number(cr, uid, [inv.id], context = context)
+                continue
+
+            if inv.type == "out_invoice":
+
+                if not inv.shop_id:
+                    raise osv.except_osv(_('Error !'), _('Shop should be defined!'))
+                if not inv.shop_id.afip_sales_point_id:
+                    raise osv.except_osv(_('Error !'), _('AFIP Sales point should be defined for the shop!'))
+                    
+                # Asegurarse que tiene fecha de factura
+                if not inv.date_invoice:
+                    inv.write({'date_invoice': today})
+                    inv = self.browse(cr, uid, inv.id, context=context)
+    
+                # Set 'afip_invoice_type' and number
+                company = inv.shop_id.company_id
+                vat_condition = company.partner_id.vat_condition
+                sales_point = inv.shop_id.afip_sales_point_id
+                sales_point_id = sales_point.id
+                
+                if vat_condition == '01' or vat_condition == '11':
+                    # Responsable inscripto o agente de percepción
+                    if inv.partner_id.vat_condition == '01' or inv.partner_id.vat_condition == '11':
+                        # Responsable inscripto o agente de percepción
+                        afip_invoice_type = inv.debit_note and '002' or '001' # ND A o Fact A
+                    elif inv.partner_id.vat_condition == '09' or inv.partner_id.vat_condition == '10':
+                        # Cliente del exterior o Régimen especial de T. del Fuego
+                        afip_invoice_type = inv.debit_note and '020' or '019' # ND E o Fact E
+                    else:
+                        # Todos los demás: Factura B
+                        max_no_id = afip_obj.get_max_b_no_id(cr, uid)
+                        if inv.amount_total >= max_no_id and (inv.partner_id.name=="CONSUMIDOR FINAL" or not inv.partner_id.cuit_dni):
+                            raise osv.except_osv(_('Error !'), _('No invoice B could issued if the amount is bigger or equal to %8.2d ARS without name or CUIT/CUIL/DNI!') % max_no_id)
+
+                        afip_invoice_type = inv.debit_note and '007' or '006' # ND B o Fact B
+                elif vat_condition == '04' or vat_condition == '10':
+                    # Sujeto exento o de T. del Fuego
+                    if inv.partner_id.vat_condition == '09' or inv.partner_id.vat_condition == '10':
+                        # Cliente del exterior o Régimen especial de T. del Fuego
+                        afip_invoice_type = inv.debit_note and '020' or '019' # ND E o Fact E
+                    else:
+                        # Todos los demás: Presupuesto X
+                        afip_invoice_type = '090' # Presupuesto X
+                elif vat_condition == '06':
+                    # Responsable monotributo
+                    if inv.partner_id.vat_condition == '09' or inv.partner_id.vat_condition == '10':
+                        # Cliente del exterior o Régimen especial de T. del Fuego
+                        raise osv.except_osv(_('Error !'), _('No Invoices type "E" for monotributo!'))
+                    else:
+                        # Todos los demás: Factura C
+                        afip_invoice_type = inv.debit_note and '012' or '011' # ND C o Fact C
+                else:
+                    raise osv.except_osv(_('Error !'), _('It is not possible to a generate an invoice/debit note to a customer with this VAT condition (%s)!') % vat_condition)
+
+            elif inv.type == "out_refund":
+                if not inv.shop_id:
+                    raise osv.except_osv(_('Error !'), _('Shop should be defined!'))
+                if not inv.shop_id.afip_sales_point_id:
+                    raise osv.except_osv(_('Error !'), _('AFIP Sales point should be defined for the shop!'))
+
+                # Asegurarse que tiene fecha de factura
+                if not inv.date_invoice:
+                    inv.write({'date_invoice': time.strftime('%Y-%m-%d')})
+                    inv = self.browse(cr, uid, inv.id, context=context)
+    
+                # Set 'afip_invoice_type' and number
+                company = inv.shop_id.company_id
+                vat_condition = company.partner_id.vat_condition
+                sales_point = inv.shop_id.afip_sales_point_id
+                sales_point_id = sales_point.id
+
+                if vat_condition == '01' or vat_condition == '11':
+                    # Responsable inscripto o agente de percepción
+                    if inv.partner_id.vat_condition == '01' or inv.partner_id.vat_condition == '11':
+                        # Responsable inscripto o agente de percepción
+                        afip_invoice_type = '003' # NC A
+                    elif inv.partner_id.vat_condition == '09' or inv.partner_id.vat_condition == '10':
+                        # Cliente del exterior o Régimen especial de T. del Fuego
+                        afip_invoice_type = '021' # NC E
+                    else:
+                        # Todos los demás: Factura B
+
+                        max_no_id = afip_obj.get_max_b_no_id(cr, uid)
+                        if inv.amount_total >= max_no_id and (inv.partner_id.name=="CONSUMIDOR FINAL" or not inv.partner_id.cuit_dni):
+                            raise osv.except_osv(_('Error !'), _('No credit note B could issued if the amount is bigger or equal to %8.2d ARS without name or CUIT/CUIL/DNI!') % max_no_id)
+
+                        afip_invoice_type = '008' # NC B
+
+                elif vat_condition == '04' or vat_condition == '10':
+                    # Sujeto exento o de T. del Fuego
+                    if inv.partner_id.vat_condition == '09' or inv.partner_id.vat_condition == '10':
+                        # Cliente del exterior o Régimen especial de T. del Fuego
+                        afip_invoice_type = '021' # NC E
+                    else:
+                        # Todos los demás: Presupuesto NC
+                        afip_invoice_type = '091' # Presupuesto NC
+
+                elif vat_condition == '06':
+                    # Responsable monotributo
+                    if inv.partner_id.vat_condition == '09' or inv.partner_id.vat_condition == '10':
+                        # Cliente del exterior o Régimen especial de T. del Fuego
+                        raise osv.except_osv(_('Error !'), _('No Invoices type "E" for monotributo!'))
+                    else:
+                        # Todos los demás: Factura C
+                        afip_invoice_type = '013' # NC C
+
+                else:
+                    raise osv.except_osv(_('Error !'), _('No credit note could be generated for the customer''s VAT condition!') % vat_condition)
+
+            elif inv.type == "in_invoice":
+                afip_invoice_type = False
+
+            elif inv.type == "in_refund":
+                afip_invoice_type = False
+
+            else:
+                raise osv.except_osv(_('Error !'), _('Invalid invoice type!'))
+
+            if invtype in ('out_invoice', 'out_refund'):
+                afip_sales_point = inv.shop_id.afip_sales_point_id.afip_id
+                if afip_invoice_type:            
+                    afip_number = inv.shop_id.afip_sales_point_id.next_number(afip_invoice_type)
+                    printer = inv.shop_id.afip_sales_point_id.get_printer(afip_invoice_type)
+                    dup = inv.shop_id.afip_sales_point_id.is_dup(afip_invoice_type)
+                    report = inv.get_report_name()
+                    
+                if afip_number != 0:
+                    number = '%s %04d-%08d' % (short_name[afip_invoice_type], afip_sales_point, afip_number)
+                else:
+                    if inv.journal_id and inv.journal_id.sequence_id:
+                        number = seq_obj.get_id(cr, uid, inv.journal_id.sequence_id.id)
+                    else:
+                        number = inv.reference or inv.name or '/'
+
+                last_invoice_ids = self.search(cr, uid,
+                                               [('sales_point', '=', sales_point_id),
+                                                ('afip_invoice_type', '=', afip_invoice_type),
+                                                ('state','in',['open', 'paid', 'cancel'])],
+                                               order='date_invoice desc',
+                                               limit=1,
+                                               context=context)
+                i_di_dt = datetime.strptime(inv.date_invoice, DATEFORMAT)
+                if last_invoice_ids:
+                    last_invoice = self.browse(cr, uid, last_invoice_ids[0], context=context)
+                    li_di_dt = datetime.strptime(last_invoice.date_invoice, DATEFORMAT)
+                    if i_di_dt < li_di_dt:
+                        raise osv.except_osv(_('Error !'),
+                                             _('La fecha de factura / NC no puede ser anterior a la ultima factura (%s)') % last_invoice.date_invoice)
+                today_dt = datetime.strptime(today, DATEFORMAT)
+                if (i_di_dt - today_dt) > timedelta(days=5):
+                    raise osv.except_osv(_('Error !'),
+                                         _('La fecha de factura / NC no puede ser mas adelante de 5 dias'))
+                                         
+                if (i_di_dt - today_dt) > timedelta(days=1) and inv.date_invoice[0:7] != today[0:7]:
+                    raise osv.except_osv(_('Error !'),
+                                         _('Para fechas de facturas / NC delante de hoy, deben estar en el mismo mes'))
+
+                ref = self._convert_ref(cr, uid, number)
+                self.write(cr, uid, [inv.id], {'name': number,
+                                          'internal_number':number,
+                                          'number':number,
+                                          'ref': ref,
+                                          'sales_point': sales_point_id,
+                                          'afip_invoicing_type': inv.shop_id.afip_sales_point_id.afip_invoicing_type,
+                                          'afip_invoice_type': afip_invoice_type,
+                                          'afip_sales_point': afip_sales_point, 
+                                          'afip_number': afip_number})
+ 
+                if printer and report:
+                    obj = netsvc.LocalService(report)
+                    (result, format) = obj.create(cr, uid, ids, {}, context)
+                    if not result:
+                        raise osv.except_osv(_('Error !'), _('No printed report produced on invoice %s. No RML or not enough data! Please check it') % inv.name)
+
+                    fd, file_name = mkstemp()
+                    try:
+                        os.write(fd, result)
+                    finally:
+                        os.close(fd)
+                    printer_system_name = printer.system_name
+                    cmd = "lpr -P %s %s" % (printer_system_name,file_name)
+                    os.system(cmd)
+                    if dup:
+                        os.system(cmd)
+    
+            elif invtype in ('in_invoice', 'in_refund'):
+                if not inv.reference:
+                    ref = self._convert_ref(cr, uid, number)
+                else:
+                    ref = inv.reference
+                number = '%s %s' % (inv.partner_id.ref, inv.reference)
+
+                inv.write({'ref': ref,
+                           'name': number,
+                           'number': number,
+                           'internal_number': number})
+
+            for inv_id, name in self.name_get(cr, uid, [id]):
+                ctx = context.copy()
+                if inv.type in ('out_invoice', 'out_refund'):
+                    ctx = self.get_log_context(cr, uid, context=ctx)
+                message = _('Invoice ') + " '" + name + "' "+ _("is validated.")
+                self.log(cr, uid, inv_id, message, context=ctx)
+
+        return True
+
+
+    def finalize_invoice_move_lines(self, cr, uid, invoice_browse, move_lines):
+        """finalize_invoice_move_lines(cr, uid, invoice, move_lines) -> move_lines
+        Hook method to be overridden in additional modules to verify and possibly alter the
+        move lines to be created by an invoice, for special cases.
+        :param invoice_browse: browsable record of the invoice that is generating the move lines
+        :param move_lines: list of dictionaries with the account.move.lines (as for create())
+        :return: the (possibly updated) final move_lines to create for this invoice
+        """
+        tax_obj = self.pool.get ('account.tax')
+
+        if invoice_browse.type == 'out_invoice':
+            company = invoice_browse.journal_id.company_id
+            total_wo_taxes = invoice_browse.amount_untaxed
+            partner = invoice_browse.partner_id
+            address = invoice_browse.address_invoice_id
+            base = move_lines[0][2]
+            tax_context = {
+                'pool': self.pool,
+                'uid': uid,
+                'invoice': invoice_browse,
+                'company': company,
+            }
+
+            for tax in tax_obj.browse(cr, uid, [x.id for x in company.taxes_on_invoice]):
+                taxes = tax_obj.compute_all(cr, uid, [tax], total_wo_taxes, 1.00, 
+                                               address.id,
+                                               tax_context, 
+                                               partner).get('taxes')
+                for tax in taxes:
+                    move_line1 = {
+                        'name': tax['name'],
+                        'ref': base['ref'],
+                        'partner_id': base['partner_id'],
+                        'currency_id': base['currency_id'],
+                        'amount_currency': 0.0,
+                        'analytic_account_id': False,
+                        'quantity': 1,
+                        'date_maturity': base['date'],
+                        'date_created': base['date'],
+
+                        'account_tax_id': False,
+                        'tax_code_id': False,
+                        'tax_amount': 0.0,
+                        'account_id': tax['account_collected_id'],
+                        'debit': 0.0,
+                        'credit': tax['amount'],
+                    }
+
+                    #pdb.set_trace()
+
+                    move_lines.append((0, 0, move_line1))
+
+                    move_line2 = move_line1.copy()
+
+                    move_line2.update ({
+                        'tax_code_id': tax['tax_code_id'],
+                        'tax_amount': tax['amount'],
+                        'account_id': tax['account_paid_id'],
+                        'debit': tax['amount'],
+                        'credit': 0.0,
+                    })
+
+                    move_lines.append((0, 0, move_line2))
+
+        elif invoice_browse.type == 'out_refund':
+            company = invoice_browse.journal_id.company_id
+            total_wo_taxes = invoice_browse.amount_untaxed
+            partner = invoice_browse.partner_id
+            address = invoice_browse.address_invoice_id
+            base = move_lines[0][2]
+            tax_context = {
+                'pool': self.pool,
+                'uid': uid,
+                'invoice': invoice_browse,
+                'company': company,
+            }
+
+            for tax in tax_obj.browse(cr, uid, [x.id for x in company.taxes_on_refund]):
+                taxes = tax_obj.compute_all(cr, uid, [tax], total_wo_taxes, 1.00, 
+                                               address.id,
+                                               tax_context, 
+                                               partner).get('taxes')
+                for tax in taxes:
+                    move_line1 = {
+                        'name': tax['name'],
+                        'ref': base['ref'],
+                        'partner_id': base['partner_id'],
+                        'currency_id': base['currency_id'],
+                        'amount_currency': 0.0,
+                        'analytic_account_id': False,
+                        'quantity': 1,
+                        'date_maturity': base['date'],
+                        'date_created': base['date'],
+
+                        'account_tax_id': False,
+                        'tax_code_id': False,
+                        'tax_amount': 0.0,
+                        'account_id': tax['account_collected_id'],
+                        'debit': 0.0,
+                        'credit': tax['amount'],
+                    }
+
+                    move_lines.append((0, 0, move_line1))
+
+                    move_line2 = move_line1.copy()
+
+                    move_line2.update ({
+                        'tax_code_id': tax['tax_code_id'],
+                        'tax_amount': tax['amount'],
+                        'account_id': tax['account_paid_id'],
+                        'debit': tax['amount'],
+                        'credit': 0.0,
+                    })
+
+                    move_lines.append((0, 0, move_line2))
+
+        elif invoice_browse.type in ['in_invoice', 'in_refund']:
+            pass
+
+        return super(account_invoice, self).finalize_invoice_move_lines (cr, uid, invoice_browse, move_lines)
+
+
+    def _convert_tax (self, cr, uid, tax, company_id, context=None):
+        tax_obj = self.pool.get ('account.tax')
+
+        if tax:
+            if tax.company_id.id != company_id:
+                new_tax_ids = tax_obj.search (cr, uid, [('company_id','=', company_id), ('name', '=', tax.name)], context=context)
+                if new_tax_ids:
+                    return tax_obj.browse (cr, uid, new_tax_ids[0], context=context)
+            else:
+                return tax
+        return None
+
+    def _convert_account (self, cr, uid, account, company_id, context=None):
+        account_obj = self.pool.get ('account.account')
+
+        if account:
+            if account.company_id.id != company_id:
+                new_account_ids = account_obj.search (cr, uid, [('company_id','=', company_id), ('name', '=', account.name)], context=context)
+                if new_account_ids:
+                    return account_obj.browse (cr, uid, new_account_ids[0], context=context)
+            else:
+                return account
+        return None
+
+    def fix_line_taxes (self, cr, uid, ids, context=None):
+        for inv in self.browse (cr, SUPERUSER, ids, context=context):
+            for il in inv.invoice_line:
+                new_taxes = set ()
+                for tax in il.invoice_line_tax_id:
+                    new_tax = self._convert_tax(cr, SUPERUSER, tax, inv.shop_id.company_id.id, context=context)
+                    if new_tax:
+                        new_taxes.add (new_tax.id)
+                il.write ({'invoice_line_tax_id': [(6,0,list(new_taxes))]}, context=context)
+                
+                if il.account_id and inv.shop_id and il.account_id.company_id != inv.shop_id.company_id.id:
+                    new_account = self._convert_account(cr, uid, il.account_id, inv.shop_id.company_id.id, context=context)
+                    il.write ({'account_id': new_account and new_account.id}, context=context)
+
+    def fix_account (self, cr, uid, ids, context=None):
+        for inv in self.browse(cr, SUPERUSER, ids, context=context):
+            if inv.account_id and inv.shop_id and inv.account_id.company_id != inv.shop_id.company_id:
+                new_account = self._convert_account (cr, SUPERUSER, inv.account_id, inv.shop_id.company_id.id, context=context)
+                inv.write ({'account_id': new_account and new_account.id}, context=context)
+        return
+        
+    def button_reset_taxes(self, cr, uid, ids, context=None):
+        self.fix_line_taxes (cr, uid, ids, context=context)
+        self.fix_account (cr, uid, ids, context=context)
+        
+        return super(account_invoice, self).button_reset_taxes (cr, uid, ids, context=context)
+
+    def action_move_create(self, cr, uid, ids, context=None):
+        # Try to fix item taxes to the company
+        self.fix_line_taxes (cr, uid, ids, context=context)    
+        self.fix_account (cr, uid, ids, context=context)
+    
+        return super(account_invoice, self).action_move_create(cr, uid, ids)
+
+
+account_invoice()
+
+class account_invoice_tax (osv.osv):
+    _inherit = "account.invoice.tax"
+
+    def compute(self, cr, uid, invoice_id, context=None):
+        tax_obj = self.pool.get ('account.tax')
+        cur_obj = self.pool.get('res.currency')
+        invoice = self.pool.get('account.invoice').browse (cr, uid, invoice_id, context=context)
+
+        tax_grouped = super(account_invoice_tax, self).compute(cr, uid, invoice_id, context=context)
+
+        company = invoice.journal_id.company_id
+        total_wo_taxes = invoice.amount_untaxed
+        partner = invoice.partner_id
+        address = invoice.address_invoice_id
+        company_currency = company.currency_id.id
+        tax_context = {
+            'pool': self.pool,
+            'uid': uid,
+            'invoice': invoice,
+            'date': invoice.date_invoice or time.strftime('%Y-%m-%d'),
+            'company': company,
+        }
+
+        if invoice.type in ['out_invoice']:
+            tax_list = company.taxes_on_invoice_additional
+        elif invoice.type in ['out_refund']:
+            tax_list = company.taxes_on_refund_additional
+        else:
+            return tax_grouped
+    
+        for addtax in tax_obj.browse(cr, uid, [x.id for x in tax_list]):
+            for tax in tax_obj.compute_all(cr, uid, [addtax], total_wo_taxes, 1.00, 
+                                           address.id,
+                                           tax_context, 
+                                           partner)['taxes']:
+
+                val={}
+                val['invoice_id'] = invoice.id
+                val['name'] = tax['name']
+                val['amount'] = tax['amount']
+                val['manual'] = False
+                val['sequence'] = tax['sequence']
+                val['base'] = total_wo_taxes
+
+                if invoice.type in ('out_invoice','in_invoice'):
+                    val['base_code_id'] = tax['base_code_id']
+                    val['tax_code_id'] = tax['tax_code_id']
+                    val['base_amount'] = cur_obj.compute(cr, uid, invoice.currency_id.id, company_currency, val['base'] * tax['base_sign'], context={'date': invoice.date_invoice or time.strftime('%Y-%m-%d')}, round=False)
+                    val['tax_amount'] = cur_obj.compute(cr, uid, invoice.currency_id.id, company_currency, val['amount'] * tax['tax_sign'], context={'date': invoice.date_invoice or time.strftime('%Y-%m-%d')}, round=False)
+                    val['account_id'] = tax['account_collected_id']
+                else:
+                    val['base_code_id'] = tax['ref_base_code_id']
+                    val['tax_code_id'] = tax['ref_tax_code_id']
+                    val['base_amount'] = cur_obj.compute(cr, uid, invoice.currency_id.id, company_currency, val['base'] * tax['ref_base_sign'], context={'date': invoice.date_invoice or time.strftime('%Y-%m-%d')}, round=False)
+                    val['tax_amount'] = cur_obj.compute(cr, uid, invoice.currency_id.id, company_currency, val['amount'] * tax['ref_tax_sign'], context={'date': invoice.date_invoice or time.strftime('%Y-%m-%d')}, round=False)
+                    val['account_id'] = tax['account_paid_id']
+
+                key = (val['tax_code_id'], val['base_code_id'], val['account_id'])
+                if not key in tax_grouped:
+                    if tax['amount']:
+                        tax_grouped[key] = val
+                else:
+                    tax_grouped[key]['amount'] += val['amount']
+                    tax_grouped[key]['base'] += val['base']
+                    tax_grouped[key]['base_amount'] += val['base_amount']
+                    tax_grouped[key]['tax_amount'] += val['tax_amount']
+
+        for t in tax_grouped.values():
+            t['base'] = cur_obj.round(cr, uid, company.currency_id, t['base'])
+            t['amount'] = cur_obj.round(cr, uid, company.currency_id, t['amount'])
+            t['base_amount'] = cur_obj.round(cr, uid, company.currency_id, t['base_amount'])
+            t['tax_amount'] = cur_obj.round(cr, uid, company.currency_id, t['tax_amount'])
+
+        return tax_grouped
+
+account_invoice_tax()
+
+class invoice_so_fix (osv.osv):
+    _name = "account.invoice_so_fix"
+    
+    def action_fix(self, cr, uid, ids, context=None):
+        invoice_obj = self.pool.get('account.invoice')
+        so_obj = self.pool.get('sale.order')
+        
+        logger.info("STARTING INVOICE FIXING")
+        lines_added = 0
+        invoices_added = 0
+        errors_found = 0
+        
+        for invoice in invoice_obj.browse(cr, uid, 
+                                           invoice_obj.search(cr, uid, [], context=context), 
+                                           context=context):
+            if invoice.state not in ('paid', 'open', 'cancel'):
+                continue
+                
+            if not invoice.origin:
+                logger.info("Invoice [%s] cannot be related to any sales order. No origin" % invoice.name)
+                continue
+
+            for ors in invoice.origin.split(','):
+                so_name = ors.split(':')[-1].strip()
+                so_ids = so_obj.search(cr, uid, [('name','=',so_name)], context=context)
+                if so_ids:
+                    product_sol = {}
+                    sos = so_obj.browse(cr, uid, so_ids, context=context)
+                    for so in sos:
+                        for sol in so.order_line:
+                            if sol.product_id.id not in product_sol:
+                                product_sol[sol.product_id.id] = [sol]
+                            else:
+                                product_sol[sol.product_id.id].append(sol)
+                        
+                    logger.info("Processing invoice [%s]" % invoice.name)
+                    for invl in invoice.invoice_line:
+                        for so in sos:
+                            if invoice.id not in [x.id for x in so.invoice_ids]:
+                                so.write({'invoice_ids': [(4, invoice.id)]})
+                                logger.info("Invoice [%s] added to sales order[%s]" % (invoice.name, so.name))
+                                invoices_added += 1
+
+                        if not invl.product_id:
+                            continue
+
+                        if invl.product_id.id in product_sol:
+                            for sol in product_sol[invl.product_id.id]:
+                                if invl.id not in [x.id for x in sol.invoice_lines]:
+                                    sol.write({'invoice_lines': [(4, invl.id)]})
+                                    lines_added += 1
+                                    logger.info("Invoice line [%s, %s] added to sales order[%s]" % (invoice.name, sol.product_id.default_code, so.name))
+                        else:
+                            logger.info("On invoice [%s], product [%s] cannot be related to any sales order line. Product not found" % (invoice.name, sol.product_id.default_code))
+                            errors_found += 1
+                else:
+                    logger.info("Invoice [%s] cannot be related to sales order [%s]. SO not found" % (invoice.name, so_name))
+                    errors_found += 1
+
+        logger.info("INVOICE FIX ENDED. Total number of invoices added: %d, number of invoice lines added: %d, errors found: %d" % (invoices_added, lines_added, errors_found))
+        return True
+        
+invoice_so_fix()
+

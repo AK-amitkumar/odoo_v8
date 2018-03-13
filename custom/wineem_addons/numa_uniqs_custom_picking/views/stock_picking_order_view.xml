@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="stock_picking_order_tree" model="ir.ui.view">
+            <field name="name">stock.picking.order.tree</field>
+            <field name="model">stock.picking.order</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Picking Orders" colors="black:state=='draft';blue:state=='done';grey:state=='canceled';red:state=='planned'">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="rep"/>
+                    <field name="leader"/>
+                    <field name="state"/>
+                    <field name="planned_on"/>
+                    <field name="confirmed_on"/>
+                    <field name="canceled_on"/>
+                    <button name="action_plan" type="object" string="Plan" icon="gtk-go-forward" states="draft" />
+                </tree>
+            </field>
+        </record>
+        
+        <record id="stock_picking_order_form" model="ir.ui.view">
+            <field name="name">stock.picking.order.form</field>
+            <field name="model">stock.picking.order</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Picking Order">
+                    <header>
+                        <button name="get_moves" type="object" string="Get Moves" states="draft" class="oe_highlight" />
+                        <button name="action_plan" type="object" string="Plan" states="draft" class="oe_highlight" />
+                        <button name="action_back_to_draft" type="object" string="Back to draft" states="planned,canceled" />
+                        <button name="action_confirm" type="object" string="Confirm" states="planned" class="oe_highlight" />
+                        <button name="action_cancel" type="object" string="Cancel" states="planned" />
+                        <button name="action_print" type="object" string="Print"/>
+                        <button name="%(numa_uniqs_custom_picking.action_picking_list)d" type="action" string="Print Picking List"
+                            states="done" class="oe_highlight"/>
+                        <field name="state" widget="statusbar" readonly="1" nolabel="1"/>
+                    </header>
+                    <sheet>
+                        <h1 attrs="{'invisible': [('state','in',('draft'))]}" >
+                            <label for="name" string="Picking Order"/>
+                            <field name="name" class="oe_inline" readonly="1"/>
+                        </h1>
+                        <group>
+                            <group col="2">
+                                <field name="partner_id" domain="[('customer','=',True)]"
+                                    attrs="{'readonly': [('state','!=','draft')]}"/>
+                                <field name="rep"/>
+                                <field name="leader"/>
+                                <field name="box_id" readonly="1"/>
+                            </group>
+                            <group col="2">
+                                <field name="planned_on"/>
+                                <field name="confirmed_on"/>
+                                <field name="canceled_on"/>
+                            </group>
+                        </group>
+                        <field name="move_ids" nolabel="1" colspan="4" readonly="1" domain="[('state','not in',['cancel','draft'])]">
+                            <tree string="Moves" editable="bottom">
+                                <field name="picking_id"/>
+                                <field name="group_id"/>
+                                <field name="product_id"/>
+                                <field name="product_uom"/>
+                                <field name="product_uom_qty"/>
+                                <field name="state"/>
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="stock_picking_order_search" model="ir.ui.view">
+            <field name="name">stock.picking.order.search</field>
+            <field name="model">stock.picking.order</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Picking Orders">
+                    <filter icon="terp-check"
+                        string="Draft"
+                        domain="[('state','=','draft')]"/>
+                    <filter icon="terp-camera_test"
+                        string="Planned"
+                        domain="[('state','=','planned')]"/>
+                    <filter icon="terp-gtk-media-pause"
+                        string="Confirmed"
+                        domain="[('state','=','done')]"/>
+                    <filter icon="terp-gtk-media-pause"
+                        string="Cancelled"
+                        domain="[('state','=','canceled')]"/>
+
+                    <separator orientation="vertical"/>
+                    <field name="name" />
+                    <field name="partner_id"/>
+                    <newline />
+
+                    <field name="planned_on"/>
+                    <field name="confirmed_on"/>
+                    <field name="canceled_on" />
+                    <newline />
+
+                    <group expand="0" string="Group By...">
+                        <filter string="Partner" icon="terp-personal" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <separator orientation="vertical"/>
+                        <filter string="State" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"/>
+                        <separator orientation="vertical"/>
+                        <filter string="Repre." icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'rep'}"/>
+                        <filter string="Lider." icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'leader'}"/>
+                        <separator orientation="vertical"/>
+                        <filter string="Planned on" help="Planning date" icon="terp-go-month"
+                            domain="[]" context="{'group_by':'planned_on'}" />
+                        <filter string="Confirmed on" help="Confirm date" icon="terp-go-month"
+                            domain="[]" context="{'group_by':'confirmed_on'}" />
+                        <filter string="Canceled on" help="Cancellation date" icon="terp-go-month"
+                            domain="[]" context="{'group_by':'canceled_on'}" />
+                    </group>
+               </search>
+            </field>
+        </record>
+
+        <record id="stock_picking_order_action" model="ir.actions.act_window">
+            <field name="name">Picking Orders</field>
+            <field name="res_model">stock.picking.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem  id="stock_picking_order_menu" action="stock_picking_order_action"
+            parent="stock.menu_stock_warehouse_mgmt" sequence="40"/>
+
+
+            <record id="stock_picking_to_picking_order_form_view" model="ir.ui.view">
+            <field name="name">Picking to Picking Order form view</field>
+            <field name="model">stock.picking_to_picking_order</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Picking to Picking Order" >
+                    <label string="Selected pickings to picking orders" colspan="4"/>
+                    <button name="action_create" type="object" string="Generate" colspan="4" />
+                </form>
+            </field>
+        </record>
+
+
+        <act_window
+            id="stock_picking_stock_pick_order_cross_action"
+            multi="True"
+            key2="client_action_multi"
+            name="Create Picking Order"
+            res_model="stock.picking_to_picking_order"
+            src_model="stock.picking"
+            view_mode="form"
+            view_type="form"
+            target="new" />
+
+
+
+    </data>
+</openerp>

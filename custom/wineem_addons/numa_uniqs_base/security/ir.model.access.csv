@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_afip_sales_point,numa_ar_base.afip_sales_point,model_numa_ar_base_afip_sales_point,,1,1,0,0
+access_afip_sales_point_manager,numa_ar_base.model_afip_sales_point,model_numa_ar_base_afip_sales_point,account.group_account_manager,1,1,1,1
+access_afip_store_point,numa_ar_base.afip_store_point,model_numa_ar_base_afip_store_point,,1,1,0,0
+access_afip_store_point_manager,numa_ar_base.model_afip_store_point,model_numa_ar_base_afip_store_point,account.group_account_manager,1,1,1,1
+access_afip,numa_ar_base.afip,model_numa_ar_base_afip,,1,1,0,0
+access_afip_manager,numa_ar_base.model_afip,model_numa_ar_base_afip,account.group_account_manager,1,1,1,1
+access_rg830_rate,numa_ar_base.rg830_rate,model_numa_ar_base_rg830_rate,,1,1,0,0
+access_rg830_rate_manager,numa_ar_base.model_rg830_rate,model_numa_ar_base_rg830_rate,account.group_account_manager,1,1,1,1
+access_rg830_table,numa_ar_base.rg830_table,model_numa_ar_base_rg830_table,,1,1,0,0
+access_rg830_table_manager,numa_ar_base.model_rg830_table,model_numa_ar_base_rg830_table,account.group_account_manager,1,1,1,1
+access_document_type,AFIP Document Type ,model_afip_document_type,,1,0,0,0
+access_document_type_manager,AFIP Document Type manager,model_afip_document_type,account.group_account_manager,1,1,1,1
+access_afip_optional_type,AFIP Optional Type ,model_afip_optional_type,,1,0,0,0
+access_afip_optional_type_manager,AFIP Optional Type Manager,model_afip_optional_type,account.group_account_manager,1,1,1,1

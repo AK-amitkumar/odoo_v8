@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--
+        ======================
+        account.invoice
+        ======================
+        -->
+        <record id="invoice_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.invoice_form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <!--<field name="number" position="after">
+                    <newline/>
+                    <field name="shop_id" string="Tienda" on_change="onchange_shop_id(shop_id,partner_id,type,invoice_line,currency_id)"/>
+                    <field name="debit_note" string="Nota de Debito" />
+                    <newline/>
+                    <field name="out_picking"  string="out_picking" />
+                    <newline/>
+                </field>-->
+
+                <!--<field name="vat_discriminated" position="after">-->
+                <field name="fiscal_position" position="after">
+                    <!--<newline/>-->
+                    <!--<field name="afip_concept" />-->
+                    <!--<newline/>-->
+                    <field name="afip_service_start" />
+                    <field name="afip_service_end" />
+                </field>
+            </field>
+        </record>
+
+        <record id="invoice_tree" model="ir.ui.view">
+            <field name="name">Wineem invoice tree</field>
+            <field name="model">account.invoice</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="account.invoice_tree" />
+            <field name="arch" type="xml">
+                <data>
+                    <field name="partner_id" position="after">
+                        <field name="rep_id" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record id="view_account_invoice_filter" model="ir.ui.view">
+            <field name="name">Wineem invoice filter</field>
+            <field name="model">account.invoice</field>
+            <field name="type">search</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter" />
+            <field name="arch" type="xml">
+                <data>
+                    <field name="partner_id" position="after">
+                        <field name="rep_id" />
+                    </field>
+                    <xpath expr="//filter[@name='group_by_partner_id']" position="after" >
+                        <filter string="Representante" icon="terp-personal" domain="[]" context="{'group_by':'rep_id'}"/>
+                    </xpath>
+
+                </data>
+            </field>
+        </record>
+
+        <!--
+        ======================
+        Massive invoice shop change
+        ======================
+        -->
+<!--
+        <record id="mass_shop_change_form_view" model="ir.ui.view">
+            <field name="name">Massive Invoice Shop Change form</field>
+            <field name="model">account.mass_shop_change</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Invoice shop change">
+                    <field name="shop" />
+                    <button name="action_shop_change" string="Shop change" colspan="4" type="object" icon="terp-gtk-go-forward-rtl"/>
+               </form>
+            </field>
+        </record>
+-->
+
+<!--
+        <record id="mass_shop_change_action" model="ir.actions.act_window">
+            <field name="name">Invoice shop change</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.mass_shop_change</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="mass_shop_change_form_view"/>
+            <field name="target">new</field>
+            <field name="multi">True</field>
+        </record>
+
+        <record model="ir.values" id="mass_shop_change_cross_action">
+            <field name="model_id" ref="account.model_account_invoice" />
+            <field name="object" eval="1" />
+            <field name="name">Invoice shop change</field>
+            <field name="key2">client_action_multi</field>
+            <field name="value" eval="'ir.actions.act_window,' + str(ref('mass_shop_change_action'))" />
+            <field name="key">action</field>
+            <field name="model">account.invoice</field>
+        </record>
+-->
+		
+        <!--
+        ======================
+        Invoice Fix
+        ======================
+        -->
+        <record id="invoice_so_fix_form" model="ir.ui.view">
+            <field name="name">Invoice SO Fix form</field>
+            <field name="model">account.invoice_so_fix</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Invoice Sales Order Fix" >
+                    <label string="Corrección de relación facturas a pedidos" colspan="4" />
+                    <button name="action_fix" type="object" string="Corregir" colspan="4" />
+                </form>
+            </field>
+        </record>
+
+        <record id="invoice_so_fix_action" model="ir.actions.act_window">
+            <field name="name">Invoice SO Fix</field>
+            <field name="res_model">account.invoice_so_fix</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="invoice_so_fix_menu"
+            action="invoice_so_fix_action"
+            parent="base.menu_sale_config_sales"
+            groups="base.group_sale_manager"
+            sequence="100"/>
+
+    </data>
+</openerp>

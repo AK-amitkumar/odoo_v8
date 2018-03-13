@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+<!-- #todo Liricus    -->
+
+        <record model="ir.ui.view" id="partner_tree_view">
+            <field name="name">Partner with leaders</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree" />
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <field name="phone" position="after" >
+                    <field name="group_id" />
+                    <field name="is_leader" />
+                </field>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="partner_form_view">
+            <field name="name">Partner with leaders</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+<!--           <field name="supplier" position="after" >-->
+                <xpath expr="//page[@name='sales_purchases']/group/group/field[@name='supplier']" position="after">
+                    <field name="is_leader" />
+                </xpath>
+                <field name="lang" position="after" >
+                    <field name='id' invisible="1" />
+                    <field name="leader_id" widget="selection"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

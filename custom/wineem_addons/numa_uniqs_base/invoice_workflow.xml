@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- ensure action_number is executed BEFORE the movements are created
+              in order to set name and referency correctly in moves -->
+
+        <record id="account.act_open" model="workflow.activity">
+            <field name="wkf_id" ref="account.wkf"/>
+            <field name="name">open</field>
+            <field name="action">action_date_assign()
+action_number()
+action_move_create()
+write({'state':'open'})</field>
+            <field name="kind">function</field>
+        </record>
+
+    </data>
+</openerp>

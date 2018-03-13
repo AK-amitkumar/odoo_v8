@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!--
+        Sequence types for boxes
+        -->
+
+        <record id="seq_type_boxes" model="ir.sequence.type">
+            <field name="name">Boxes</field>
+            <field name="code">stock.box</field>
+        </record>
+        
+        <!--
+            Sequences for boxes
+        -->
+
+        <record id="seq_boxes" model="ir.sequence">
+            <field name="name">Boxes</field>
+            <field name="code">stock.box</field>
+            <field name="prefix">BOX-</field>
+            <field name="padding">5</field>
+        </record>
+
+    </data>
+</openerp>

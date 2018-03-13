@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <report id="report_product_label_form_print"
+            string="Etiqueta WINEEM"
+            model="product.product"
+            name="wineem_product_label"
+            rml="numa_uniqs_impresos/report/product_label_form.rml"
+            auto="False"
+            header = "False"
+            menu="True"
+            attachment= "False"
+            attachment_use="False"
+            multi="True"/>
+
+    </data>
+</openerp>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!--
+        ======================
+        res.partner
+        ======================
+        -->
+        <record id="view_partner_form" model="ir.ui.view">
+            <field name="name">WINEEM Magento form</field>
+            <field name="model">res.partner</field>
+       		<field name="inherit_id" ref="numa_uniqs_base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/sheet/notebook" position="inside">
+                        <page string="WINEEM Magento">
+                            <group>
+                                <field name="fechadenacimiento" />
+                                <field name="localidad" />
+                                <field name="provincia" />
+                                <field name="direccioncliente" />
+                                <field name="cierre" />
+                            </group>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>

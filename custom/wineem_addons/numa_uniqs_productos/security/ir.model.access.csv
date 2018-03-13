@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_fabric","Product fabric general access","model_product_fabric",,1,1,1,1
+"access_color","Product color general access","model_product_color",,1,1,1,1

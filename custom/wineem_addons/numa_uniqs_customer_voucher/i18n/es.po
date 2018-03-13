@@ -1,0 +1,959 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* numa_uniqs_customer_voucher
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-07-17 00:28+0000\n"
+"PO-Revision-Date: 2012-07-17 00:28+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Importe (en letras):"
+msgstr "Importe (en letras):"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Seguimiento :"
+msgstr "Seguimiento :"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: view:numa_ar_base.document_receipt:0
+msgid "Debts"
+msgstr "Deudas"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.model,name:numa_uniqs_customer_voucher.model_numa_ar_base_document_receipt_debt
+msgid "Receipt Debts"
+msgstr "Deudas"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Estado:"
+msgstr "Estado:"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Ref. :"
+msgstr "Ref. :"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Firma del receptor"
+msgstr "Firma del receptor"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:468
+#, python-format
+msgid "No account defined on [property_account_receivable_tdocuments] for target company!"
+msgstr "No hay cuenta definida en la propiedad [property_account_receivable_tdocuments] para la compañía!"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile,company_id:0
+#: field:numa_ar_base.customer_reconcile_debt,company_id:0
+#: field:numa_ar_base.customer_reconcile_uac,company_id:0
+#: field:numa_ar_base.document_receipt,company_id:0
+#: field:numa_ar_base.document_receipt_debt,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid ", Fecha de transferencia:"
+msgstr ", Fecha de transferencia:"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_debt,move_line_id:0
+#: field:numa_ar_base.customer_reconcile_uac,move_line_id:0
+#: field:numa_ar_base.document_receipt_debt,move_line_id:0
+msgid "Move line"
+msgstr "Línea de asiento"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt,cancel_move_id:0
+msgid "Cancel account move"
+msgstr "Asiento de cancelación"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile,uac_ids:0
+msgid "Non reconciled credits"
+msgstr "Créditos no reconciliados"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.model,name:numa_uniqs_customer_voucher.model_numa_ar_base_document_receipt_qm
+msgid "Document receipt Quick moves"
+msgstr "Movimientos rápidos"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,bt_total:0
+msgid "Total transfers"
+msgstr "Total transferencias"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_uac,analytic_account_id:0
+#: field:numa_ar_base.document_receipt_qm,analytic_account_id:0
+msgid "Analitic account"
+msgstr "Cuentas analíticas"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile,account_id:0
+#: field:numa_ar_base.customer_reconcile_debt,account_id:0
+#: field:numa_ar_base.customer_reconcile_uac,account_id:0
+#: field:numa_ar_base.document_receipt,account_id:0
+#: field:numa_ar_base.document_receipt_debt,account_id:0
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Registrado"
+msgstr "Registrado"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.model,name:numa_uniqs_customer_voucher.model_numa_ar_base_document_receipt_cash
+msgid "Received cash"
+msgstr "Efectivo recibido"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,narration:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Move lines"
+msgstr "Lineas del asiento"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_qm,credit_account_id:0
+#: field:numa_ar_base.quick_move,credit_account_id:0
+msgid "Credit account"
+msgstr "Cuenta crédito"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:268
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:275
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:354
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:415
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:837
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:920
+#, python-format
+msgid "Error!"
+msgstr "Error!"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_bt,amount:0
+#: field:numa_ar_base.document_receipt_cash,amount:0
+#: field:numa_ar_base.document_receipt_qm,amount:0
+msgid "Amount"
+msgstr "Importe"
+
+#. module: numa_uniqs_customer_voucher
+#: help:numa_ar_base.document_receipt,date:0
+msgid "Effective receipt date"
+msgstr "Fecha efectiva de recepción"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Total deudas"
+msgstr "Total deudas"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.module.module,description:numa_uniqs_customer_voucher.module_meta_information
+msgid "\n"
+"Argentinean Localization\n"
+"Simplified customer receipt and reconcile\n"
+"\n"
+""
+msgstr "\n"
+"Argentinean Localization\n"
+"Recibo simplificado\n"
+"\n"
+""
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Detalle de efectivo"
+msgstr "Detalle de efectivo"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_debt,amount:0
+msgid "Amount to reconcile"
+msgstr "Cantidad a conciliar"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:322
+#, python-format
+msgid "No credit was entered!"
+msgstr "No se ingresó crédito!"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile,move_line_ids:0
+msgid "Reconcile"
+msgstr "Reconciliación"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Reasign credit"
+msgstr "Reasignar crédito"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Cliente:"
+msgstr "Cliente:"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:462
+#, python-format
+msgid "Not complete!"
+msgstr "No está completo!"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/report/common_report_header.py:67
+#, python-format
+msgid "All Entries"
+msgstr "Todas las entradas"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.model,name:numa_uniqs_customer_voucher.model_numa_ar_base_customer_reconcile
+msgid "Deffered documents receipt"
+msgstr "Recibo de documentos posdatados"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Are you sure you want to cancel the receipt?"
+msgstr "Esta seguro que quiere cancelar el recibo?"
+
+#. module: numa_uniqs_customer_voucher
+#: help:numa_ar_base.document_receipt,reference:0
+#: help:numa_ar_base.document_receipt_bt,reference:0
+msgid "Reference number."
+msgstr "Número de referencia."
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: selection:numa_ar_base.customer_reconcile,state:0
+#: view:numa_ar_base.document_receipt:0
+#: selection:numa_ar_base.document_receipt,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: selection:numa_ar_base.customer_reconcile,state:0
+#: selection:numa_ar_base.document_receipt,state:0
+msgid "Posted"
+msgstr "Registrado"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid ", Tasa de cambio:"
+msgstr ", Tasa de cambio:"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Search receipts"
+msgstr "Buscar recibos"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.quick_move,analytic_account_id:0
+msgid "Analytic account"
+msgstr "Cuenta analítica"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Reconcile movements"
+msgstr "Lineas de asiento de la reconciliación"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: field:numa_ar_base.customer_reconcile,state:0
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_debt,amount_unreconciled:0
+msgid "Deuda no cancelada"
+msgstr "Deuda no cancelada"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:467
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:472
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:911
+#, python-format
+msgid "Configuration error!"
+msgstr "Error de configuración!"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:298
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:441
+#, python-format
+msgid "Please define a Journal with sequence!"
+msgstr "Por favor defina un diario con secuencia!"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:268
+#, python-format
+msgid "No period for receipt date!"
+msgstr "No se encontró período para la fecha del recibo!"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.quick_move,type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:463
+#, python-format
+msgid "No credit entered!"
+msgstr "No se ingresó crédito!"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:912
+#, python-format
+msgid "No default account defined on bank journal for credit or debit entries!. Please configure them or select another journal!"
+msgstr "No se definió cuenta en el diario de banco para entradas de crédito y débito!. Por favor, configurelas o elija otro diario!"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:298
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:304
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:441
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:447
+#, python-format
+msgid "Error !"
+msgstr "Error !"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_uac,amount:0
+msgid "Amount to be applied"
+msgstr "Importe a aplicar"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:607
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:645
+#, python-format
+msgid "Bank transfer"
+msgstr "Transferencia bancaria"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_uac,amount_unreconciled:0
+msgid "Non applied ammount"
+msgstr "Importe no aplicado"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.actions.report.xml,name:numa_uniqs_customer_voucher.report_document_receipt
+msgid "Print receipt"
+msgstr "Imprimir recibo"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/report/common_report_header.py:100
+#, python-format
+msgid "No Filter"
+msgstr "Sin filtro"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Créditos"
+msgstr "Créditos"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "- Cuenta"
+msgstr "- Cuenta"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Total efectivo"
+msgstr "Total efectivo"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_cash,original_amount:0
+msgid "Amount on original currency"
+msgstr "Importe en moneda original"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,bt_ids:0
+msgid "Bank transfers"
+msgstr "Transferencias bancarias"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: view:numa_ar_base.document_receipt:0
+msgid "Extended filters ..."
+msgstr "Filtros extendidos ..."
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:447
+#, python-format
+msgid "No valid period for the given date!"
+msgstr "No se encontrados períodos válidos para la fecha dada!"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Fecha:"
+msgstr "Fecha:"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Grouped by..."
+msgstr "Agrupado por..."
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.module.module,shortdesc:numa_uniqs_customer_voucher.module_meta_information
+msgid "Argentina: Basic country data and adaptations by NUMA"
+msgstr "Argentina: Basic country data and adaptations by NUMA"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Cancelado"
+msgstr "Cancelado"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,cash_total:0
+msgid "Total cash"
+msgstr "Total efectivo"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Grouped by ..."
+msgstr "Agrupado por ..."
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_debt,date_due:0
+#: field:numa_ar_base.customer_reconcile_uac,date_due:0
+#: field:numa_ar_base.document_receipt_debt,date_due:0
+msgid "Due date"
+msgstr "Fecha de vencimiento"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Moneda:"
+msgstr "Moneda:"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.model,name:numa_uniqs_customer_voucher.model_numa_ar_base_document_receipt_bt
+msgid "Received bank transfer"
+msgstr "Transferencia bancaria recibida"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt,currency_id:0
+#: field:numa_ar_base.document_receipt_bt,currency_id:0
+#: field:numa_ar_base.document_receipt_cash,currency_id:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Customer Receipt"
+msgstr "Recibo de cliente"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,qm_total:0
+msgid "Total retentions"
+msgstr "Total retenciones"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: view:numa_ar_base.document_receipt:0
+msgid "Customer receipt"
+msgstr "Recibo de cliente"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Movements"
+msgstr "Lineas de asiento"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_uac,amount_original:0
+msgid "Original ammount"
+msgstr "Importe original"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_debt,analytic_account_id:0
+msgid "Cuenta analítica"
+msgstr "Cuenta analítica"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_bt,bank_journal_id:0
+msgid "Bank Journal"
+msgstr "Diario Bancario"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.actions.act_window,name:numa_uniqs_customer_voucher.act_journal_customer_reconcile_open
+#: model:ir.actions.act_window,name:numa_uniqs_customer_voucher.action_customer_reconcile_form
+#: model:ir.ui.menu,name:numa_uniqs_customer_voucher.menu_action_customer_reconcile_form
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Customer reconcile"
+msgstr "Reconciliación de cliente"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Cancel movement"
+msgstr "Asiento de cancelación"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Original movement"
+msgstr "Asiento original"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile,name:0
+#: field:numa_ar_base.document_receipt,name:0
+msgid "Identification"
+msgstr "Identificación"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Retentions"
+msgstr "Retenciones"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "PRO-FORMA"
+msgstr "PRO-FORMA"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.model,name:numa_uniqs_customer_voucher.model_numa_ar_base_quick_move
+msgid "numa_ar_base.quick_move"
+msgstr "numa_ar_base.quick_move"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Tasa de cambio:"
+msgstr "Tasa de cambio:"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt,move_line_ids:0
+msgid "Account move lines"
+msgstr "Lineas del asiento"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Cancel move lines"
+msgstr "Lineas del asiento de cancelación"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.actions.act_window,name:numa_uniqs_customer_voucher.act_journal_document_receipt_open
+#: model:ir.actions.act_window,name:numa_uniqs_customer_voucher.action_document_receipt_form
+#: model:ir.actions.act_window,name:numa_uniqs_customer_voucher.action_voucher_list
+#: model:ir.ui.menu,name:numa_uniqs_customer_voucher.menu_action_document_receipt_form
+#: model:ir.ui.menu,name:numa_uniqs_customer_voucher.menu_encode_entries_by_voucher
+msgid "Customer receipts"
+msgstr "Recibos de cliente"
+
+#. module: numa_uniqs_customer_voucher
+#: help:numa_ar_base.customer_reconcile,state:0
+#: help:numa_ar_base.document_receipt,state:0
+msgid " * 'Draft' state is used on new document entry.                         \n"
+"* 'Posted' is used when the document is registered and account moves are generated                         \n"
+"* 'Cancel' is used for canceled documents."
+msgstr " * 'Borrador' se usa mientras el documento no está completo                         \n"
+"* 'Registrado' se usa cuando el documento está activo y los correspondientes asientos han sido registrados                         \n"
+"* 'Cancelado' se usa para documentos cancelados."
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile,debt_ids:0
+#: field:numa_ar_base.document_receipt,debt_ids:0
+msgid "Applied debts"
+msgstr "Deudas aplicadas"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Detalle de movimientos rápidos"
+msgstr "Detalle de movimientos rápidos"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: view:numa_ar_base.document_receipt:0
+msgid "Post"
+msgstr "Registrar"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,debt_total:0
+msgid "Total debts"
+msgstr "Total deudas"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_bt,exchange_rate:0
+#: field:numa_ar_base.document_receipt_cash,exchange_rate:0
+msgid "Exchange rate"
+msgstr "Tasa de cambio"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile,narration:0
+msgid "Notas"
+msgstr "Notas"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/report/common_report_header.py:68
+#, python-format
+msgid "All Posted Entries"
+msgstr "Todas las entradas publicadas"
+
+#. module: numa_uniqs_customer_voucher
+#: help:numa_ar_base.customer_reconcile,date:0
+msgid "Efective operation date"
+msgstr "Fecha efectiva de la operación"
+
+#. module: numa_uniqs_customer_voucher
+#: selection:numa_ar_base.quick_move,type:0
+msgid "Received retention"
+msgstr "Retenciones recibidas"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_debt,amount_unreconciled:0
+msgid "Open debt"
+msgstr "Deuda impaga"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/report/common_report_header.py:97
+#: field:numa_ar_base.customer_reconcile,date:0
+#: field:numa_ar_base.customer_reconcile_debt,date_original:0
+#: field:numa_ar_base.customer_reconcile_uac,date_original:0
+#: field:numa_ar_base.document_receipt,date:0
+#: field:numa_ar_base.document_receipt_debt,date_original:0
+#, python-format
+msgid "Date"
+msgstr "Fecha"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Deudas"
+msgstr "Deudas"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/report/common_report_header.py:92
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Diario:"
+msgstr "Diario:"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_bt,transfer_date:0
+msgid "Transfer date"
+msgstr "Fecha de transferencia"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile,balance:0
+#: field:numa_ar_base.document_receipt,balance:0
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_uac,partner_id:0
+msgid "Cliente"
+msgstr "Cliente"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_qm,qm_id:0
+msgid "Code"
+msgstr "Código"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.model,name:numa_uniqs_customer_voucher.model_numa_ar_base_customer_reconcile_uac
+msgid "Document receipt Unassigned Credits"
+msgstr "Créditos no asignados"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_debt,cr_id:0
+#: field:numa_ar_base.customer_reconcile_uac,cr_id:0
+#: field:numa_ar_base.document_receipt_bt,dr_id:0
+#: field:numa_ar_base.document_receipt_cash,dr_id:0
+#: field:numa_ar_base.document_receipt_debt,dr_id:0
+#: field:numa_ar_base.document_receipt_qm,dr_id:0
+msgid "Receipt"
+msgstr "Recibo"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Detalle de documentos"
+msgstr "Detalle de documentos"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_qm,debit_account_id:0
+#: field:numa_ar_base.quick_move,debit_account_id:0
+msgid "Debit account"
+msgstr "Cuenta débito"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+#: view:numa_ar_base.quick_move:0
+msgid "Accounting information"
+msgstr "Información contable"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile,currency_id:0
+msgid "Moneda"
+msgstr "Moneda"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/report/common_report_header.py:99
+#, python-format
+msgid "Periods"
+msgstr "Períodos"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:354
+#, python-format
+msgid "No period for the given date!"
+msgstr "No se encontraron períodos para la fecha dada!"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_debt,amount:0
+msgid "Importe a aplicar"
+msgstr "Importe a aplicar"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+#: field:numa_ar_base.customer_reconcile_debt,amount_original:0
+msgid "Importe original"
+msgstr "Importe original"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Importe"
+msgstr "Importe"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Recibo"
+msgstr "Recibo"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Borrador"
+msgstr "Borrador"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Identificación :"
+msgstr "Identificación :"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:275
+#, python-format
+msgid "Posted documents could not be cancelled!"
+msgstr "Documento publicados no pueden ser cancelados!"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:415
+#, python-format
+msgid "Posted or canceled receipts could not be deleted!"
+msgstr "Recibos publicados o cancelados no pueden ser borrados!"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:838
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:921
+#, python-format
+msgid "No currency defined. Probably you didn't select the journal yet! Please check"
+msgstr "No se ha definido la moneda. Probablemente, aún no ha ingresado el diario! Por favor, revisar"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.customer_reconcile_debt,name:0
+#: field:numa_ar_base.customer_reconcile_uac,name:0
+#: field:numa_ar_base.document_receipt_debt,name:0
+#: field:numa_ar_base.document_receipt_qm,description:0
+#: field:numa_ar_base.quick_move,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: numa_uniqs_customer_voucher
+#: selection:numa_ar_base.customer_reconcile,state:0
+#: selection:numa_ar_base.document_receipt,state:0
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: field:numa_ar_base.customer_reconcile,journal_id:0
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,journal_id:0
+msgid "Journal"
+msgstr "Diario"
+
+#. module: numa_uniqs_customer_voucher
+#: help:numa_ar_base.document_receipt_bt,transfer_date:0
+msgid "Effective transfer date, according to bank"
+msgstr "Fecha efectiva de transferencia según los registros del banco"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/report/common_report_header.py:92
+#, python-format
+msgid "Not implemented"
+msgstr "No implementado"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,qm_ids:0
+msgid "Received retentions"
+msgstr "Retenciones recibidas"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt,audit:0
+msgid "Audit ?"
+msgstr "A ser auditado?"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: field:numa_ar_base.customer_reconcile,partner_id:0
+#: field:numa_ar_base.customer_reconcile_debt,partner_id:0
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,partner_id:0
+#: field:numa_ar_base.document_receipt_debt,partner_id:0
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Receipt statistic"
+msgstr "Estadística de recibos"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Número:"
+msgstr "Número:"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.quick_move,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Customer reconcile statistic"
+msgstr "Estadística de reconciliación de clientes"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Cash and notes"
+msgstr "Efectivo y notas"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:527
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:565
+#: view:numa_ar_base.document_receipt:0
+#: field:numa_ar_base.document_receipt,cash_ids:0
+#, python-format
+msgid "Cash"
+msgstr "Efectivo"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:321
+#, python-format
+msgid "Not complete document!"
+msgstr "Documento incompleto!"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Registrar"
+msgstr "Registrar"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Search customer reconcile"
+msgstr "Buscar reconciliación de cliente"
+
+#. module: numa_uniqs_customer_voucher
+#: selection:numa_ar_base.quick_move,type:0
+msgid "Performed retention"
+msgstr "Retenciones realizadas"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/document_receipt.py:473
+#, python-format
+msgid "No account defined on [property_account_receivable_ntdocuments] for target company!"
+msgstr "No se ha definido cuenta en la propiedad [property_account_receivable_ntdocuments] para la compañia!"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+msgid "Total credit"
+msgstr "Total crédito"
+
+#. module: numa_uniqs_customer_voucher
+#: report:document_receipt_print:0
+msgid "Detalle de transferencias bancarias"
+msgstr "Detalle de transferencias bancarias"
+
+#. module: numa_uniqs_customer_voucher
+#: code:addons/numa_uniqs_customer_voucher/customer_reconcile.py:304
+#, python-format
+msgid "No valid period for the entered date!"
+msgstr "No se ha encontrado un período válida para la fecha dada!"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt,reference:0
+#: field:numa_ar_base.document_receipt_bt,reference:0
+msgid "Ref #"
+msgstr "Ref #"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.actions.act_window,name:numa_uniqs_customer_voucher.action_quick_move_tree
+#: model:ir.ui.menu,name:numa_uniqs_customer_voucher.menu_action_quick_move_tree
+#: view:numa_ar_base.quick_move:0
+#: help:numa_ar_base.quick_move,name:0
+msgid "Operation code"
+msgstr "Código de operación"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.customer_reconcile:0
+#: view:numa_ar_base.document_receipt:0
+msgid "To be checked"
+msgstr "A ser auditado"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.model,name:numa_uniqs_customer_voucher.model_numa_ar_base_document_receipt
+msgid "numa_ar_base.document_receipt"
+msgstr "numa_ar_base.document_receipt"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt,cancel_move_line_ids:0
+msgid "Cancel account move lines"
+msgstr "Lineas del asiento de cancelación"
+
+#. module: numa_uniqs_customer_voucher
+#: model:ir.model,name:numa_uniqs_customer_voucher.model_numa_ar_base_customer_reconcile_debt
+msgid "Document receipt Debts"
+msgstr "Deudas"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt,move_id:0
+msgid "Account move"
+msgstr "Asiento contable"
+
+#. module: numa_uniqs_customer_voucher
+#: field:numa_ar_base.document_receipt_bt,original_amount:0
+#: field:numa_ar_base.document_receipt_debt,amount_original:0
+msgid "Original amount"
+msgstr "Importe original"
+
+#. module: numa_uniqs_customer_voucher
+#: view:numa_ar_base.document_receipt:0
+msgid "Retention"
+msgstr "Retención"
+

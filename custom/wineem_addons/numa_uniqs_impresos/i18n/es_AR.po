@@ -1,0 +1,62 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* numa_uniqs_impresos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-04-28 17:20+0000\n"
+"PO-Revision-Date: 2012-04-28 17:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: numa_uniqs_impresos
+#: report:stock_move_print:0
+msgid "Referencia"
+msgstr "Referencia"
+
+#. module: numa_uniqs_impresos
+#: report:stock_move_print:0
+msgid "Cantidad"
+msgstr "Cantidad"
+
+#. module: numa_uniqs_impresos
+#: report:stock_move_print:0
+msgid "Producto"
+msgstr "Producto"
+
+#. module: numa_uniqs_impresos
+#: report:stock_move_print:0
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: numa_uniqs_impresos
+#: report:stock_move_print:0
+msgid "Caja"
+msgstr "Caja"
+
+#. module: numa_uniqs_impresos
+#: report:stock_move_print:0
+msgid "Origen"
+msgstr "Origen"
+
+#. module: numa_uniqs_impresos
+#: model:ir.actions.report.xml,name:numa_uniqs_impresos.report_stock_move_form_print
+msgid "Stock Move print"
+msgstr "Reporte de movimientos"
+
+#. module: numa_uniqs_impresos
+#: report:stock_move_print:0
+msgid "Partner"
+msgstr "Partner"
+
+#. module: numa_uniqs_impresos
+#: report:stock_move_print:0
+msgid "Estado"
+msgstr "Estado"
+

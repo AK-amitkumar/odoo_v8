@@ -1,0 +1,555 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* numa_uniqs_box
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-06-07 18:12+0000\n"
+"PO-Revision-Date: 2012-06-07 18:12+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: numa_uniqs_box
+#: model:ir.module.module,shortdesc:numa_uniqs_box.module_meta_information
+msgid "Special box handling for UNIQS"
+msgstr "Manejo especial de cajas para UNIQS"
+
+#. module: numa_uniqs_box
+#: model:ir.model,name:numa_uniqs_box.model_stock_partial_picking_box_create
+msgid "stock.partial.picking.box.create"
+msgstr "stock.partial.picking.box.create"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+msgid "Group By..."
+msgstr "Agrupado por..."
+
+#. module: numa_uniqs_box
+#: field:stock.box,name:0
+msgid "Box ID"
+msgstr "ID de Caja"
+
+#. module: numa_uniqs_box
+#: field:stock.box,state:0
+msgid "Box State"
+msgstr "Estado de la caja"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+msgid "_Close"
+msgstr "_Cerrar"
+
+#. module: numa_uniqs_box
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique !"
+msgstr "¡La referencia del pedido debe ser única!"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "$"
+msgstr "$"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "("
+msgstr "("
+
+#. module: numa_uniqs_box
+#: field:stock.box,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: numa_uniqs_box
+#: code:addons/numa_uniqs_box/stock.py:172
+#, python-format
+msgid "NO delivery address for the rep was found. Please check!"
+msgstr "NO delivery address for the rep was found. Please check!"
+
+#. module: numa_uniqs_box
+#: model:ir.model,name:numa_uniqs_box.model_stock_partial_picking
+msgid "Partial Picking"
+msgstr "Empaquetado parcial"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "P.Venta"
+msgstr "P.Venta"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Totales del representante"
+msgstr "Totales del representante"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+#: field:stock.box,pickings_ids:0
+msgid "Included pickings"
+msgstr "Remitos incluidos"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+#: report:uniqs_box_form.print:0
+msgid "Remito"
+msgstr "Remito"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_form.print:0
+msgid "Doc. origen"
+msgstr "Doc. origen"
+
+#. module: numa_uniqs_box
+#: field:stock.box,notes:0
+#: view:stock.delivery:0
+#: field:stock.delivery,notes:0
+#: view:stock.delivery_confirmation:0
+#: field:stock.delivery_confirmation,notes:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+#: field:stock.box,rep_id:0
+#: field:stock.partial.picking.box.create,rep_id:0
+msgid "Representant"
+msgstr "Representante"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_form.print:0
+msgid "Dirección de contacto representante:"
+msgstr "Dirección de contacto representante:"
+
+#. module: numa_uniqs_box
+#: model:ir.model,name:numa_uniqs_box.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento stock"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+#: report:uniqs_box_form.print:0
+msgid "Vendedor"
+msgstr "Vendedor"
+
+#. module: numa_uniqs_box
+#: model:ir.model,name:numa_uniqs_box.model_stock_box
+msgid "stock.box"
+msgstr "stock.box"
+
+#. module: numa_uniqs_box
+#: code:addons/numa_uniqs_box/box.py:113
+#, python-format
+msgid "Only opened boxes could be cancelled!"
+msgstr "Solo se pueden cancelar cajas abiertas!"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_label.print:0
+msgid "Dirección de envio:"
+msgstr "Dirección de envio:"
+
+#. module: numa_uniqs_box
+#: field:stock.delivery,forwarder_id:0
+#: field:stock.delivery_confirmation,forwarder_id:0
+msgid "Forwarder"
+msgstr "Expreso"
+
+#. module: numa_uniqs_box
+#: model:ir.model,name:numa_uniqs_box.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: numa_uniqs_box
+#: model:ir.model,name:numa_uniqs_box.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: numa_uniqs_box
+#: field:stock.delivery,name:0
+#: field:stock.delivery_confirmation,name:0
+msgid "Delivery ID"
+msgstr "ID del envio"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "P.Lista"
+msgstr "P.Lista"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_form.print:0
+msgid "Fecha de emisión"
+msgstr "Fecha de emisión"
+
+#. module: numa_uniqs_box
+#: view:stock.delivery_confirmation:0
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: numa_uniqs_box
+#: field:stock.partial.picking,rep_id:0
+msgid "Rep"
+msgstr "Rep"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+msgid "State"
+msgstr "Estado"
+
+#. module: numa_uniqs_box
+#: model:ir.model,name:numa_uniqs_box.model_stock_picking
+msgid "Picking List"
+msgstr "Albarán"
+
+#. module: numa_uniqs_box
+#: view:stock.partial.picking.box.create:0
+msgid "_Create box"
+msgstr "_Crear caja"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Código"
+msgstr "Código"
+
+#. module: numa_uniqs_box
+#: code:addons/numa_uniqs_box/box.py:100
+#, python-format
+msgid "Only opened boxes could be closed!"
+msgstr "Solo se pueden cerrar cajas abiertas!"
+
+#. module: numa_uniqs_box
+#: field:stock.box,date_opened:0
+msgid "Date opened"
+msgstr "Fecha de apertura"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+msgid "Search Boxes"
+msgstr "Búsqueda de cajas"
+
+#. module: numa_uniqs_box
+#: field:stock.delivery,boxes_ids:0
+msgid "Included boxes"
+msgstr "Cajas incluidas"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_label.print:0
+msgid "Notas:"
+msgstr "Notas:"
+
+#. module: numa_uniqs_box
+#: help:stock.box,rep_shipping_id:0
+msgid "Shipping address for this box."
+msgstr "Dirección de envío de esta caja."
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+msgid "Box"
+msgstr "Caja"
+
+#. module: numa_uniqs_box
+#: help:stock.partial.picking.box.create,rep_id:0
+msgid "Representant to send the box to"
+msgstr "Representante a quien enviar la caja"
+
+#. module: numa_uniqs_box
+#: model:ir.actions.report.xml,name:numa_uniqs_box.report_box_detailed_print
+msgid "Detailed report"
+msgstr "Reporte detallado"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Pedido"
+msgstr "Pedido"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_form.print:0
+msgid "Datos de envio representante:"
+msgstr "Datos de envio representante:"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+#: selection:stock.box,state:0
+msgid "Canceled"
+msgstr "Cancelada"
+
+#. module: numa_uniqs_box
+#: field:stock.delivery,delivered_on:0
+#: field:stock.delivery_confirmation,delivered_on:0
+msgid "Delivered on"
+msgstr "Enviada el"
+
+#. module: numa_uniqs_box
+#: field:stock.partial.picking.box.create,spp_id:0
+msgid "Partial picking wizard"
+msgstr "Asistente de envios parciales"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+#: selection:stock.box,state:0
+msgid "Opened"
+msgstr "Abierta"
+
+#. module: numa_uniqs_box
+#: help:stock.box,rep_id:0
+msgid "Representant, responsible for final delivery to sales reps. Destination of box delivery"
+msgstr "Representante, responsable por el envio final a los vendedores. Destino para el envio de la caja"
+
+#. module: numa_uniqs_box
+#: field:stock.partial.picking,box_id:0
+#: field:stock.picking,box_id:0
+msgid "Included in box"
+msgstr "Incluido en la caja"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Caja"
+msgstr "Caja"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+msgid "Closed"
+msgstr "Cerrada"
+
+#. module: numa_uniqs_box
+#: field:stock.box,date_canceled:0
+msgid "Date canceled"
+msgstr "Fecha de cancelacion"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_form.print:0
+msgid "Contacto"
+msgstr "Contacto"
+
+#. module: numa_uniqs_box
+#: view:stock.partial.picking.box.create:0
+msgid "Create box for a customer"
+msgstr "Crear una caja para un cliente"
+
+#. module: numa_uniqs_box
+#: field:stock.box,rep_shipping_id:0
+msgid "Shipping Address"
+msgstr "Direccion de envio"
+
+#. module: numa_uniqs_box
+#: model:ir.actions.act_window,name:numa_uniqs_box.action_box_form
+#: model:ir.ui.menu,name:numa_uniqs_box.menu_action_box_form
+#: model:ir.ui.menu,name:numa_uniqs_box.menu_boxes
+#: view:stock.box:0
+msgid "Boxes"
+msgstr "Cajas"
+
+#. module: numa_uniqs_box
+#: model:ir.module.module,description:numa_uniqs_box.module_meta_information
+msgid "UNIQS Box"
+msgstr "Cajas para UNIQS"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_form.print:0
+msgid "Datos del representante :"
+msgstr "Datos del representante :"
+
+#. module: numa_uniqs_box
+#: view:stock.delivery:0
+msgid "Boxes in this delivery"
+msgstr "Cajas en este envio"
+
+#. module: numa_uniqs_box
+#: model:ir.actions.report.xml,name:numa_uniqs_box.report_box_label_print
+msgid "Box label"
+msgstr "Etiqueta"
+
+#. module: numa_uniqs_box
+#: field:sale.order,rep_mg_group:0
+#: field:stock.move,rep_mg_group:0
+#: field:stock.picking,rep_mg_group:0
+msgid "Magento Group"
+msgstr "Representante"
+
+#. module: numa_uniqs_box
+#: view:stock.delivery_confirmation:0
+msgid "Delivery confirmation"
+msgstr "Registro de envío"
+
+#. module: numa_uniqs_box
+#: code:addons/numa_uniqs_box/stock.py:119
+#, python-format
+msgid "NO rep was found for this delivery order. Please check!"
+msgstr "NO rep was found for this delivery order. Please check!"
+
+#. module: numa_uniqs_box
+#: selection:stock.box,state:0
+msgid "Closed, not delivered"
+msgstr "Cerrada, no enviada"
+
+#. module: numa_uniqs_box
+#: selection:stock.box,state:0
+msgid "Already delivered"
+msgstr "Enviada"
+
+#. module: numa_uniqs_box
+#: view:stock.delivery:0
+msgid "Deliveries"
+msgstr "Envios"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_form.print:0
+msgid "CAJA"
+msgstr "CAJA"
+
+#. module: numa_uniqs_box
+#: code:addons/numa_uniqs_box/box.py:173
+#, python-format
+msgid "No boxes to deliver!"
+msgstr "No se seleccionaron cajas para enviar!"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: numa_uniqs_box
+#: model:ir.model,name:numa_uniqs_box.model_stock_delivery
+msgid "stock.delivery"
+msgstr "stock.delivery"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+msgid "Delivered"
+msgstr "Enviado"
+
+#. module: numa_uniqs_box
+#: field:stock.box,date_delivered:0
+msgid "Date delivered"
+msgstr "Fecha de envio"
+
+#. module: numa_uniqs_box
+#: model:ir.actions.report.xml,name:numa_uniqs_box.report_box_form_print
+msgid "Box form"
+msgstr "Formulario"
+
+#. module: numa_uniqs_box
+#: code:addons/numa_uniqs_box/stock.py:103
+#, python-format
+msgid "_Create a new box"
+msgstr "_Crear una nueva caja"
+
+#. module: numa_uniqs_box
+#: constraint:stock.move:0
+msgid "You must assign a production lot for this product"
+msgstr "Debe asignar un lote de producción para este producto"
+
+#. module: numa_uniqs_box
+#: code:addons/numa_uniqs_box/box.py:127
+#, python-format
+msgid "Only closed boxes could be delivered!"
+msgstr "Solo se pueden enviar cajas cerradas!"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Totales del vendedor"
+msgstr "Totales del vendedor"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid ")"
+msgstr ")"
+
+#. module: numa_uniqs_box
+#: code:addons/numa_uniqs_box/stock.py:126
+#, python-format
+msgid "Create a new box"
+msgstr "Crear una nueva caja"
+
+#. module: numa_uniqs_box
+#: model:ir.actions.act_window,name:numa_uniqs_box.action_delivery
+#: model:ir.ui.menu,name:numa_uniqs_box.menu_action_delivery
+#: field:stock.box,delivery_id:0
+#: view:stock.delivery:0
+msgid "Delivery"
+msgstr "Envío"
+
+#. module: numa_uniqs_box
+#: model:ir.actions.act_window,name:numa_uniqs_box.action_delivery_confirmation
+msgid "Delivery Confirmation"
+msgstr "Registro de envío"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Total unidades"
+msgstr "Total unidades"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Representante"
+msgstr "Representante"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_label.print:0
+msgid "Fecha de envío:"
+msgstr "Fecha de envío:"
+
+#. module: numa_uniqs_box
+#: field:stock.box,date_closed:0
+msgid "Date closed"
+msgstr "Fecha de cierre"
+
+#. module: numa_uniqs_box
+#: help:stock.box,state:0
+msgid "Gives the state of the box. \n"
+"The box is created on the opened state. In this state you can add pickings to the box, till the box is closed. \n"
+"After the delivery confirmation, the box goes to the 'delivered' state.\n"
+"While opened a box could be canceled, meaning nothing was delivered or stored (just to document the use of the box ID)."
+msgstr "Provee el estado de la caja. \n"
+"La caja se crea en el estado 'abierto'. En este estado se pueden agregar remitos a la caja, hasta que la caja se cierra. \n"
+"Al enviar la caja, esta queda en el estado 'enviada'.\n"
+"Mientras la caja esta abierta puede ser cancelada, en cuyo caso los remitos incluidos se desasignan, y la caja queda en estado 'cancelada' a fin de registrar el uso del identificador."
+
+#. module: numa_uniqs_box
+#: model:ir.model,name:numa_uniqs_box.model_stock_delivery_confirmation
+msgid "stock.delivery_confirmation"
+msgstr "stock.delivery_confirmation"
+
+#. module: numa_uniqs_box
+#: code:addons/numa_uniqs_box/box.py:99
+#: code:addons/numa_uniqs_box/box.py:112
+#: code:addons/numa_uniqs_box/box.py:126
+#: code:addons/numa_uniqs_box/box.py:172
+#: code:addons/numa_uniqs_box/stock.py:118
+#: code:addons/numa_uniqs_box/stock.py:171
+#, python-format
+msgid "Error !"
+msgstr "Error !"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Desc."
+msgstr "Desc."
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Descripción"
+msgstr "Descripción"
+
+#. module: numa_uniqs_box
+#: report:uniqs_box_detailed.print:0
+msgid "Cantidad"
+msgstr "Cantidad"
+
+#. module: numa_uniqs_box
+#: view:stock.box:0
+msgid "Creation"
+msgstr "Creación"
+
+#. module: numa_uniqs_box
+#: constraint:stock.move:0
+msgid "You try to assign a lot which is not from the same product"
+msgstr "Está intentando asignar un lote que no es del mismo producto"
+

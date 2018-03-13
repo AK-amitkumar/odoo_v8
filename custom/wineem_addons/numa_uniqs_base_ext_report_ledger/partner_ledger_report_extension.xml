@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+		<!-- <act_window id="action_print_partner_ledger_date_invoice_maturity" key2="client_action_multi" name="Print Partner Ledger por fecha vencimiento" res_model="numa_ar_base.partner_ledger_wizard" src_model="res.partner"
+			view_mode="form" target="new" view_type="form" /> -->
+
+		<record id="partner_ledger_wizard_form_ext" model="ir.ui.view">
+			<field name="name">numa_ar_base.partner_ledger_wizard_form_ext_ledger_wizard</field>
+			<field name="model">numa_ar_base.partner_ledger_wizard</field>
+			<field name="inherit_id" ref="numa_uniqs_base.partner_ledger_wizard_form" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<data>
+					<xpath expr="//button[@name='action_report']" position="after">
+						<newline />
+						<button icon="gtk-print" name="action_report_con_fecha_vencimiento" string="Imprimir (con columna vencimiento de factura)" type="object" colspan="2" default_focus="1" />
+					</xpath>
+				</data>
+			</field>
+		</record>
+	</data>
+</openerp>

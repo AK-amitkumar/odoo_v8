@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_order_form" model="ir.ui.view">
+            <field name="name">UNIQS Sale Order with autocalc</field>
+            <field name="model">sale.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <button name="action_button_confirm" position="attributes">
+                    <attribute name="type" >object</attribute>
+                    <attribute name="name" >action_confirm</attribute>
+                </button>
+            </field>
+        </record>
+
+        <!--<record model="ir.ui.view" id="view_order_tree">-->
+            <!--<field name="name">Sale orders with Magento group</field>-->
+            <!--<field name="model">sale.order</field>-->
+            <!--<field name="inherit_id" ref="sale.view_order_tree" />-->
+            <!--<field name="type">tree</field>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<data>-->
+                    <!--<field name="partner_id" position="after" >-->
+                        <!--<field name="rep_mg_group" />-->
+                    <!--</field>-->
+                <!--</data>-->
+            <!--</field>-->
+        <!--</record>-->
+
+    </data>
+</openerp>
+

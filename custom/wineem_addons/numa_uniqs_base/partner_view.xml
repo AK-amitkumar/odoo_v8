@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--
+        ======================
+        Company
+        ======================
+        -->
+        <record id="view_company_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.view_company_form</field>
+            <field name="model">res.company</field>
+       		<field name="inherit_id" ref="base.view_company_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/sheet/notebook" position="inside">
+                        <page string="AFIP information">
+                            <group>
+                                <field name="start_date" />
+                                <label string="Country and State for all legal and commercial purposes" colspan="4"/>
+                                <field name="legal_country_id" />
+                                <field name="legal_state_id" />
+                                <field name="iibb_number" />
+                                 <separator string="Sales points" colspan="4"/>
+                                <field name="sales_points_ids" colspan="4" nolabel="1" mode="tree,form"/>
+                                <separator string="Store points" colspan="4"/>
+                                <field name="store_points_ids" colspan="4" nolabel="1" mode="tree,form"/>
+                            </group>
+                        </page>
+                        <page string="Taxation on invoices">
+                            <group>
+                                <separator string="Additional taxes will be computed on document totals and they will increase the final document amount." colspan="4"/>
+                                <label string="Taxes to be added on invoices and debit notes." colspan="4"/>
+                                <field name="taxes_on_invoice_additional" colspan="4" mode="tree" nolabel="1"/>
+                                <label string="Taxes to be added on credit notes (refund)." colspan="4"/>
+                                <field name="taxes_on_refund_additional" colspan="4" mode="tree" nolabel="1"/>
+                                <separator string="The following are special taxes that will generate an couple of move lines on tax's debit and credit defined accounts. They will not be added to documents." colspan="4"/>
+                                <label string="Special taxes computed on issued invoices and debit notes." colspan="4"/>
+                                <field name="taxes_on_invoice" colspan="4" mode="tree" nolabel="1"/>
+                                <label string="Special taxes computed on issued credit notes." colspan="4"/>
+                                <field name="taxes_on_refund" colspan="4" mode="tree" nolabel="1"/>
+                            </group>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <!--
+        ======================
+        res.partner
+        ======================
+        -->
+
+        <record id="view_partner_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.view_partner_form</field>
+            <field name="model">res.partner</field>
+       		<field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <!--#todo liricus era solo orden distinto.. creo que no va<field name="address" position="replace" >
+                        <field colspan="4" name="address" nolabel="1" select="1" height="260">
+                            <tree string="Partner Contacts">
+                                <field name="name"/>
+                                <field name="zip"/>
+                                <field name="city"/>
+                                <field name="country_id"/>
+                                <field name="phone"/>
+                                <field name="email"/>
+                            </tree>
+                        </field>
+                        <form string="Partner Contacts">
+                            <group colspan="4" col="6">
+                                <field name="name" string="Contact Name"/>
+                                <field domain="[('domain', '=', 'contact')]" name="title" size="0"/>
+                                <field name="function"/>
+                            </group>
+                            <newline/>
+                              <group colspan="2" col="4">
+                                <separator string="Postal Address" colspan="4" col="4" />
+                                <field name="type" string="Type" colspan="2"/>
+                                <field name="street" colspan="4"/>
+                                <field name="street2" colspan="4"/>
+                                <field name="zip"/>
+                                <field name="city"/>
+                                <field name="country_id" completion="1"/>
+                                <field name="state_id"/>
+                             </group>
+                             <group colspan="2" col="2">
+                                <separator string="Communication" colspan="2" col="2" />
+                                <field name="phone"/>
+                                <field name="mobile"/>
+                                <field name="fax"/>
+                                <field name="email" widget="email"/>
+                             </group>
+                        </form>
+                    </field>-->
+                    <xpath expr="/form/sheet/notebook" position="inside">
+                        <page string="AFIP information">
+                            <group>
+                                <separator string="VAT condition" colspan="4"/>
+                                <field name="vat_condition" on_change="onchange_vat_condition(vat_condition)"/>
+                                <field name="vat" invisible="True" />
+                                <field name="document_type_id"
+                                    on_change="onchange_document_type_id(document_type_id, vat_condition)" />
+                                <field name="cuit_dni"
+                                    on_change="onchange_cuit_dni(cuit_dni, vat_condition)" />
+                                <field name="rs_type"
+                                    attrs="{'required':[('vat_condition','in',['06','12','13','14'])]}" />
+                                <field name="legal_country_id" />
+                                <field name="legal_state_id" />
+                            </group>
+                        </page>
+                        <page string="Financial information" col="6" colspan="4">
+                            <group>
+                                <separator string="Description" colspan="1"/>
+                                <separator string="Total" colspan="1"/>
+                                <separator string="0-30 days" colspan="1"/>
+                                <separator string="31-60 days" colspan="1"/>
+                                <separator string="61-90 days" colspan="1"/>
+                                <separator string="91+ days" colspan="1"/>
+
+                                <label string="Invoices, overdue" colspan="1"/>
+                                <field name="ocredit" nolabel="1" colspan="1" />
+                                <field name="ocredit_30" nolabel="1" colspan="1" />
+                                <field name="ocredit_60" nolabel="1" colspan="1" />
+                                <field name="ocredit_90" nolabel="1" colspan="1" />
+                                <field name="ocredit_90plus" nolabel="1" colspan="1" />
+
+                                <label string="Invoices, partially payed, overdue" colspan="1"/>
+                                <field name="partial_ocredit" nolabel="1" colspan="1" />
+                                <field name="partial_ocredit_30" nolabel="1" colspan="1" />
+                                <field name="partial_ocredit_60" nolabel="1" colspan="1" />
+                                <field name="partial_ocredit_90" nolabel="1" colspan="1" />
+                                <field name="partial_ocredit_90plus" nolabel="1" colspan="1" />
+
+                                <label string="Invoices, not due" colspan="1"/>
+                                <field name="credit_invoice" nolabel="1" colspan="1" />
+                                <field name="credit_30" nolabel="1" colspan="1" />
+                                <field name="credit_60" nolabel="1" colspan="1" />
+                                <field name="credit_90" nolabel="1" colspan="1" />
+                                <field name="credit_90plus" nolabel="1" colspan="1" />
+
+                                <label string="Invoices, partially payed, not due" colspan="1"/>
+                                <field name="partial_credit" nolabel="1" colspan="1" />
+                                <field name="partial_credit_30" nolabel="1" colspan="1" />
+                                <field name="partial_credit_60" nolabel="1" colspan="1" />
+                                <field name="partial_credit_90" nolabel="1" colspan="1" />
+                                <field name="partial_credit_90plus" nolabel="1" colspan="1" />
+
+                                <label string="Supplier Invoices, not due" colspan="1"/>
+                                <field name="debt_invoice" nolabel="1" colspan="1" />
+                                <field name="debt_30" nolabel="1" colspan="1" />
+                                <field name="debt_60" nolabel="1" colspan="1" />
+                                <field name="debt_90" nolabel="1" colspan="1" />
+                                <field name="debt_90plus" nolabel="1" colspan="1" />
+
+                                <label string="Supplier Invoices, partially payed, not due" colspan="1"/>
+                                <field name="partial_debt" nolabel="1" colspan="1" />
+                                <field name="partial_debt_30" nolabel="1" colspan="1" />
+                                <field name="partial_debt_60" nolabel="1" colspan="1" />
+                                <field name="partial_debt_90" nolabel="1" colspan="1" />
+                                <field name="partial_debt_90plus" nolabel="1" colspan="1" />
+
+                                <label string="Supplier Invoices, partially payed, overdue" colspan="1"/>
+                                <field name="partial_odebt" nolabel="1" colspan="1" />
+                                <field name="partial_odebt_30" nolabel="1" colspan="1" />
+                                <field name="partial_odebt_60" nolabel="1" colspan="1" />
+                                <field name="partial_odebt_90" nolabel="1" colspan="1" />
+                                <field name="partial_odebt_90plus" nolabel="1" colspan="1" />
+
+                                <label string="Supplier Invoices, overdue" colspan="1"/>
+                                <field name="odebt" nolabel="1" colspan="1" />
+                                <field name="odebt_30" nolabel="1" colspan="1" />
+                                <field name="odebt_60" nolabel="1" colspan="1" />
+                                <field name="odebt_90" nolabel="1" colspan="1" />
+                                <field name="odebt_90plus" nolabel="1" colspan="1" />
+
+                                <newline />
+                            </group>
+                        </page>
+                    </xpath>
+                    <!-- #todo liricus esto es de res.partner.bank.. se ve que no va mas para odoo8 lo voy a menter en otro lado???? cuit y cbu
+                    <xpath expr="//page[@string='Accounting']/field/form/sheet//field[@name='owner_name']" position="after">
+                        <field name="cuit" />
+                        <field name="cbu" />
+                    </xpath>
+                    -->
+                    <xpath expr="//field[@name='parent_id']" position="replace" />
+                    <xpath expr="/form/sheet/notebook" position="inside">
+                        <page string="Salesmen and Rep">
+                            <group>
+                                <field name="parent_id" />
+                                <!-- # todo Liricus: lo cambie por child_ids porque salesmen_ids tambien me mostraba los inactivos-->
+                                <!--<field name="salesmen_ids" nolabel="1" colspan="4" />-->
+                                <field name="child_ids" nolabel="1" colspan="4" />
+                            </group>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+         <record id="partner_ledger_wizard_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.partner_ledger_wizard_form</field>
+            <field name="model">numa_ar_base.partner_ledger_wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Report Options">
+                        <separator string="Partner Ledger" colspan="4"/>
+                        <label nolabel="1" colspan="4" string="This report is an analysis done by a partner. It is a PDF report containing one line per movement representing the cumulative credit balance"/>
+                      <newline/>
+                       <separator string="Fiscal years" colspan="4" />
+                       <field name="fiscalyear_ids" nolabel="1" colspan="4" height="200"/>
+                        <group>
+                            <field name="start_date" />
+                            <field name="result_selection" />
+
+                            <field name="reconcil"/>
+                            <field name="include_children" />
+                       </group>
+                        <separator colspan="4"/>
+                        <group col="4" colspan="4">
+                            <button icon="gtk-cancel" special="cancel" string="Cancel" colspan="2"/>
+                            <button icon="gtk-print" name="action_report" string="Print" type="object" colspan="2" default_focus="1" />
+                        </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- # todo Liricus ok: lo meti todo en sale.shop
+        ======================
+        sale.shop
+        ======================
+
+
+        <record id="shop_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.shop_form</field>
+            <field name="model">sale.shop</field>
+       		<field name="inherit_id" ref="sale_shop.wk_sale_shop_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="project_id" position="after">
+                    <field name="afip_sales_point_id" mode="tree,form" />
+                </field>
+            </field>
+        </record>
+
+        <record id="shop_tree" model="ir.ui.view">
+            <field name="name">numa_ar_base.shop_tree</field>
+            <field name="model">sale.shop</field>
+       		<field name="inherit_id" ref="sale_shop.wk_sale_shop_tree"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="afip_sales_point_id"/>
+                </field>
+            </field>
+        </record>
+-->
+        <!--
+        ======================
+        Partner Fix
+        ======================
+        -->
+        <record id="magento_fix_form" model="ir.ui.view">
+            <field name="name">Partner Fix form</field>
+            <field name="model">wineem.magento_fix</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Correccion Magento" >
+                    <label string="Corrección de Magento import" colspan="4" />
+                    <button name="action_magento_fix" type="object" string="Corregir" colspan="4" />
+                </form>
+            </field>
+        </record>
+
+        <record id="magento_fix_action" model="ir.actions.act_window">
+            <field name="name">Correccion Magento</field>
+            <field name="res_model">wineem.magento_fix</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="magento_fix_menu"
+            action="magento_fix_action"
+            parent="base.menu_sale_config_sales"
+            groups="base.group_sale_manager"
+            sequence="99"/>
+
+
+        <!--
+        ======================
+        Partner initial balance
+        ======================
+        -->
+        <record id="partner_initial_balance_form" model="ir.ui.view">
+            <field name="name">Partner initial balance form</field>
+            <field name="model">wineem.partner_initial_balance</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Partner initial balance" >
+                    <label string="Carga de saldos iniciales de los clientes" colspan="4" />
+                    <field name="filename" invisible="1" />
+                    <field name="company" invisible="1" />
+                    
+                    <field name="data" filename="filename" />
+                    <group string="Asiento inicial a generar" colspan="4" >
+                        <field name="fiscalyear" on_change="onchange_fiscalyear(fiscalyear,period,company)" />
+                        <field name="period" domain="[('fiscalyear_id','=',fiscalyear)]" />
+                        
+                        <field name="journal" domain="[('company_id','=',company)]" />
+                        <field name="capital_account" />                    
+                    </group>
+                    <label string="ATENCION: Esta acción borra los movimientos actuales y deja solo los saldos iniciales" colspan="4" />
+                    <label string="          Todos las órdenes de entrega aparecerán como facturadas y todos los pedidos como terminados" colspan="4" />
+                    <label string="          NO ES REVERSIBLE" colspan="4" />
+                    <button name="action_load_data" type="object" string="Borrar datos y fijar saldos iniciales" colspan="4" />
+                </form>
+            </field>
+        </record>
+
+        <record id="partner_initial_balance_action" model="ir.actions.act_window">
+            <field name="name">Partner initial balance</field>
+            <field name="res_model">wineem.partner_initial_balance</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="partner_initial_balance_menu"
+            action="partner_initial_balance_action"
+            parent="base.menu_sale_config_sales"
+            groups="base.group_sale_manager"
+            sequence="98"/>
+        
+
+    </data>
+</openerp>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_order_tree">
+            <field name="name">Sale orders with Magento group</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_tree" />
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="partner_id" position="after" >
+                        <field name="rep_mg_group" />
+                        <field name="wclosing" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_sales_order_filter">
+            <field name="name">Sale orders with Magento group filter</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_sales_order_filter" />
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/search/field[@name='partner_id']" position="after" >
+                        <field name="rep_mg_group" />
+                    </xpath>
+                    <!--  Codigo traido de modulo "attractor_uniqs_group_representante" -->
+                    <xpath expr="//filter[@string='Customer']" position="after" >
+                        <filter string="Representante" icon="terp-personal" domain="[]" context="{'group_by':'rep_mg_group'}"/>
+                        <filter string="Estado" icon="terp-personal" domain="[]" context="{'group_by':'state'}"/>
+                        <filter string="Cierre" icon="terp-personal" domain="[]" context="{'group_by':'wclosing'}"/>
+                    </xpath>
+                    <!-- .............................................................  -->
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_sales_order_form">
+            <field name="name">Sale orders form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='project_id']" position="after" >
+                        <field name="wclosing" />
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,66 @@
+sudo service odoo-server stop
+sudo -u odoo /opt/odoo/odoo-server/openerp-server -c /etc/odoo-server.conf
+tail -n 50 -f /var/log/odoo/odoo-server.log
+
+sudo -u postgres psql
+
+------------------------------------------------------------------------------
+unitario	dto		    Final		Neto		    Iva
+1099.9		423.4615	676.4385	559.0400826446	117.3984173554
+orden 173
+
+Subtotal
+1118.08 $
+Impuestos 	346.48 $
+Total 	1464.56 $
+
+Importe sin impuestos
+1118.08 $
+Impuestos
+234.80 $
+Total 	1352.88 $
+
+sale = sale_order_obj.browse(cr, SUPERUSER, 175, context=context)
+sale.order_line.price_unit
+sale.order_line.price_reduce
+sale.order_line.vat_amount
+sale.order_line.discount
+---------------------------------------
+
+            new_vals = product_news.get('value', {})
+            discount = new_vals.get('discount', 0.0)
+
+            subtotal_wo_discount = line.price_unit * line.product_uom_qty
+            if disc_product_code and line.product_id.default_code.startswith(disc_product_code):
+                new_vals['price_unit'] = line.price_unit * (
+                1 - (subtotal_wo_discount and discount_amount / subtotal_wo_discount or 0.0))
+                disc_product_code = None
+            new_vals['price_subtotal'] = new_vals.get('price_unit', line.price_unit) * \
+                                         line.product_uom_qty * (1.0 - discount / 100.0)
+
+            line.write(new_vals)
+
+price_unit = line.product_id.price_get()[line.product_id.id]
+
+origin
+
+
+pick_obj = self.pool.get('stock.picking')
+sale_obj = self.pool.get('sale.order')
+pick_id = pick_obj.search(cr, uid, [('name','=',line.origin)], context=context)
+pick=pick_obj.browse(cr, uid, pick_id, context=context)
+sale_id = sale_obj.search(cr, uid, [('name','=',pick.origin)], context=context)
+sale = sale_obj.browse(cr, uid, [('name','=',sale_id)], context=context)
+
+
+
+
+ 1789  cd /opt/odoo/custom/wineem_addons/
+ 1790  hg pull -u
+ 1791  sudo service odoo-server restart
+ 1792  tail -n 500 -f /var/log/odoo/odoo-server.log
+ 1793  sudo service odoo-server stop
+
+pg_dump -U postgres test_migracion -f /opt/odoo/bbdd_v1.sql
+sudo service postgresql restart
+sudo service odoo-server restart

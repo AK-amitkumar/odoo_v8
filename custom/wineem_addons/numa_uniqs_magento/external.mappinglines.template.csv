@@ -1,0 +1,11 @@
+id,type_id:id,model_id:id,external_field,type,external_type,in_function,out_function
+partner_1,magentoerpconnect.magento1324,base.model_res_partner,fechadenacimiento,in_out,int,"result=[('fechadenacimiento',ifield[0:10])]
+",
+partner_2,magentoerpconnect.magento1324,base.model_res_partner,dni,in_out,int,"result=[('cuit_dni',ifield)]
+",
+partner_3,magentoerpconnect.magento1324,base.model_res_partner,direccioncliente,in_out,int,"result=[('direccioncliente',ifield)]
+",
+partner_4,magentoerpconnect.magento1324,base.model_res_partner,localidad,in_out,int,"result=[('localidad',ifield)]
+",
+partner_5,magentoerpconnect.magento1324,base.model_res_partner,provincia,in_out,int,"result=[('provincia',ifield)]
+",

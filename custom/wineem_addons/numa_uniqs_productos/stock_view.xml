@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_move_tree_reception_picking" model="ir.ui.view">
+            <field name="name">Wineem stock move with SO price</field>
+            <field name="model">stock.move</field>
+            <field name="type">tree</field>
+            <!--<field name="inherit_id" ref="stock.view_move_tree_reception_picking" />-->
+            <field name="inherit_id" ref="stock.view_move_tree_receipt_picking" />
+            <field name="arch" type="xml">
+                <data>
+                    <!-- <field name="product_qty" position="after" >-->
+                    <field name="product_uom_qty" position="after" >
+                        <field name="so_price" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</openerp>

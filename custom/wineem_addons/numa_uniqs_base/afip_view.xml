@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--
+        ======================
+        afip
+        ======================
+        -->
+        <record id="afip_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.afip_form</field>
+            <field name="model">numa_ar_base.afip</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="AFIP General Properties" col="2">
+                    <field name="rs_max_inv_wo_wt_rg" />
+                    <field name="rs_max_inv_wo_wt_ser" />
+                    <field name="rs_wt_iva" />
+                    <field name="rs_wt_gan" />
+                    <field name="rg830_min" />
+                    <field name="max_b_no_id" />
+                </form>
+            </field>
+        </record>
+
+
+        <!--
+        ======================
+        rg830_rate
+        ======================
+        -->
+
+        <record id="rg830_rate_tree" model="ir.ui.view">
+            <field name="name">numa_ar_base.rg830_rate_tree</field>
+            <field name="model">numa_ar_base.rg830_rate</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="AFIP RG830 Rates" >
+                    <field name="codigo_de_regimen" select="1"/>
+                    <field name="descripcion" />
+                    <field name="use_tabla" />
+                    <field name="inscriptos" />
+                    <field name="no_inscriptos" />
+                    <field name="monto_no_sujeto" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="rg830_rate_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.rg830_rate_form</field>
+            <field name="model">numa_ar_base.rg830_rate</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="AFIP RG830 Rate" col="2">
+                    <field name="codigo_de_regimen" />
+                    <field name="descripcion" />
+                    <field name="use_tabla" />
+                    <field name="inscriptos" />
+                    <field name="no_inscriptos" />
+                    <field name="monto_no_sujeto" />
+                </form>
+            </field>
+        </record>
+
+        <record id="rg830_table_tree" model="ir.ui.view">
+            <field name="name">numa_ar_base.rg830_table_tree</field>
+            <field name="model">numa_ar_base.rg830_table</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="AFIP RG830 Rates" >
+                    <field name="desde" />
+                    <field name="hasta" />
+                    <field name="monto" />
+                    <field name="tasa" />
+                    <field name="no_imponible" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="rg830_table_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.rg830_table_form</field>
+            <field name="model">numa_ar_base.rg830_table</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="AFIP RG830 table" col="2">
+                    <field name="desde" />
+                    <field name="hasta" />
+                    <field name="monto" />
+                    <field name="tasa" />
+                    <field name="no_imponible" />
+                </form>
+            </field>
+        </record>
+
+        <!--
+        ======================
+        menu items
+        ======================
+        -->
+        <record id="action_afip_form" model="ir.actions.act_window">
+            <field name="name">Basic data AFIP</field>
+            <field name="res_model">numa_ar_base.afip</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <menuitem action="action_afip_form" id="menu_action_afip_form"
+            parent="account.menu_configuration_misc"/>
+
+        <record id="action_rg830_rate_form" model="ir.actions.act_window">
+            <field name="name">AFIP RG830 rates</field>
+            <field name="res_model">numa_ar_base.rg830_rate</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_rg830_rate_form" id="menu_action_rg830_rate_form"
+            parent="account.menu_configuration_misc"/>
+
+        <record id="action_rg830_table_form" model="ir.actions.act_window">
+            <field name="name">AFIP RG830 table</field>
+            <field name="res_model">numa_ar_base.rg830_table</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_rg830_table_form" id="menu_action_rg830_table_form"
+            parent="account.menu_configuration_misc"/>
+
+        <!--
+        ======================
+        afip_sales_point
+        ======================
+        -->
+
+        <record id="afip_sales_point_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.afip_sales_point_form</field>
+            <field name="model">numa_ar_base.afip_sales_point</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="AFIP sales point">
+                    <field name="name" />
+                    <field name="afip_id" />
+                    <field name="afip_invoicing_type" />
+                    <field name="separate_sequences" />
+                    <field name="company_id" invisible="1" />
+                    <notebook>
+                        <page string="General Settings">
+                            <group string="Document sequences" colspan="4">
+                                <group string="A docs" colspan="2">
+                                    <field name="a_next_number" />
+                                    <field name="a_i_next_number" />
+                                    <field name="a_dn_next_number" />
+                                    <field name="a_cn_next_number" />
+                                </group>
+                                <group string="B docs" colspan="2">
+                                    <field name="b_next_number" />
+                                    <field name="b_i_next_number" />
+                                    <field name="b_dn_next_number" />
+                                    <field name="b_cn_next_number" />
+                                </group>
+                                <group string="C docs" colspan="2">
+                                    <field name="c_next_number" />
+                                    <field name="c_i_next_number" />
+                                    <field name="c_dn_next_number" />
+                                    <field name="c_cn_next_number" />
+                                </group>
+                                <group string="E docs" colspan="2">
+                                    <field name="e_next_number" />
+                                    <field name="e_i_next_number" />
+                                    <field name="e_dn_next_number" />
+                                    <field name="e_cn_next_number" />
+                                </group>
+                            </group>
+                            <group string="Document Automatic printing" colspan="4">
+                                <group string="A docs" colspan="2">
+                                    <field name="a_dup" />
+                                    <field name="a_i_printer" />
+                                    <field name="a_dn_printer" />
+                                    <field name="a_cn_printer" />
+                                </group>
+                                <group string="B docs" colspan="2">
+                                    <field name="b_dup" />
+                                    <field name="b_i_printer" />
+                                    <field name="b_dn_printer" />
+                                    <field name="b_cn_printer" />
+                                </group>
+                                <group string="C docs" colspan="2">
+                                    <field name="c_dup" />
+                                    <field name="c_i_printer" />
+                                    <field name="c_dn_printer" />
+                                    <field name="c_cn_printer" />
+                                </group>
+                                <group string="E docs" colspan="2">
+                                    <field name="e_dup" />
+                                    <field name="e_i_printer" />
+                                    <field name="e_dn_printer" />
+                                    <field name="e_cn_printer" />
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+        <record id="afip_sales_point_tree" model="ir.ui.view">
+            <field name="name">numa_ar_base.afip_sales_point_tree</field>
+            <field name="model">numa_ar_base.afip_sales_point</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="AFIP sales point">
+                    <field name="name" />
+                    <field name="afip_id" />
+                    <field name="afip_invoicing_type" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="afip_sales_point_action" model="ir.actions.act_window" >
+            <field name="name">AFIP Sales Point</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">numa_ar_base.afip_sales_point</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="afip_sales_point_menu"
+                name="AFIP Sales Point" 
+                action="afip_sales_point_action"
+                sequence="6"
+                parent="account.menu_configuration_misc"/>
+
+        <!--
+        ======================
+        afip_store_point
+        ======================
+        -->
+
+        <record id="afip_store_point_form" model="ir.ui.view">
+            <field name="name">numa_ar_base.afip_store_point_form</field>
+            <field name="model">numa_ar_base.afip_store_point</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="AFIP store point">
+                    <field name="name" />
+                    <field name="afip_id" />
+                    <field name="company_id" invisible="1" />
+                    <separator string="Document sequences" colspan="4"/>
+                    <newline />
+                    <field name="r_next_number" />
+                    <newline />
+                    <field name="r_printer" />
+                    <field name="r_copies" />
+                </form>
+            </field>
+        </record>
+        <record id="afip_store_point_tree" model="ir.ui.view">
+            <field name="name">numa_ar_base.afip_store_point_tree</field>
+            <field name="model">numa_ar_base.afip_store_point</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="AFIP store point">
+                    <field name="name" />
+                    <field name="afip_id" />
+                    <field name="r_next_number" />
+                    <field name="company_id" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="afip_store_point_action" model="ir.actions.act_window" >
+            <field name="name">AFIP Store Point</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">numa_ar_base.afip_store_point</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="afip_store_point_menu"
+                name="AFIP Store Point" 
+                action="afip_store_point_action"
+                sequence="6"
+                parent="account.menu_configuration_misc"/>
+
+
+        <!--
+        ======================
+        afip_document_type
+        ======================
+        -->
+
+        <record id="view_afip_document_type_form" model="ir.ui.view">
+            <field name="name">afip.document_type.form</field>
+            <field name="model">afip.document_type</field>
+            <field name="arch" type="xml">
+                <form string="AFIP Document type">
+                    <field name="name"/>
+                    <field name='code'/>
+                    <field name='afip_code'/>
+                    <field name='active'/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_afip_document_type_tree" model="ir.ui.view">
+            <field name="name">afip.document_type.tree</field>
+            <field name="model">afip.document_type</field>
+            <field name="arch" type="xml">
+                <tree string="AFIP Document type">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="afip_code"/>
+                    <field name='active'/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_afip_document_type">
+            <field name="name">AFIP Document type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">afip.document_type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_action_afip_document_type"
+                name="Document type" 
+                action="act_afip_document_type"
+                sequence="6"
+                parent="account.menu_configuration_misc"/>
+
+        <!--
+        ======================
+        afip_tax_code
+        ======================
+        -->
+
+        <record id="view_tax_code_tree" model="ir.ui.view">
+            <field name="name">AFIP Tax code tree</field>
+            <field name="model">account.tax.code</field>
+            <field name="inherit_id" ref="account.view_tax_code_tree" />
+            <field name="arch" type="xml">
+                <data>
+                    <field name="code" position="after">
+                        <field name="afip_code" />
+                        <field name="parent_afip_code" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record id="view_tax_code_form" model="ir.ui.view">
+            <field name="name">AFIP Tax code form</field>
+            <field name="model">account.tax.code</field>
+            <field name="inherit_id" ref="account.view_tax_code_form" />
+            <field name="arch" type="xml">
+                <data>
+                    <field name="code" position="after">
+                        <field name="afip_code" />
+                        <field name="parent_afip_code" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <!--
+        ======================
+        afip_optional_type
+        ======================
+        -->
+        <record id="view_afip_optional_type_form" model="ir.ui.view">
+            <field name="name">afip.optional_type.form</field>
+            <field name="model">afip.optional_type</field>
+            <field name="arch" type="xml">
+                <form string="AFIP Optional type">
+                    <field name="name"/>
+                    <field name='afip_code'/>
+                    <field name='active'/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_afip_optional_type_tree" model="ir.ui.view">
+            <field name="name">afip.optional_type.tree</field>
+            <field name="model">afip.optional_type</field>
+            <field name="arch" type="xml">
+                <tree string="AFIP Optional type">
+                    <field name="name"/>
+                    <field name="afip_code"/>
+                    <field name='active'/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_afip_optional_type">
+            <field name="name">AFIP Optional type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">afip.optional_type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_action_afip_optional_type"
+                name="Optional type" 
+                action="act_afip_optional_type"
+                sequence="7"
+                parent="account.menu_configuration_misc"/>
+
+
+        <!--
+        ======================
+        res_currency
+        ======================
+        -->
+        <record id="view_currency_form" model="ir.ui.view">
+            <field name="name">AFIP currency</field>
+            <field name="model">res.currency</field>
+            <field name="inherit_id" ref="base.view_currency_form"/>
+            <field name="arch" type="xml">
+                <data>
+        		     <field name="active" position="before">
+                        <field name="afip_code"/>
+                        <field name="afip_desc"/>
+                        <field name="afip_dt_from"/>
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record id="view_currency_tree" model="ir.ui.view">
+            <field name="name">AFIP currency</field>
+            <field name="model">res.currency</field>
+            <field name="inherit_id" ref="base.view_currency_tree"/>
+            <field name="arch" type="xml">
+                <data>
+        		     <field name="active" position="before">
+                        <field name="afip_code"/>
+                        <field name="afip_desc"/>
+                        <field name="afip_dt_from"/>
+                    </field>
+                </data>
+            </field>
+        </record>
+
+
+        <!--
+        ======================
+        res_country
+        ======================
+        -->
+
+        <record id="view_res_country_form" model="ir.ui.view">
+            <field name="name">res.country.form</field>
+            <field name="model">res.country</field>
+            <field name="inherit_id" ref="base.view_country_form"/>
+            <field name="arch" type="xml">
+		<field name="code" position="after">
+                    <field name="cuit_juridica"/>
+                    <field name="cuit_fisica"/>
+                    <field name="cuit_otro"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_res_country_tree" model="ir.ui.view">
+            <field name="name">res.country.tree</field>
+            <field name="model">res.country</field>
+            <field name="inherit_id" ref="base.view_country_tree"/>
+            <field name="arch" type="xml">
+		    <field name="code" position="after">
+                    <field name="cuit_juridica"/>
+                    <field name="cuit_fisica"/>
+                    <field name="cuit_otro"/>
+                </field>
+            </field>
+        </record>
+
+
+
+
+    </data>
+</openerp>

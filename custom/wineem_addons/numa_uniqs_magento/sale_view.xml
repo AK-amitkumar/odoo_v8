@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_order_form" model="ir.ui.view">
+            <field name="name">sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <data>
+                    <field name="pricelist_id" position="after" >
+                        <!--<field name="pricelist_id" invisible="1" groups="base.group_extended"/>-->
+                        <field name="view_pricelist" groups="base.group_extended" />
+                        <button name="action_change_pricelist"
+                                type="object"
+                                colspan="2"
+                                states="draft"
+                                string="Change"/>
+                    </field>
+                    <field name="fiscal_position" position="after">
+                        <field name="magento_coupon_code" />
+                        <field name="magento_discount_amount" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record id="sale_change_pricelist_form" model="ir.ui.view">
+            <field name="name">Sales Order pricelist change wizard</field>
+            <field name="model">sale.change_pricelist</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Change Pricelist">
+                    <field name="new_pricelist" />
+                    <newline />
+                    <button name="action_change_pricelist"
+                            type="object"
+                            colspan="2"
+                            string="_Change pricelist" />
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,65 @@
+#-*- coding: utf-8 -*-
+##############################################################################
+#
+#    NUMA Extreme Systems (www.numaes.com)
+#    Copyright (C) 2011
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+from openerp.osv import fields, osv
+
+class account_move(osv.osv):
+    _inherit = 'account.move'
+
+    def revert (self, cr, uid, ids, vals, context=None):
+        # Generate a counter movement
+        # It returns a dictionary, keyed by id, with the new moves
+        reconcile_pool = self.pool.get('account.move.reconcile')
+        move_line_obj = self.pool.get('account.move.line')
+
+        for move in self.browse (cr, uid, ids, context=context):
+            recs = []
+            for ml in move.line_id:
+                if ml.reconcile_id:
+                    recs += [ml.reconcile_id.id]
+                if ml.reconcile_partial_id:
+                    recs += [ml.reconcile_partial_id.id]
+
+            reconcile_pool.unlink(cr, uid, recs)
+
+        res = {}        
+        for move in self.browse (cr, uid, ids, context=context):
+            # Generate the new movement
+            
+            if move.state != 'posted':
+                raise osv.except_osv(_('Error !'), _('You can not revert a move [%(name)%s] in this state [%(state)s]!') % {
+                                                                'name': move.name,
+                                                                'state': move.state})
+            vals.update(state='draft')
+
+            move_id = self.copy (cr, uid, move.id, vals, context=context)
+            new_move = self.browse(cr, uid, move_id, context=context)
+            for ml in new_move.line_id:
+                ml.write ({'debit': ml.credit, 'credit': ml.debit}, context=context)
+
+            res[move.id] = move_id
+            self.post (cr, uid, [move_id], context=context)
+    
+        return res
+        
+account_move()
+
+

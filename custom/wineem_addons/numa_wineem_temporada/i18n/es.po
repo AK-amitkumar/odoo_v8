@@ -1,0 +1,192 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* numa_wineem_temporada
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-09-12 15:45+0000\n"
+"PO-Revision-Date: 2012-09-12 15:45+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: numa_wineem_temporada
+#: help:product.season,valid_from:0
+msgid "Initial date for sales order acceptance"
+msgstr "Fecha inicial de aceptación de órdenes"
+
+#. module: numa_wineem_temporada
+#: sql_constraint:res.partner.closing:0
+msgid "Closing reference must be unique!"
+msgstr "Closing reference must be unique!"
+
+#. module: numa_wineem_temporada
+#: view:sale.cancel_orders_confirm:0
+msgid "Cancel orders"
+msgstr "Cancelar ordenes"
+
+#. module: numa_wineem_temporada
+#: model:ir.model,name:numa_wineem_temporada.model_res_partner_closing
+msgid "res.partner.closing"
+msgstr "res.partner.closing"
+
+#. module: numa_wineem_temporada
+#: constraint:stock.move:0
+msgid "You must assign a production lot for this product"
+msgstr "Debe asignar un lote de producción para este producto"
+
+#. module: numa_wineem_temporada
+#: model:ir.model,name:numa_wineem_temporada.model_stock_picking
+msgid "Picking List"
+msgstr "Lista de selección"
+
+#. module: numa_wineem_temporada
+#: model:ir.model,name:numa_wineem_temporada.model_product_season
+msgid "product.season"
+msgstr "product.season"
+
+#. module: numa_wineem_temporada
+#: field:product.season,valid_to:0
+msgid "Valid up to"
+msgstr "Válido hasta"
+
+#. module: numa_wineem_temporada
+#: model:ir.model,name:numa_wineem_temporada.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: numa_wineem_temporada
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique !"
+msgstr "¡La referencia del pedido debe ser única!"
+
+#. module: numa_wineem_temporada
+#: field:product.season,description:0
+#: view:res.partner.closing:0
+#: field:res.partner.closing,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: numa_wineem_temporada
+#: constraint:stock.move:0
+msgid "You try to assign a lot which is not from the same product"
+msgstr "Está intentando asignar un lote que no es del mismo producto"
+
+#. module: numa_wineem_temporada
+#: field:product.product,season:0
+#: field:stock.move,season:0
+#: field:stock.picking,season:0
+msgid "Season"
+msgstr "Temporada"
+
+#. module: numa_wineem_temporada
+#: view:sale.cancel_orders_confirm:0
+msgid "Do you really want to cancel the selected order(s) ?"
+msgstr "Realmente desea cancelar las órdenes elegida(s) ?"
+
+#. module: numa_wineem_temporada
+#: view:res.partner.closing:0
+msgid "Closings"
+msgstr "Cierres"
+
+#. module: numa_wineem_temporada
+#: field:res.partner,commercial_closing:0
+#: field:res.partner.closing,name:0
+msgid "Commercial closing"
+msgstr "Cierre comercial"
+
+#. module: numa_wineem_temporada
+#: view:sale.validate_orders_confirm:0
+msgid "Validate orders"
+msgstr "Validar órdenes"
+
+#. module: numa_wineem_temporada
+#: model:ir.actions.act_window,name:numa_wineem_temporada.season_tree_action
+#: model:ir.ui.menu,name:numa_wineem_temporada.season_menu
+#: view:product.season:0
+msgid "Seasons"
+msgstr "Temporadas"
+
+#. module: numa_wineem_temporada
+#: field:product.season,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: numa_wineem_temporada
+#: field:product.season,valid_from:0
+msgid "Valid from"
+msgstr "Válido desde"
+
+#. module: numa_wineem_temporada
+#: field:res.partner,effective_closing:0
+msgid "Effective closing"
+msgstr "Cierre efectivo"
+
+#. module: numa_wineem_temporada
+#: view:sale.validate_orders_confirm:0
+msgid "Do you really want to validate the selected order(s) ?"
+msgstr "Realmente quiere validar las órdenes elegidas ?"
+
+#. module: numa_wineem_temporada
+#: model:ir.actions.act_window,name:numa_wineem_temporada.validate_orders_action
+msgid "Validate Orders"
+msgstr "Validar Ordenes"
+
+#. module: numa_wineem_temporada
+#: model:ir.actions.act_window,name:numa_wineem_temporada.closing_tree_action
+#: model:ir.ui.menu,name:numa_wineem_temporada.closing_menu
+#: view:res.partner.closing:0
+#: field:stock.picking,wclosing:0
+msgid "Closing"
+msgstr "Cierre"
+
+#. module: numa_wineem_temporada
+#: model:ir.model,name:numa_wineem_temporada.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: numa_wineem_temporada
+#: model:ir.actions.act_window,name:numa_wineem_temporada.cancel_orders_action
+msgid "Cancel Orders"
+msgstr "Cancelar Ordenes"
+
+#. module: numa_wineem_temporada
+#: help:product.season,valid_to:0
+msgid "End date for sales order acceptance"
+msgstr "Fecha final de aceptación de órdenes"
+
+#. module: numa_wineem_temporada
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Código EAN no válido"
+
+#. module: numa_wineem_temporada
+#: model:ir.model,name:numa_wineem_temporada.model_sale_cancel_orders_confirm
+msgid "sale.cancel_orders_confirm"
+msgstr "sale.cancel_orders_confirm"
+
+#. module: numa_wineem_temporada
+#: model:ir.model,name:numa_wineem_temporada.model_sale_validate_orders_confirm
+msgid "sale.validate_orders_confirm"
+msgstr "sale.validate_orders_confirm"
+
+#. module: numa_wineem_temporada
+#: model:ir.model,name:numa_wineem_temporada.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: numa_wineem_temporada
+#: view:res.partner:0
+msgid "Salesmen and Rep"
+msgstr "Vendedores y Reps."
+
+#. module: numa_wineem_temporada
+#: model:ir.model,name:numa_wineem_temporada.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+<!-- 
+Luis Torres: Comentadas lineas reemplazadas (debajo de ellas lo incorporado)
+-->
+        <!-- Stock picking out Form View -->
+        
+        <record model="ir.ui.view" id="stock_picking_out_form_view">
+            <field name="name">Pickings out with box info</field>
+            <field name="model">stock.picking</field>
+       <!-- <field name="inherit_id" ref="stock.view_picking_out_form" />-->
+            <field name="inherit_id" ref="stock.view_picking_form" />
+            <field name="arch" type="xml">
+                <data>
+                    <field name="backorder_id" position="after" >
+                        <field name="box_id" domain="[('state','=','opened')]"/>
+                        <field name="box_state" />
+                        <field name="rep_mg_group" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_picking_out_tree">
+            <field name="name">Pickings out tree with Magento Group</field>
+            <field name="model">stock.picking</field>
+       <!-- <field name="inherit_id" ref="stock.view_picking_out_tree" /> -->
+            <field name="inherit_id" ref="stock.vpicktree" />
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="partner_id" position="after" >
+                        <field name="rep_mg_group"/>
+                        <field name="box_id" />
+                        <field name="box_state" />
+                    </field>
+                </data>
+            </field>
+        </record>
+        <!--  #todo Liricus      
+
+        <record id="spp_create_box_form_view" model="ir.ui.view">
+            <field name="name">numa_uniqs_box.spp_create_box_form_view</field>
+            <field name="model">stock.partial.picking.box.create</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Create box for a customer" col="2" >
+                    <field name="rep_id"/>
+                    <button name="action_create_box" type="object" string="_Create box" icon="gtk-go-forward" colspan="2"/>
+                </form>
+            </field>
+        </record>-->
+        
+
+        <record model="ir.ui.view" id="view_picking_out_search">
+            <field name="name">Pickings out with box search</field>
+            <field name="model">stock.picking</field>
+       <!-- <field name="inherit_id" ref="stock.view_picking_out_search"/>-->
+            <field name="inherit_id" ref="stock.view_picking_internal_search"/>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <!--<field name="company_id" position="after" >-->
+                <field name="product_id" position="after" >
+                    <newline />
+                    <field name="rep_mg_group"/>
+                    <field name="box_id" />
+                    <field name="box_state" />
+                    <field name="box_closed_date" />
+                </field>
+
+                <xpath expr="//filter[@string='Procurement Group']" position="after" >
+                    <filter string="Representante" icon="terp-personal" domain="[]" context="{'group_by':'rep_mg_group'}"/>
+                    <filter string="Campaña" icon="terp-personal" domain="[]" context="{'group_by':'campaign'}"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_move_tree_reception_picking">
+            <field name="name">Move tree with Magento Group</field>
+            <field name="model">stock.move</field>
+       <!-- <field name="inherit_id" ref="stock.view_move_tree_reception_picking"/> -->
+            <field name="inherit_id" ref="stock.view_move_tree_receipt_picking"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <field name="product_id" position="after" >
+                    <field name="rep_mg_group"/>
+                    <field name="date_expected"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_move_search_reception_outcoming_picking">
+            <field name="name">Move search with Magento Group</field>
+            <field name="model">stock.move</field>
+      <!-- <field name="inherit_id" ref="stock.view_move_search_reception_outcoming_picking" /> -->
+            <field name="inherit_id" ref="stock.view_move_search" />
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <field name="product_id" position="after" >
+                    <field name="date_expected"/>
+                    <field name="date" groups="base.group_extended"/>
+                </field>
+                <field name="partner_id" position="after" >
+                    <field name="rep_mg_group"/>
+                </field>
+            </field>
+        </record>
+<!-- #todo Liricus
+-->
+
+    </data>
+</openerp>

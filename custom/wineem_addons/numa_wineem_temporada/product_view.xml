@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+       
+        <record model="ir.ui.view" id="product_template_season_form_view">
+            <field name="name">Wineem Season product template form view</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view" />
+            <field name="arch" type="xml">
+                    <field name="active" position="after" >
+                        <field name="season"/>
+                    </field>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="product_form_view">
+            <field name="name">Wineem Season product form view</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view" />
+            <field name="arch" type="xml">
+                <data>
+                    <!-- todo liricus: no existe mas<field name="variants" position="after" >-->
+                    <field name="active" position="after" >
+                        <field name="season"/>
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="season_tree_view">
+            <field name="name">Wineem season tree view</field>
+            <field name="model">product.season</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Seasons" editable="top" >
+                    <field name="name" />
+                    <field name="description" />
+                    <field name="valid_from" />
+                    <field name="valid_to" />                
+                </tree>
+            </field>
+        </record>
+        
+        <record id="season_tree_action" model="ir.actions.act_window">
+            <field name="name">Seasons</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.season</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="season_tree_view"/>
+        </record>
+
+        <!-- todo Liricus: groups="base.group_extended" <menuitem action="season_tree_action"
+            groups="base.group_extended"
+            id="season_menu"
+            parent="product.prod_config_main" sequence="4"/>
+            -->
+        <menuitem action="season_tree_action"
+            groups="product.group_sale_pricelist"
+            id="season_menu"
+            parent="product.prod_config_main" sequence="4"/>
+    </data>
+</openerp>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_quick_move_tree">
+            <field name="name">numa_ar_base.quick_move.tree</field>
+            <field name="model">numa_ar_base.quick_move</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Operation code">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="description"/>
+                    <field name="debit_account_id"/>
+                    <field name="credit_account_id"/>
+                    <field name="analytic_account_id"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_quick_move_form">
+            <field name="name">numa_ar_base.quick_move.form</field>
+            <field name="model">numa_ar_base.quick_move</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Operation code">
+                    <field name="name" colspan="1"/>
+                    <field name="type" colspan="1"/>
+                    <field name="description"/>
+                    <separator string="Accounting information" colspan="4" />
+                    <field name="debit_account_id"/>
+                    <field name="credit_account_id"/>
+                    <field name="analytic_account_id"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_quick_move_tree" model="ir.actions.act_window">
+            <field name="name">Operation code</field>
+            <field name="res_model">numa_ar_base.quick_move</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_quick_move_tree" id="menu_action_quick_move_tree"
+            parent="account.menu_configuration_misc" sequence="6" />
+<!--
+            groups="base.group_extended"
+-->
+
+    </data>
+</openerp>

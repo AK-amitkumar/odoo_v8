@@ -1,0 +1,28 @@
+syntax: regexp
+^\.project$
+^.*[.]DS_Store$
+^\.pydevproject$
+^.*[.](pyc|pyo|mo)$
+^python/dist$
+^python/build$
+^.*/?_ign_
+^.*(.)orig$
+^\.settings$
+^.*/local_settings.py$
+^.*/wf_wsgi.py$
+^static/.*$
+^dist/.*$
+^db.sqlite3$
+#^.hgignore$
+^content/.*$
+^.idea/.*$
+
+syntax: glob
+_media/*
+_test
+all.json
+data.json
+*.py~
+*.css~
+*.txt~
+*.js~

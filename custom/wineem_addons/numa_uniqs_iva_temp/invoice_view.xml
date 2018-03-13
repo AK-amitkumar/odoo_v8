@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="iva_report_old_form_view" model="ir.ui.view">
+            <field name="name">Wizard para emitir libro de IVA</field>
+            <field name="model">uniqs.iva_report_old</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Emitir Libro IVA Ventas" col="2">
+                    <field name="initial_date"/>
+                    <field name="final_date" /><field name="initial_page"></field>
+                	<button name="action_print_report" type="object" string="Imprimir reporte" colspan="2" />
+                </form>
+            </field>
+        </record>
+        
+    </data>
+</openerp>

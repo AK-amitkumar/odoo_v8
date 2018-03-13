@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <report id="report_document_receipt"
+            string="Print receipt"
+            model="numa_ar_base.document_receipt"
+            name="document_receipt_print"
+            rml="numa_uniqs_customer_voucher/report/document_receipt.rml"
+            auto="False"
+            header = "False"
+            menu="True"/>
+    </data>
+</openerp>

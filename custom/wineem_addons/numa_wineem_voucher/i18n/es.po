@@ -1,0 +1,39 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* numa_wineem_voucher
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.4\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2013-09-27 15:22+0000\n"
+"PO-Revision-Date: 2013-09-27 15:22+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: numa_wineem_voucher
+#: view:account.voucher:0
+msgid "Compute debts"
+msgstr "Recolectar deudas"
+
+#. module: numa_wineem_voucher
+#: code:addons/numa_wineem_voucher/voucher.py:301
+#, python-format
+msgid "Invalid action !"
+msgstr "Invalid action !"
+
+#. module: numa_wineem_voucher
+#: model:ir.model,name:numa_wineem_voucher.model_account_voucher
+msgid "Accounting Voucher"
+msgstr "Voucher de contabilidad"
+
+#. module: numa_wineem_voucher
+#: code:addons/numa_wineem_voucher/voucher.py:302
+#, python-format
+msgid "Payment assignment (%f) is bigger than voucher amount (%f)!"
+msgstr "La asignación de pago (%f) es mayor que el importe del voucher (%f)!"
+

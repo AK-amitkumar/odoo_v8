@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="stock_box_tree_view" model="ir.ui.view">
+            <field name="name">numa_uniqs_box.stock_box_tree_view</field>
+            <field name="model">stock.box</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Boxes" colors="black:state=='opened';blue:state=='closed';grey:state=='delivered';red:state='canceled'">
+                    <field name="name"/>
+                    <field name="rep_id" />
+                    <field name="state" />
+                    <field name="date_opened" />
+                    <field name="date_closed" />
+                    <field name="date_delivered" />
+                    <field name="date_canceled" />
+                </tree>
+            </field>
+        </record>
+        
+        <record id="stock_box_form_view" model="ir.ui.view">
+            <field name="name">numa_uniqs_box.stock_box_form_view</field>
+            <field name="model">stock.box</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Box" >
+                    <field name="name"/>
+                    <field name="rep_id" />
+                    <field name="date_opened" />
+                    <field name="date_closed" />
+                    <field name="date_delivered" />
+                    <field name="date_canceled" />
+                    <field name="state" />
+                    <field name="company_id"
+                        groups="base.group_multi_company"
+                        widget="selection" colspan="2" />
+                    <field name="pickings_ids" colspan="4" nolabel="1" >
+                        <tree string="Included pickings" >
+                            <field name="name" />
+                            <field name="partner_id" />
+                            <field name="state" />
+                            <field name="date_done" />
+                            <field name="origin" />
+                            <field name="location_id" />                            
+                            <field name="invoice_state" />
+                        </tree>
+                    </field>
+                    <button name="action_close" string="_Close"
+                        states="opened" type="object" colspan="2"
+                        icon="gtk-go-forward" />
+                    <button name="action_cancel" string="Cancel"
+                        states="opened" type="object" colspan="2"
+                        icon="gtk-close" />
+                    <button string="Register delivery"
+                        name="action_deliver"
+                        states="closed" icon="gtk-go-forward" colspan="4"
+                        type="object" />
+                </form>
+            </field>
+        </record>
+
+        <record id="stock_box_search_view" model="ir.ui.view">
+            <field name="name">Stock - Box search</field>
+            <field name="model">stock.box</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Boxes">
+                    <filter icon="terp-check"
+                        string="Opened"
+                        name="current" help="Draft and Open Leads"
+                        domain="[('state','=','opened')]"/>
+                    <filter icon="terp-camera_test"
+                        string="Closed"
+                        domain="[('state','=','closed')]"/>
+                    <filter icon="terp-gtk-media-pause"
+                        string="Delivered"
+                        domain="[('state','=','delivered')]"/>
+                    <filter icon="terp-gtk-media-pause"
+                        string="Canceled"
+                        domain="[('state','=','canceled')]"/>
+
+                    <separator orientation="vertical"/>
+                    <field name="name" />
+                    <field name="rep_id"/>
+                    <field name="company_id" widget="selection" groups="base.group_multi_company"/>
+
+                    <field name="date_closed"/>
+                    <field name="date_delivered"/>
+                    
+                    <newline />
+
+                    <group expand="0" string="Group By...">
+                        <filter string="Representant" icon="terp-personal" domain="[]" context="{'group_by':'rep_id'}"/>
+                        <filter string="State" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"/>
+                        <separator orientation="vertical"/>
+                        <filter string="Creation" help="Opening date" icon="terp-go-month"
+                            domain="[]" context="{'group_by':'date_opened'}" />
+                        <filter string="Creation" help="Closing date" icon="terp-go-month"
+                            domain="[]" context="{'group_by':'date_closed'}" />
+                        <filter string="Creation" help="Delivery date" icon="terp-go-month"
+                            domain="[]" context="{'group_by':'date_delivered'}" />
+                    </group>
+               </search>
+            </field>
+        </record>
+
+        <menuitem id="menu_boxes" name="Boxes" parent="stock.menu_stock_root" sequence="2"/>
+        
+        <record id="action_box_form" model="ir.actions.act_window">
+            <field name="name">Boxes</field>
+            <field name="res_model">stock.box</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem  id="menu_action_box_form" action="action_box_form"
+            parent="menu_boxes" sequence="4"/>
+
+    </data>
+</openerp>

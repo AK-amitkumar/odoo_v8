@@ -1,0 +1,6 @@
+"id","type_id:id","model_id:id","external_field","type","external_type","in_function","out_function"
+"partner_leader_1","magentoerpconnect.magento1324","base.model_res_partner","nombre_lider","in","str","if ifield:
+	result=self.pool.get('res.partner').search(cr, uid, [('name','=',ifield.replace('_',' '))])
+	if result:
+		result=[('leader_id',result[0])]",
+"partner_leader_2","magentoerpconnect.magento1324","base.model_res_partner","lider","in","int","result=[('is_leader', ifield == 4)]","result=[('lider', record['is_leader'] and 4 or 3)]",

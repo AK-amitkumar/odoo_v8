@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <report id="vat_report"
+            string="Print VAT report"
+            model="uniqs.iva_report_old"
+            name="vat_report_print"
+            rml="numa_uniqs_iva_temp/report/vat_report.rml"
+            auto="False"
+            header = "'external'"
+            menu="False"/>
+
+        <record id="action_vat_report_form" model="ir.actions.act_window">
+            <field name="name">Reporte de IVA Ventas</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">uniqs.iva_report_old</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="iva_report_old_form_view"/>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem
+                icon="STOCK_PRINT"
+                name="Reporte de IVA Ventas"
+                parent="account.menu_finance_legal_statement"
+                action="action_vat_report_form"
+                id="menu_action_vat_report_form"
+               />
+
+    </data>
+</openerp>

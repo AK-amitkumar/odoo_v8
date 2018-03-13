@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       <act_window id="action_print_partner_ledger"
+		    key2="client_action_multi" name="Print Partner Ledger"
+		    res_model="numa_ar_base.partner_ledger_wizard" src_model="res.partner"
+		    view_mode="form" target="new" view_type="form"
+		    />
+
+    </data>
+</openerp>

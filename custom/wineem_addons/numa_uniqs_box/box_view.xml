@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="stock_box_tree_view" model="ir.ui.view">
+            <field name="name">numa_uniqs_box.stock_box_tree_view</field>
+            <field name="model">stock.box</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Boxes" colors="black:state=='opened';blue:state=='closed';grey:state=='delivered';red:state='canceled'">
+                    <field name="name"/>
+                    <field name="rep_id" />
+                    <field name="rep_rep_id" />
+                    <field name="state" />
+                    <field name="date_opened" />
+                    <field name="date_closed" />
+                    <field name="date_delivered" />
+                    <field name="delivery_id" />
+                    <field name="date_canceled" />
+                </tree>
+            </field>
+        </record>
+        
+        <record id="stock_box_form_view" model="ir.ui.view">
+            <field name="name">numa_uniqs_box.stock_box_form_view</field>
+            <field name="model">stock.box</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Box" >
+                    <header>
+                        <button name="action_close" string="_Close" states="opened" type="object" colspan="2" icon="gtk-go-forward" />
+                        <button name="action_cancel" string="Cancel" states="opened" type="object" colspan="2" icon="gtk-close" />
+                        <field name="state" widget="statusbar" statusbar_visible="opened,closed,delivered,canceled" statusbar_colors='{"opened":"blue"}'/>
+                    </header>
+                    <sheet>
+                        <div class="oe_edit_only">
+                            <label for="name"/>
+                        </div>
+                        <h1><field name="name" default_focus="1" placeholder="Nombre"/></h1>
+                        <group>
+                            <group>
+                                <field name="rep_id" on_change="onchange_rep_id(rep_id)" />
+                                <field name="rep_rep_id" />
+                                <field name="date_opened" />
+                                <field name="date_closed" />
+                                <field name="date_delivered" />
+                            </group>
+                            <group>
+                                <field name="delivery_id" />
+                                <field name="date_canceled" />
+                                <field name="state" />
+                                <field name="company_id" groups="base.group_multi_company" widget="selection" colspan="2" />
+                            </group>
+                        </group>
+                        <separator string="Included pickings"/>
+                        <field name="pickings_ids" colspan="4" nolabel="1" >
+                            <tree string="Included pickings" >
+                                <field name="name" />
+                                <field name="partner_id" />
+                                <field name="state" />
+                                <field name="date_done" />
+                                <field name="origin" />
+                                <field name="location_id" />                            
+                                <field name="invoice_state" />
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        
+
+        <record id="stock_box_search_view" model="ir.ui.view">
+            <field name="name">Stock - Box search</field>
+            <field name="model">stock.box</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Boxes">
+                    <filter icon="terp-check"
+                        string="Opened"
+                        name="current"
+                        domain="[('state','=','opened')]"/>
+                    <filter icon="terp-camera_test"
+                        string="Closed"
+                        domain="[('state','=','closed')]"/>
+                    <filter icon="terp-gtk-media-pause"
+                        string="Delivered"
+                        domain="[('state','=','delivered')]"/>
+                    <filter icon="terp-gtk-media-pause"
+                        string="Canceled"
+                        domain="[('state','=','canceled')]"/>
+
+                    <separator orientation="vertical"/>
+                    <field name="name" />
+                    <field name="rep_id"/>
+                    <field name="rep_rep_id"/>
+                    <field name="company_id" widget="selection" groups="base.group_multi_company"/>
+
+                    <field name="date_closed"/>
+                    <field name="date_delivered"/>
+                    <field name="delivery_id" />
+                    
+                    <newline />
+
+                    <group expand="0" string="Group By...">
+                        <filter string="Representant" icon="terp-personal" domain="[]" context="{'group_by':'rep_id'}"/>
+                        <filter string="State" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"/>
+                        <separator orientation="vertical"/>
+                        <filter string="Creation" help="Opening date" icon="terp-go-month"
+                            domain="[]" context="{'group_by':'date_opened'}" />
+                        <filter string="Closing" help="Closing date" icon="terp-go-month"
+                            domain="[]" context="{'group_by':'date_closed'}" />
+                        <filter string="Delivery" help="Delivery date" icon="terp-go-month"
+                            domain="[]" context="{'group_by':'date_delivered'}" />
+                    </group>
+               </search>
+            </field>
+        </record>
+
+        <menuitem id="menu_boxes" name="Boxes" parent="stock.menu_stock_root" sequence="2"/>
+        
+        <record id="action_box_form" model="ir.actions.act_window">
+            <field name="name">Boxes</field>
+            <field name="res_model">stock.box</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem  id="menu_action_box_form" action="action_box_form"
+            parent="menu_boxes" sequence="4"/>
+            
+        <record id="stock_delivery_confirmation_form_view" model="ir.ui.view">
+            <field name="name">Delivery confirmation form</field>
+            <field name="model">stock.delivery_confirmation</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Delivery confirmation">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="forwarder_id" domain="[('customer','=',True)]"/>
+                            <field name="delivered_on" />
+                        </group>
+                        <separator string="Notes" colspan="4" />
+                        <field name="notes" colspan="4" nolabel="1"/>
+                        <button name="action_send" type="object" string="Confirm" colspan="4" />
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+		<record id="action_delivery_confirmation" model="ir.actions.act_window">
+			<field name="name">Delivery Confirmation</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">stock.delivery_confirmation</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+            <field name="context">{}</field>
+		</record>
+
+		<record id="ir_action_delivery_confirmation" model="ir.values">
+			<field name="key2">client_action_multi</field>
+			<field name="model">stock.box</field>
+			<field name="name">Send boxes</field>
+			<field eval="'ir.actions.act_window,%d'%action_delivery_confirmation" name="value"/>
+			<field eval="True" name="object"/>
+		</record>
+
+        <record id="stock_delivery_form_view" model="ir.ui.view">
+            <field name="name">Delivery confirmation form</field>
+            <field name="model">stock.delivery</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Delivery" >
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="forwarder_id" domain="[('customer','=',True)]"/>
+                            <field name="delivered_on" />
+                        </group>
+                        <separator string="Boxes in this delivery" colspan="4" />
+                        <field name="boxes_ids" colspan="4" nolabel="1"/>
+                        <separator string="Notes" colspan="4" />
+                        <field name="notes" colspan="4" nolabel="1"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="stock_delivery_tree_view" model="ir.ui.view">
+            <field name="name">Delivery confirmation tree</field>
+            <field name="model">stock.delivery</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Deliveries" >
+                    <field name="name"/>
+                    <field name="forwarder_id" />
+                    <field name="reps" />
+                    <field name="delivered_on" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="stock_delivery_search_view" model="ir.ui.view">
+            <field name="name">Delivery confirmation search</field>
+            <field name="model">stock.delivery</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Deliveries" >
+                    <field name="name"/>
+                    <field name="forwarder_id" />
+                    <field name="delivered_on" />
+                    <field name="reps" />
+                    <!-- #todo Liricus<field name="boxes_ids" string="Representant" filter_domain="[('boxes_ids.rep_id.name','ilike',self)]"/> -->
+                    <newline/>
+                    <group expand="0" string="Group By..." colspan="9" col="8">
+                        <filter string="Forwarder" icon="terp-accessories-archiver" domain="[]" context="{'group_by':'forwarder_id'}"/>
+                        <filter string="Delivered on" icon="terp-accessories-archiver" domain="[]" context="{'group_by':'delivered_on'}"/>
+                        <filter string="Reps" icon="terp-accessories-archiver" domain="[]" context="{'group_by':'reps'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_delivery" model="ir.actions.act_window">
+            <field name="name">Delivery</field>
+            <field name="res_model">stock.delivery</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem  id="menu_action_delivery" action="action_delivery"
+            parent="menu_boxes" sequence="5"/>
+
+        <!-- Invoice boxes wizard -->
+
+        <record id="stock_box_invoice_form_view" model="ir.ui.view">
+            <field name="name">Invoice closed boxes wizard</field>
+            <field name="model">stock.invoice_boxes</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <form string="Create invoices">
+                    <separator colspan="4" string="Create invoice" />
+                    <field name="journal_id" on_change="onchange_journal_id(journal_id)" />
+                    <!--<field name="company_id" invisible="1" />-->
+                    <field name="company_id"/>
+                    <!--<field name="shop_id" domain="[('company_id','=',company_id)]" />-->
+                    <newline/>
+                    <field name="group"/>
+                    <newline/>
+                    <field name="invoice_date" />
+                    <separator string="" colspan="4" />
+                    <button special="cancel" string="_Cancel" icon='gtk-cancel'/>
+                    <button name="open_invoice" string="Create" type="object" icon="terp-gtk-go-back-rtl"/>
+             </form>
+            </field>
+        </record>
+        
+		<record id="action_invoice_boxes" model="ir.actions.act_window">
+			<field name="name">Invoice boxes</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">stock.invoice_boxes</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+            <field name="context">{}</field>
+		</record>
+
+		<record id="ir_action_invoice_boxes_from_box" model="ir.values">
+			<field name="key2">client_action_multi</field>
+			<field name="model">stock.box</field>
+			<field name="name">Invoice boxes</field>
+			<field eval="'ir.actions.act_window,%d'%action_invoice_boxes" name="value"/>
+			<field eval="True" name="object"/>
+		</record>
+
+        
+    </data>
+</openerp>

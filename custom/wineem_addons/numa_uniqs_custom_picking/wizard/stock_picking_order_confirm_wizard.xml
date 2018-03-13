@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+        <record id="stock_picking_order_confirm_wizard" model="ir.ui.view">
+            <field name="name">stock.picking.order.confirm.wizard</field>
+            <field name="model">stock.picking.order.confirm</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Picking Order Confirmation" >
+                    <group>
+                        <field name="pick_order_id" invisible="1"/>
+                        <field name="rep"/>
+                        <field name="box_id" context="{'rep_id': rep}"
+                            domain="[('state','=','opened'),('rep_id','=',rep)]"/>
+                        <field name="scanned_item" on_change="onchange_scanned_item(scanned_item,lines)"/>
+                    </group>
+                    <field name="lines" nolabel="1" colspan="4" width="800" height="500">
+                        <tree string="Lines" editable="top" delete="false" create="false"
+                            colors="green:requested_qty==actual_qty;red:requested_qty&gt;actual_qty">
+                            <field name="move_id" invisible="1"/>
+                            <field name="picking" />
+                            <field name="product" />
+                            <field name="uom" />
+                            <field name="requested_qty"/>
+                            <field name="actual_qty" />
+                        </tree>
+                    </field>
+                    <footer>
+                        <button name="do_reset_scan" type="object" string="Reset to 0" colspan="2" />
+                        <button name="do_set_scan_to_requested" type="object" string="Set to requested" colspan="2" />
+                        <button name="action_confirm_po" type="object" string="Confirm" colspan="4" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

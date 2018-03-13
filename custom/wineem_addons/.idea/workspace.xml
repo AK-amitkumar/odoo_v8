@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6281ea81-96c3-4386-803d-b041c6210c92" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/09_datamodel.png" afterPath="$PROJECT_DIR$/connector/doc/_static/09_datamodel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/img/LogicSupply_Orange_260x80_transparent.png" afterPath="$PROJECT_DIR$/connector/doc/_static/img/LogicSupply_Orange_260x80_transparent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/img/akretion_logo.png" afterPath="$PROJECT_DIR$/connector/doc/_static/img/akretion_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/img/c2c_square_baseline_192.jpg" afterPath="$PROJECT_DIR$/connector/doc/_static/img/c2c_square_baseline_192.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/img/logo-debonix.jpg" afterPath="$PROJECT_DIR$/connector/doc/_static/img/logo-debonix.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/img/magentoerpconnect.png" afterPath="$PROJECT_DIR$/connector/doc/_static/img/magentoerpconnect.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/img/magentoerpconnect150.png" afterPath="$PROJECT_DIR$/connector/doc/_static/img/magentoerpconnect150.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/img/prestashoperpconnect.png" afterPath="$PROJECT_DIR$/connector/doc/_static/img/prestashoperpconnect.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/img/prestashoperpconnect150.png" afterPath="$PROJECT_DIR$/connector/doc/_static/img/prestashoperpconnect150.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/static/description/icon.png" afterPath="$PROJECT_DIR$/connector/static/description/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/LogicSupply_Orange_260x80_transparent.png" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/LogicSupply_Orange_260x80_transparent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/akretion_logo.png" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/akretion_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/c2c_square_baseline_192.jpg" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/c2c_square_baseline_192.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/logo-debonix.jpg" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/logo-debonix.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/sync-workflow.png" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/_static/img/sync-workflow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/core" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/core" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/images/invoice_binding.png" afterPath="$PROJECT_DIR$/magentoerpconnect/images/invoice_binding.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/images/jobs.png" afterPath="$PROJECT_DIR$/magentoerpconnect/images/jobs.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/images/magento-hover.png" afterPath="$PROJECT_DIR$/magentoerpconnect/images/magento-hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/images/magento.png" afterPath="$PROJECT_DIR$/magentoerpconnect/images/magento.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/images/magento_backend.png" afterPath="$PROJECT_DIR$/magentoerpconnect/images/magento_backend.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/images/magentoerpconnect.png" afterPath="$PROJECT_DIR$/magentoerpconnect/images/magentoerpconnect.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/images/product_binding.png" afterPath="$PROJECT_DIR$/magentoerpconnect/images/product_binding.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/static/src/img/icon.png" afterPath="$PROJECT_DIR$/magentoerpconnect/static/src/img/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/report/partner_ledger.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_base/report/partner_ledger.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/report/box_detailed_form.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_box/report/box_detailed_form.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/report/box_form.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_box/report/box_form.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/report/box_label.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_box/report/box_label.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/Packinglist.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/Packinglist.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/picking_packing_list.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/picking_packing_list.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/product_label_form.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/product_label_form.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/shipping.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/shipping.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/stock_move_form.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/stock_move_form.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_detailed_form.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_detailed_form.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_form.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_form.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_label.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_label.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/stock_move_form.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/stock_move_form.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/stock_move_form.sxw.THIS" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/stock_move_form.sxw.THIS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/report/pick_order.sxw" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/report/pick_order.sxw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_m2mcategories/static/description/icon.png" afterPath="$PROJECT_DIR$/product_m2mcategories/static/description/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/static/description/icon.png" afterPath="$PROJECT_DIR$/sale_automatic_workflow/static/description/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/static/description/icon.png" afterPath="$PROJECT_DIR$/sale_exceptions/static/description/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/static/description/icon.png" afterPath="$PROJECT_DIR$/sale_payment_method/static/description/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/static/description/icon.png" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/static/description/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/description/Banner.png" afterPath="$PROJECT_DIR$/sale_shop/static/description/Banner.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/description/icon-features.png" afterPath="$PROJECT_DIR$/sale_shop/static/description/icon-features.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/description/icon-help.png" afterPath="$PROJECT_DIR$/sale_shop/static/description/icon-help.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/description/icon-support.png" afterPath="$PROJECT_DIR$/sale_shop/static/description/icon-support.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/description/icon.png" afterPath="$PROJECT_DIR$/sale_shop/static/description/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/src/img/icon-features.png" afterPath="$PROJECT_DIR$/sale_shop/static/src/img/icon-features.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/src/img/icon-help.png" afterPath="$PROJECT_DIR$/sale_shop/static/src/img/icon-help.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/src/img/icon-support.png" afterPath="$PROJECT_DIR$/sale_shop/static/src/img/icon-support.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/src/img/icon.png" afterPath="$PROJECT_DIR$/sale_shop/static/src/img/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/static/description/icon.png" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/static/description/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/winnem_addons.iml" afterPath="$PROJECT_DIR$/.idea/winnem_addons.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/README.rst" afterPath="$PROJECT_DIR$/base_report_to_printer/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/__init__.py" afterPath="$PROJECT_DIR$/base_report_to_printer/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/__openerp__.py" afterPath="$PROJECT_DIR$/base_report_to_printer/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/base_report_to_printer.xml" afterPath="$PROJECT_DIR$/base_report_to_printer/base_report_to_printer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/am.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/am.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/ar.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/ar.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/base_report_to_printer.pot" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/base_report_to_printer.pot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/bg.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/bg.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/bs.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/bs.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/ca.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/ca.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/ca_ES.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/ca_ES.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/cs.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/cs.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/da.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/da.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/de.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/de.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/el_GR.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/el_GR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/en_GB.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/en_GB.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_AR.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_AR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_CL.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_CL.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_CO.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_CO.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_CR.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_CR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_DO.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_DO.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_EC.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_EC.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_ES.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_ES.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_MX.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_MX.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_PE.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_PE.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_PY.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_PY.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/es_VE.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/es_VE.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/et.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/et.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/eu.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/eu.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/fa.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/fa.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/fi.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/fi.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/fr.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/fr_CA.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/fr_CA.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/fr_CH.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/fr_CH.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/gl.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/gl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/gl_ES.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/gl_ES.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/he.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/he.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/hr.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/hr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/hr_HR.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/hr_HR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/hu.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/hu.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/id.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/id.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/it.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/it.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/ja.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/ja.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/ko.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/ko.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/lt.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/lt.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/lv.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/lv.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/mk.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/mk.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/mn.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/mn.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/nb.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/nb.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/nl.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/nl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/nl_BE.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/nl_BE.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/pl.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/pl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/pt.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/pt.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/pt_BR.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/pt_BR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/pt_PT.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/pt_PT.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/ro.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/ro.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/ru.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/ru.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/sk.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/sk.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/sl.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/sl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/sr.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/sr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/sr@latin.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/sr@latin.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/sv.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/sv.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/th.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/th.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/tr.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/tr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/uk.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/uk.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/vi.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/vi.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/zh_CN.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/zh_CN.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/i18n/zh_TW.po" afterPath="$PROJECT_DIR$/base_report_to_printer/i18n/zh_TW.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/ir_report.py" afterPath="$PROJECT_DIR$/base_report_to_printer/ir_report.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/printing.py" afterPath="$PROJECT_DIR$/base_report_to_printer/printing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/printing_data.xml" afterPath="$PROJECT_DIR$/base_report_to_printer/printing_data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/printing_view.xml" afterPath="$PROJECT_DIR$/base_report_to_printer/printing_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/report.py" afterPath="$PROJECT_DIR$/base_report_to_printer/report.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/report_service.py" afterPath="$PROJECT_DIR$/base_report_to_printer/report_service.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/report_xml_action.py" afterPath="$PROJECT_DIR$/base_report_to_printer/report_xml_action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/security/security.xml" afterPath="$PROJECT_DIR$/base_report_to_printer/security/security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/static/src/js/qwebactionmanager.js" afterPath="$PROJECT_DIR$/base_report_to_printer/static/src/js/qwebactionmanager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/users.py" afterPath="$PROJECT_DIR$/base_report_to_printer/users.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/wizard/__init__.py" afterPath="$PROJECT_DIR$/base_report_to_printer/wizard/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/wizard/update_printers.py" afterPath="$PROJECT_DIR$/base_report_to_printer/wizard/update_printers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_report_to_printer/wizard/update_printers.xml" afterPath="$PROJECT_DIR$/base_report_to_printer/wizard/update_printers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/AUTHORS" afterPath="$PROJECT_DIR$/connector/AUTHORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/CHANGES.rst" afterPath="$PROJECT_DIR$/connector/CHANGES.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/README.rst" afterPath="$PROJECT_DIR$/connector/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/__init__.py" afterPath="$PROJECT_DIR$/connector/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/__openerp__.py" afterPath="$PROJECT_DIR$/connector/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/backend.py" afterPath="$PROJECT_DIR$/connector/backend.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/backend_model.py" afterPath="$PROJECT_DIR$/connector/backend_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/checkpoint/__init__.py" afterPath="$PROJECT_DIR$/connector/checkpoint/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/checkpoint/checkpoint.py" afterPath="$PROJECT_DIR$/connector/checkpoint/checkpoint.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/checkpoint/checkpoint_view.xml" afterPath="$PROJECT_DIR$/connector/checkpoint/checkpoint_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/connector.py" afterPath="$PROJECT_DIR$/connector/connector.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/connector_menu.xml" afterPath="$PROJECT_DIR$/connector/connector_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/controllers/__init__.py" afterPath="$PROJECT_DIR$/connector/controllers/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/controllers/main.py" afterPath="$PROJECT_DIR$/connector/controllers/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/deprecate.py" afterPath="$PROJECT_DIR$/connector/deprecate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/Makefile" afterPath="$PROJECT_DIR$/connector/doc/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_static/connector_style.css" afterPath="$PROJECT_DIR$/connector/doc/_static/connector_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_templates/layout.html" afterPath="$PROJECT_DIR$/connector/doc/_templates/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_templates/navbar.html" afterPath="$PROJECT_DIR$/connector/doc/_templates/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/_themes/.gitignore" afterPath="$PROJECT_DIR$/connector/doc/_themes/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_backend.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_backend.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_backend_adapter.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_backend_adapter.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_binder.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_binder.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_channels.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_channels.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_connector.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_connector.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_event.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_event.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_exception.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_exception.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_mapper.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_mapper.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_queue.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_queue.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_runner.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_runner.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_session.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_session.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/api/api_synchronizer.rst" afterPath="$PROJECT_DIR$/connector/doc/api/api_synchronizer.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/bazaar" afterPath="$PROJECT_DIR$/connector/doc/bazaar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/conf.py" afterPath="$PROJECT_DIR$/connector/doc/conf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/guides/bootstrap_connector.rst" afterPath="$PROJECT_DIR$/connector/doc/guides/bootstrap_connector.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/guides/code_overview.rst" afterPath="$PROJECT_DIR$/connector/doc/guides/code_overview.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/guides/concepts.rst" afterPath="$PROJECT_DIR$/connector/doc/guides/concepts.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/guides/jobrunner.rst" afterPath="$PROJECT_DIR$/connector/doc/guides/jobrunner.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/guides/multiprocessing.rst" afterPath="$PROJECT_DIR$/connector/doc/guides/multiprocessing.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/index.rst" afterPath="$PROJECT_DIR$/connector/doc/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/locale/fr/LC_MESSAGES/api.po" afterPath="$PROJECT_DIR$/connector/doc/locale/fr/LC_MESSAGES/api.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/locale/fr/LC_MESSAGES/guides.po" afterPath="$PROJECT_DIR$/connector/doc/locale/fr/LC_MESSAGES/guides.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/locale/fr/LC_MESSAGES/index.po" afterPath="$PROJECT_DIR$/connector/doc/locale/fr/LC_MESSAGES/index.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/locale/fr/LC_MESSAGES/project.po" afterPath="$PROJECT_DIR$/connector/doc/locale/fr/LC_MESSAGES/project.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/make.bat" afterPath="$PROJECT_DIR$/connector/doc/make.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/project/changes.rst" afterPath="$PROJECT_DIR$/connector/doc/project/changes.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/project/contribute.rst" afterPath="$PROJECT_DIR$/connector/doc/project/contribute.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/project/contributors.rst" afterPath="$PROJECT_DIR$/connector/doc/project/contributors.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/project/license.rst" afterPath="$PROJECT_DIR$/connector/doc/project/license.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/doc/project/roadmap.rst" afterPath="$PROJECT_DIR$/connector/doc/project/roadmap.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/event.py" afterPath="$PROJECT_DIR$/connector/event.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/exception.py" afterPath="$PROJECT_DIR$/connector/exception.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/ca.po" afterPath="$PROJECT_DIR$/connector/i18n/ca.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/connector.pot" afterPath="$PROJECT_DIR$/connector/i18n/connector.pot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/de.po" afterPath="$PROJECT_DIR$/connector/i18n/de.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/en.po" afterPath="$PROJECT_DIR$/connector/i18n/en.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/es.po" afterPath="$PROJECT_DIR$/connector/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/es_MX.po" afterPath="$PROJECT_DIR$/connector/i18n/es_MX.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/fr.po" afterPath="$PROJECT_DIR$/connector/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/hr.po" afterPath="$PROJECT_DIR$/connector/i18n/hr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/hu.po" afterPath="$PROJECT_DIR$/connector/i18n/hu.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/it.po" afterPath="$PROJECT_DIR$/connector/i18n/it.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/nl.po" afterPath="$PROJECT_DIR$/connector/i18n/nl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/pt_BR.po" afterPath="$PROJECT_DIR$/connector/i18n/pt_BR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/ro.po" afterPath="$PROJECT_DIR$/connector/i18n/ro.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/sl.po" afterPath="$PROJECT_DIR$/connector/i18n/sl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/i18n/zh_CN.po" afterPath="$PROJECT_DIR$/connector/i18n/zh_CN.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/jobrunner/__init__.py" afterPath="$PROJECT_DIR$/connector/jobrunner/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/jobrunner/channels.py" afterPath="$PROJECT_DIR$/connector/jobrunner/channels.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/jobrunner/runner.py" afterPath="$PROJECT_DIR$/connector/jobrunner/runner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/migrations/2.2.0/pre-migration.py" afterPath="$PROJECT_DIR$/connector/migrations/2.2.0/pre-migration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/producer.py" afterPath="$PROJECT_DIR$/connector/producer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/queue/__init__.py" afterPath="$PROJECT_DIR$/connector/queue/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/queue/job.py" afterPath="$PROJECT_DIR$/connector/queue/job.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/queue/model.py" afterPath="$PROJECT_DIR$/connector/queue/model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/queue/model_view.xml" afterPath="$PROJECT_DIR$/connector/queue/model_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/queue/queue.py" afterPath="$PROJECT_DIR$/connector/queue/queue.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/queue/queue_data.xml" afterPath="$PROJECT_DIR$/connector/queue/queue_data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/queue/worker.py" afterPath="$PROJECT_DIR$/connector/queue/worker.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/related_action.py" afterPath="$PROJECT_DIR$/connector/related_action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/res_partner_view.xml" afterPath="$PROJECT_DIR$/connector/res_partner_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/security/connector_security.xml" afterPath="$PROJECT_DIR$/connector/security/connector_security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/connector/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/session.py" afterPath="$PROJECT_DIR$/connector/session.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/setting.py" afterPath="$PROJECT_DIR$/connector/setting.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/setting_view.xml" afterPath="$PROJECT_DIR$/connector/setting_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/__init__.py" afterPath="$PROJECT_DIR$/connector/tests/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/common.py" afterPath="$PROJECT_DIR$/connector/tests/common.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_backend.py" afterPath="$PROJECT_DIR$/connector/tests/test_backend.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_connector.py" afterPath="$PROJECT_DIR$/connector/tests/test_connector.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_default_binder.py" afterPath="$PROJECT_DIR$/connector/tests/test_default_binder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_event.py" afterPath="$PROJECT_DIR$/connector/tests/test_event.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_job.py" afterPath="$PROJECT_DIR$/connector/tests/test_job.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_mapper.py" afterPath="$PROJECT_DIR$/connector/tests/test_mapper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_producer.py" afterPath="$PROJECT_DIR$/connector/tests/test_producer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_queue.py" afterPath="$PROJECT_DIR$/connector/tests/test_queue.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_related_action.py" afterPath="$PROJECT_DIR$/connector/tests/test_related_action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_runner_channels.py" afterPath="$PROJECT_DIR$/connector/tests/test_runner_channels.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_runner_runner.py" afterPath="$PROJECT_DIR$/connector/tests/test_runner_runner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_session.py" afterPath="$PROJECT_DIR$/connector/tests/test_session.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/tests/test_worker.py" afterPath="$PROJECT_DIR$/connector/tests/test_worker.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/unit/__init__.py" afterPath="$PROJECT_DIR$/connector/unit/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/unit/backend_adapter.py" afterPath="$PROJECT_DIR$/connector/unit/backend_adapter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/unit/mapper.py" afterPath="$PROJECT_DIR$/connector/unit/mapper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector/unit/synchronizer.py" afterPath="$PROJECT_DIR$/connector/unit/synchronizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/__init__.py" afterPath="$PROJECT_DIR$/connector_base_product/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/__openerp__.py" afterPath="$PROJECT_DIR$/connector_base_product/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/ca.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/ca.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/de.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/de.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/en.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/en.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/es.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/fr.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/hu.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/hu.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/it.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/it.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/nl.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/nl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/pt_BR.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/pt_BR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/sl.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/sl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/i18n/zh_CN.po" afterPath="$PROJECT_DIR$/connector_base_product/i18n/zh_CN.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_base_product/product_view.xml" afterPath="$PROJECT_DIR$/connector_base_product/product_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/README.rst" afterPath="$PROJECT_DIR$/connector_ecommerce/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/__init__.py" afterPath="$PROJECT_DIR$/connector_ecommerce/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/__openerp__.py" afterPath="$PROJECT_DIR$/connector_ecommerce/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/account.py" afterPath="$PROJECT_DIR$/connector_ecommerce/account.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/account_view.xml" afterPath="$PROJECT_DIR$/connector_ecommerce/account_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/ecommerce_data.xml" afterPath="$PROJECT_DIR$/connector_ecommerce/ecommerce_data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/event.py" afterPath="$PROJECT_DIR$/connector_ecommerce/event.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/i18n/connector_ecommerce.pot" afterPath="$PROJECT_DIR$/connector_ecommerce/i18n/connector_ecommerce.pot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/i18n/de.po" afterPath="$PROJECT_DIR$/connector_ecommerce/i18n/de.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/i18n/es.po" afterPath="$PROJECT_DIR$/connector_ecommerce/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/i18n/fr.po" afterPath="$PROJECT_DIR$/connector_ecommerce/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/i18n/nl.po" afterPath="$PROJECT_DIR$/connector_ecommerce/i18n/nl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/invoice.py" afterPath="$PROJECT_DIR$/connector_ecommerce/invoice.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/invoice_view.xml" afterPath="$PROJECT_DIR$/connector_ecommerce/invoice_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/payment_method.py" afterPath="$PROJECT_DIR$/connector_ecommerce/payment_method.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/payment_method_view.xml" afterPath="$PROJECT_DIR$/connector_ecommerce/payment_method_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/product.py" afterPath="$PROJECT_DIR$/connector_ecommerce/product.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/sale.py" afterPath="$PROJECT_DIR$/connector_ecommerce/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/sale_view.xml" afterPath="$PROJECT_DIR$/connector_ecommerce/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/security/security.xml" afterPath="$PROJECT_DIR$/connector_ecommerce/security/security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/stock.py" afterPath="$PROJECT_DIR$/connector_ecommerce/stock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/stock_view.xml" afterPath="$PROJECT_DIR$/connector_ecommerce/stock_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/tests/__init__.py" afterPath="$PROJECT_DIR$/connector_ecommerce/tests/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/tests/test_invoice_event.py" afterPath="$PROJECT_DIR$/connector_ecommerce/tests/test_invoice_event.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/tests/test_onchange.py" afterPath="$PROJECT_DIR$/connector_ecommerce/tests/test_onchange.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/tests/test_picking_event.py" afterPath="$PROJECT_DIR$/connector_ecommerce/tests/test_picking_event.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/unit/__init__.py" afterPath="$PROJECT_DIR$/connector_ecommerce/unit/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/unit/sale_order_onchange.py" afterPath="$PROJECT_DIR$/connector_ecommerce/unit/sale_order_onchange.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/wizard/__init__.py" afterPath="$PROJECT_DIR$/connector_ecommerce/wizard/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/wizard/sale_ignore_cancel.py" afterPath="$PROJECT_DIR$/connector_ecommerce/wizard/sale_ignore_cancel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector_ecommerce/wizard/sale_ignore_cancel_view.xml" afterPath="$PROJECT_DIR$/connector_ecommerce/wizard/sale_ignore_cancel_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/AUTHORS" afterPath="$PROJECT_DIR$/magentoerpconnect/AUTHORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/CHANGES.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/CHANGES.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/README.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/__init__.py" afterPath="$PROJECT_DIR$/magentoerpconnect/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/__openerp__.py" afterPath="$PROJECT_DIR$/magentoerpconnect/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/backend.py" afterPath="$PROJECT_DIR$/magentoerpconnect/backend.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/connector.py" afterPath="$PROJECT_DIR$/magentoerpconnect/connector.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/consumer.py" afterPath="$PROJECT_DIR$/magentoerpconnect/consumer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/delivery.py" afterPath="$PROJECT_DIR$/magentoerpconnect/delivery.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/delivery_view.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/delivery_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/Makefile" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/_templates/layout.html" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/_templates/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/_themes/.gitignore" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/_themes/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_backend.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_backend.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_backend_adapter.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_backend_adapter.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_binder.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_binder.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_connector.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_connector.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_consumer.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_consumer.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_delivery.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_delivery.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_exception.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_exception.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_invoice.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_invoice.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_magento_model.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_magento_model.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_partner.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_partner.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_partner_category.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_partner_category.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_product.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_product.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_product_category.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_product_category.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_sale.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_sale.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_stock_picking.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_stock_picking.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_stock_tracking.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_stock_tracking.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_synchronizer.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/api/api_synchronizer.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/conf.py" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/conf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/guides/connector_checkpoint.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/guides/connector_checkpoint.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/guides/installation_guide.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/guides/installation_guide.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/guides/key_questions.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/guides/key_questions.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/guides/monitor_resolve_jobs.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/guides/monitor_resolve_jobs.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/guides/tutorial_customize.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/guides/tutorial_customize.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/guides/tutorial_development.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/guides/tutorial_development.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_automatic_workflows.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_automatic_workflows.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_emails.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_emails.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_exception_rules.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_exception_rules.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_payment_methods.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_payment_methods.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_pricing.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_pricing.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_schedulers.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_schedulers.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_shipping_methods.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_shipping_methods.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_taxes.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_taxes.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_translations.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_translations.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_warehouse.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/configure_warehouse.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/faq.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/faq.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/howto/modify_an_order.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/howto/modify_an_order.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/index.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/make.bat" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/make.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/project/changes.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/project/changes.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/project/contribute.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/project/contribute.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/project/contributors.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/project/contributors.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/doc/project/roadmap.rst" afterPath="$PROJECT_DIR$/magentoerpconnect/doc/project/roadmap.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/exception.py" afterPath="$PROJECT_DIR$/magentoerpconnect/exception.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/am.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/am.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/ar.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/ar.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/bg.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/bg.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/bs.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/bs.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/ca.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/ca.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/cs.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/cs.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/da.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/da.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/de.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/de.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/el_GR.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/el_GR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/en_GB.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/en_GB.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_AR.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_AR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_CL.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_CL.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_CO.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_CO.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_CR.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_CR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_DO.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_DO.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_EC.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_EC.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_ES.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_ES.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_MX.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_MX.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_PE.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_PE.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_PY.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_PY.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/es_VE.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/es_VE.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/et.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/et.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/fa.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/fa.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/fi.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/fi.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/fr.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/fr_CA.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/fr_CA.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/fr_CH.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/fr_CH.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/fr_FR.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/fr_FR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/gl.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/gl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/gl_ES.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/gl_ES.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/he.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/he.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/hr.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/hr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/hr_HR.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/hr_HR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/hu.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/hu.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/id.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/id.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/it.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/it.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/ja.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/ja.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/ko.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/ko.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/lt.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/lt.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/lv.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/lv.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/magentoerpconnect.pot" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/magentoerpconnect.pot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/mk.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/mk.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/mn.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/mn.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/nb.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/nb.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/nl.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/nl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/nl_BE.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/nl_BE.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/nl_NL.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/nl_NL.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/pl.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/pl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/pt.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/pt.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/pt_BR.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/pt_BR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/pt_PT.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/pt_PT.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/ru.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/ru.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/sk.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/sk.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/sl.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/sl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/sr@latin.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/sr@latin.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/sv.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/sv.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/th.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/th.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/tr.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/tr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/uk.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/uk.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/vi.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/vi.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/zh_CN.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/zh_CN.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/i18n/zh_TW.po" afterPath="$PROJECT_DIR$/magentoerpconnect/i18n/zh_TW.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/invoice.py" afterPath="$PROJECT_DIR$/magentoerpconnect/invoice.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/invoice_view.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/invoice_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/magento_model.py" afterPath="$PROJECT_DIR$/magentoerpconnect/magento_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/magento_model_view.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/magento_model_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/magentoerpconnect_data.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/magentoerpconnect_data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/magentoerpconnect_menu.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/magentoerpconnect_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/migrations/7.0.2.5.0/post-migration.py" afterPath="$PROJECT_DIR$/magentoerpconnect/migrations/7.0.2.5.0/post-migration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/migrations/8.0.3.0.0/pre-migration.py" afterPath="$PROJECT_DIR$/magentoerpconnect/migrations/8.0.3.0.0/pre-migration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/partner.py" afterPath="$PROJECT_DIR$/magentoerpconnect/partner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/partner_category.py" afterPath="$PROJECT_DIR$/magentoerpconnect/partner_category.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/partner_view.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/partner_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/payment_method.py" afterPath="$PROJECT_DIR$/magentoerpconnect/payment_method.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/payment_method_view.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/payment_method_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/product.py" afterPath="$PROJECT_DIR$/magentoerpconnect/product.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/product_category.py" afterPath="$PROJECT_DIR$/magentoerpconnect/product_category.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/product_view.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/product_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/related_action.py" afterPath="$PROJECT_DIR$/magentoerpconnect/related_action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/sale.py" afterPath="$PROJECT_DIR$/magentoerpconnect/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/sale_view.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/magentoerpconnect/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/setting.py" afterPath="$PROJECT_DIR$/magentoerpconnect/setting.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/setting_view.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/setting_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/stock_picking.py" afterPath="$PROJECT_DIR$/magentoerpconnect/stock_picking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/stock_tracking.py" afterPath="$PROJECT_DIR$/magentoerpconnect/stock_tracking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/stock_view.xml" afterPath="$PROJECT_DIR$/magentoerpconnect/stock_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/__init__.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/common.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/common.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/data_address_book.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/data_address_book.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/data_base.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/data_base.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/data_guest_order.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/data_guest_order.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/data_product.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/data_product.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/test_address_book.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/test_address_book.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/test_export_invoice.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/test_export_invoice.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/test_export_picking.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/test_export_picking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/test_import_partner_category.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/test_import_partner_category.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/test_import_product_image.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/test_import_product_image.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/test_related_action.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/test_related_action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/test_sale_order.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/test_sale_order.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/test_synchronization.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/test_synchronization.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/tests/test_update_product_stock.py" afterPath="$PROJECT_DIR$/magentoerpconnect/tests/test_update_product_stock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/unit/__init__.py" afterPath="$PROJECT_DIR$/magentoerpconnect/unit/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/unit/backend_adapter.py" afterPath="$PROJECT_DIR$/magentoerpconnect/unit/backend_adapter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/unit/binder.py" afterPath="$PROJECT_DIR$/magentoerpconnect/unit/binder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/unit/delete_synchronizer.py" afterPath="$PROJECT_DIR$/magentoerpconnect/unit/delete_synchronizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/unit/export_synchronizer.py" afterPath="$PROJECT_DIR$/magentoerpconnect/unit/export_synchronizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/unit/import_synchronizer.py" afterPath="$PROJECT_DIR$/magentoerpconnect/unit/import_synchronizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magentoerpconnect/unit/mapper.py" afterPath="$PROJECT_DIR$/magentoerpconnect/unit/mapper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_account_extension/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_account_extension/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_account_extension/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_account_extension/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_account_extension/account.py" afterPath="$PROJECT_DIR$/numa_uniqs_account_extension/account.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_account_extension/i18n/es.po" afterPath="$PROJECT_DIR$/numa_uniqs_account_extension/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/afip.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/afip.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/afip_data.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/afip_data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/afip_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/afip_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/country.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/country.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/document_type.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/document_type.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/i18n/es.po" afterPath="$PROJECT_DIR$/numa_uniqs_base/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/invoice.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/invoice.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/invoice_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/invoice_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/invoice_workflow.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/invoice_workflow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/numa_ar_base.rg830_rate.csv" afterPath="$PROJECT_DIR$/numa_uniqs_base/numa_ar_base.rg830_rate.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/numa_ar_base.rg830_table.csv" afterPath="$PROJECT_DIR$/numa_uniqs_base/numa_ar_base.rg830_table.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/partner.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/partner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/partner_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/partner_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/payment_terms.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/payment_terms.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/product.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/product.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/report/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/report/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/report/common_report_header.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/report/common_report_header.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/report/partner_ledger.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/report/partner_ledger.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/report/partner_ledger.rml" afterPath="$PROJECT_DIR$/numa_uniqs_base/report/partner_ledger.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/report/partner_ledger.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/report/partner_ledger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/res.country.state.csv" afterPath="$PROJECT_DIR$/numa_uniqs_base/res.country.state.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/res.currency.csv" afterPath="$PROJECT_DIR$/numa_uniqs_base/res.currency.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/res.partner.title.csv" afterPath="$PROJECT_DIR$/numa_uniqs_base/res.partner.title.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/res_bank.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/res_bank.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/res_bank_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/res_bank_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/responsability.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/responsability.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/responsability_relation.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/responsability_relation.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/sale.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/sale_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/security/ar_base_security.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/security/ar_base_security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/numa_uniqs_base/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/stock.py" afterPath="$PROJECT_DIR$/numa_uniqs_base/stock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base/stock_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base/stock_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/partner_ledger_report_extension.xml" afterPath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/partner_ledger_report_extension.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/partner_ledger_wizard_extension.py" afterPath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/partner_ledger_wizard_extension.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/report/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/report/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/report/common_report_header.py" afterPath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/report/common_report_header.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/report/partner_ledger_con_columna_vencimiento.rml" afterPath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/report/partner_ledger_con_columna_vencimiento.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/report/partner_ledger_report_fecha_vencimiento.py" afterPath="$PROJECT_DIR$/numa_uniqs_base_ext_report_ledger/report/partner_ledger_report_fecha_vencimiento.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_box/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_box/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/box.py" afterPath="$PROJECT_DIR$/numa_uniqs_box/box.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/box_report.xml" afterPath="$PROJECT_DIR$/numa_uniqs_box/box_report.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/box_sequences.xml" afterPath="$PROJECT_DIR$/numa_uniqs_box/box_sequences.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/box_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_box/box_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/i18n/es_AR.po" afterPath="$PROJECT_DIR$/numa_uniqs_box/i18n/es_AR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/report/.~lock.box_detailed_form.sxw#" afterPath="$PROJECT_DIR$/numa_uniqs_box/report/.~lock.box_detailed_form.sxw#" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/report/.~lock.box_form.sxw#" afterPath="$PROJECT_DIR$/numa_uniqs_box/report/.~lock.box_form.sxw#" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/report/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_box/report/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/report/box.py" afterPath="$PROJECT_DIR$/numa_uniqs_box/report/box.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/report/box_detailed_form.rml" afterPath="$PROJECT_DIR$/numa_uniqs_box/report/box_detailed_form.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/report/box_form.rml" afterPath="$PROJECT_DIR$/numa_uniqs_box/report/box_form.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/sale.py" afterPath="$PROJECT_DIR$/numa_uniqs_box/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/sale_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_box/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/security/box_security.xml" afterPath="$PROJECT_DIR$/numa_uniqs_box/security/box_security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/numa_uniqs_box/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/stock.py" afterPath="$PROJECT_DIR$/numa_uniqs_box/stock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_box/stock_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_box/stock_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_commission/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_commission/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_commission/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_commission/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_commission/commission.py" afterPath="$PROJECT_DIR$/numa_uniqs_commission/commission.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_commission/commission_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_commission/commission_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_commission/i18n/es.po" afterPath="$PROJECT_DIR$/numa_uniqs_commission/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_commission/security/base_security.xml" afterPath="$PROJECT_DIR$/numa_uniqs_commission/security/base_security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_commission/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/numa_uniqs_commission/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/i18n/es_AR.po" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/i18n/es_AR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/invoice.py" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/invoice.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/invoice.py" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/invoice.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/invoice_form.rml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/invoice_form.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/invoice_form.xml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/invoice_form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/picking_packing_list.py" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/picking_packing_list.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/picking_packing_list.rml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/picking_packing_list.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/picking_packing_list.xml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/picking_packing_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/product.py" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/product.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/product.xml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/product.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/product_label_form.rml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/product_label_form.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/shipping.py" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/shipping.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/shipping.rml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/shipping.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/shipping.xml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/shipping.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/stock_move.py" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/stock_move.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/stock_move_form.rml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/stock_move_form.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_impresos/report/stock_move_form.xml" afterPath="$PROJECT_DIR$/numa_uniqs_impresos/report/stock_move_form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/account.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/account.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/box.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/box.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/box_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/box_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/external.mappinglines.template.csv" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/external.mappinglines.template.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/i18n/es_AR.po" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/i18n/es_AR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/partner.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/partner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/partner_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/partner_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report.xml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/box.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/box.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_detailed_form.rml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_detailed_form.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_form.rml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_form.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_label.rml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/box_label.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/stock_move.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/stock_move.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/report/stock_move_form.rml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/report/stock_move_form.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/sale.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/sale_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/security/security.xml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/security/security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/stock.py" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/stock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_lideres/stock_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_lideres/stock_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_magento/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_magento/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_magento/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_magento/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_magento/external.mappinglines.template.csv" afterPath="$PROJECT_DIR$/numa_uniqs_magento/external.mappinglines.template.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_magento/i18n/es_AR.po" afterPath="$PROJECT_DIR$/numa_uniqs_magento/i18n/es_AR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_magento/res.py" afterPath="$PROJECT_DIR$/numa_uniqs_magento/res.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_magento/res_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_magento/res_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_magento/sale.py" afterPath="$PROJECT_DIR$/numa_uniqs_magento/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_magento/sale_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_magento/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/i18n/es_AR.po" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/i18n/es_AR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/pick_order.py" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/pick_order.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/pick_order_report.xml" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/pick_order_report.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/pick_order_sequences.xml" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/pick_order_sequences.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/pick_order_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/pick_order_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/report/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/report/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/report/pick_order.py" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/report/pick_order.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/report/pick_order.rml" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/report/pick_order.rml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/security/security.xml" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/security/security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/stock.py" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/stock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_pick_order/stock_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_pick_order/stock_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/__openerp__.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/i18n/es_AR.po" afterPath="$PROJECT_DIR$/numa_uniqs_picking/i18n/es_AR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/stock.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/stock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/stock_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/stock_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/__init__.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/__init__.py.ori" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/__init__.py.ori" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/cancel_all_invoices.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/cancel_all_invoices.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/cancel_all_invoices_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/cancel_all_invoices_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/cancel_delivery_orders.patch" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/cancel_delivery_orders.patch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_change_product_qty.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_change_product_qty.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_change_product_qty_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_change_product_qty_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_change_standard_price.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_change_standard_price.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_change_standard_price_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_change_standard_price_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_fill_inventory.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_fill_inventory.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_fill_inventory_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_fill_inventory_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_inventory_line_split.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_inventory_line_split.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_inventory_line_split_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_inventory_line_split_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_inventory_merge.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_inventory_merge.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_inventory_merge_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_inventory_merge_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_invoice_onshipping.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_invoice_onshipping.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_invoice_onshipping_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_invoice_onshipping_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_location_product.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_location_product.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_location_product_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_location_product_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_move.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_move.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_move_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_move_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_move.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_move.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_move_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_move_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py.26.6.2012" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py.26.6.2012" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py.270913" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py.270913" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py.backup" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py.backup" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py.ori" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking.py.ori" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_partial_picking_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_replacement.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_replacement.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_replacement_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_replacement_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_return_picking.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_return_picking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_return_picking_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_return_picking_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_split_move.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_split_move.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_split_move_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_split_move_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_splitinto.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_splitinto.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_splitinto_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_splitinto_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_traceability.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_traceability.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_ups.py" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_ups.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_ups_view.xml" afterPath="$PROJECT_DIR$/numa_uniqs_picking/wizard/stock_ups_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/__init__.py" afterPath="$PROJECT_DIR$/numa_wineem_temporada/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/__openerp__.py" afterPath="$PROJECT_DIR$/numa_wineem_temporada/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/__openerp__.py.save" afterPath="$PROJECT_DIR$/numa_wineem_temporada/__openerp__.py.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/i18n/es.po" afterPath="$PROJECT_DIR$/numa_wineem_temporada/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/partner.py" afterPath="$PROJECT_DIR$/numa_wineem_temporada/partner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/partner_view.xml" afterPath="$PROJECT_DIR$/numa_wineem_temporada/partner_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/product.py" afterPath="$PROJECT_DIR$/numa_wineem_temporada/product.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/product_view.xml" afterPath="$PROJECT_DIR$/numa_wineem_temporada/product_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/sale.py" afterPath="$PROJECT_DIR$/numa_wineem_temporada/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/sale_view.xml" afterPath="$PROJECT_DIR$/numa_wineem_temporada/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/numa_wineem_temporada/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/security/security.xml" afterPath="$PROJECT_DIR$/numa_wineem_temporada/security/security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/stock.py" afterPath="$PROJECT_DIR$/numa_wineem_temporada/stock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numa_wineem_temporada/stock_view.xml" afterPath="$PROJECT_DIR$/numa_wineem_temporada/stock_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_m2mcategories/__init__.py" afterPath="$PROJECT_DIR$/product_m2mcategories/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_m2mcategories/__openerp__.py" afterPath="$PROJECT_DIR$/product_m2mcategories/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_m2mcategories/i18n/ca.po" afterPath="$PROJECT_DIR$/product_m2mcategories/i18n/ca.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_m2mcategories/i18n/es.po" afterPath="$PROJECT_DIR$/product_m2mcategories/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_m2mcategories/i18n/sl.po" afterPath="$PROJECT_DIR$/product_m2mcategories/i18n/sl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_m2mcategories/models/__init__.py" afterPath="$PROJECT_DIR$/product_m2mcategories/models/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_m2mcategories/models/product.py" afterPath="$PROJECT_DIR$/product_m2mcategories/models/product.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_m2mcategories/views/product_view.xml" afterPath="$PROJECT_DIR$/product_m2mcategories/views/product_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/README.rst" afterPath="$PROJECT_DIR$/sale_automatic_workflow/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/__init__.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/__openerp__.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/automatic_workflow_data.xml" afterPath="$PROJECT_DIR$/sale_automatic_workflow/automatic_workflow_data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/automatic_workflow_job.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/automatic_workflow_job.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/i18n/es.po" afterPath="$PROJECT_DIR$/sale_automatic_workflow/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/i18n/fr.po" afterPath="$PROJECT_DIR$/sale_automatic_workflow/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/i18n/sale_automatic_workflow.pot" afterPath="$PROJECT_DIR$/sale_automatic_workflow/i18n/sale_automatic_workflow.pot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/invoice.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/invoice.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/sale.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/sale_view.xml" afterPath="$PROJECT_DIR$/sale_automatic_workflow/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/sale_workflow.xml" afterPath="$PROJECT_DIR$/sale_automatic_workflow/sale_workflow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/sale_workflow_process.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/sale_workflow_process.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/sale_workflow_process_view.xml" afterPath="$PROJECT_DIR$/sale_automatic_workflow/sale_workflow_process_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/sale_automatic_workflow/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/stock_move.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/stock_move.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/stock_picking.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/stock_picking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/tests/__init__.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/tests/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_automatic_workflow/tests/test_flow.py" afterPath="$PROJECT_DIR$/sale_automatic_workflow/tests/test_flow.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/__init__.py" afterPath="$PROJECT_DIR$/sale_exceptions/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/__openerp__.py" afterPath="$PROJECT_DIR$/sale_exceptions/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/am.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/am.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/ar.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/ar.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/bg.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/bg.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/bs.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/bs.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/ca.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/ca.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/cs.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/cs.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/da.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/da.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/de.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/de.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/el_GR.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/el_GR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/en_GB.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/en_GB.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es_AR.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es_AR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es_CO.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es_CO.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es_CR.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es_CR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es_EC.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es_EC.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es_ES.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es_ES.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es_MX.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es_MX.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es_PE.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es_PE.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es_PY.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es_PY.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/es_VE.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/es_VE.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/et.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/et.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/fa.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/fa.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/fi.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/fi.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/fr.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/fr_CH.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/fr_CH.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/gl.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/gl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/gl_ES.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/gl_ES.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/he.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/he.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/hr.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/hr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/hr_HR.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/hr_HR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/hu.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/hu.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/it.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/it.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/ja.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/ja.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/ko.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/ko.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/lt.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/lt.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/lv.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/lv.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/mk.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/mk.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/mn.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/mn.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/nb.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/nb.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/nl.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/nl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/nl_BE.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/nl_BE.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/pl.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/pl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/pt.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/pt.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/pt_BR.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/pt_BR.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/pt_PT.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/pt_PT.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/ru.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/ru.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/sale_exceptions.pot" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/sale_exceptions.pot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/sk.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/sk.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/sl.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/sl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/sr.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/sr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/sr@latin.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/sr@latin.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/sv.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/sv.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/th.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/th.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/tr.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/tr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/uk.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/uk.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/vi.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/vi.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/zh_CN.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/zh_CN.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/i18n/zh_TW.po" afterPath="$PROJECT_DIR$/sale_exceptions/i18n/zh_TW.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/sale.py" afterPath="$PROJECT_DIR$/sale_exceptions/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/sale_exceptions_data.xml" afterPath="$PROJECT_DIR$/sale_exceptions/sale_exceptions_data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/sale_view.xml" afterPath="$PROJECT_DIR$/sale_exceptions/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/sale_workflow.xml" afterPath="$PROJECT_DIR$/sale_exceptions/sale_workflow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/sale_exceptions/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/settings/sale.exception.csv" afterPath="$PROJECT_DIR$/sale_exceptions/settings/sale.exception.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/wizard/__init__.py" afterPath="$PROJECT_DIR$/sale_exceptions/wizard/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/wizard/sale_exception_confirm.py" afterPath="$PROJECT_DIR$/sale_exceptions/wizard/sale_exception_confirm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_exceptions/wizard/sale_exception_confirm_view.xml" afterPath="$PROJECT_DIR$/sale_exceptions/wizard/sale_exception_confirm_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/README.rst" afterPath="$PROJECT_DIR$/sale_payment_method/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/__init__.py" afterPath="$PROJECT_DIR$/sale_payment_method/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/__openerp__.py" afterPath="$PROJECT_DIR$/sale_payment_method/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/account_move.py" afterPath="$PROJECT_DIR$/sale_payment_method/account_move.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/i18n/es.po" afterPath="$PROJECT_DIR$/sale_payment_method/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/i18n/fr.po" afterPath="$PROJECT_DIR$/sale_payment_method/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/i18n/sale_payment_method.pot" afterPath="$PROJECT_DIR$/sale_payment_method/i18n/sale_payment_method.pot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/migrations/0.1/post-migration.py" afterPath="$PROJECT_DIR$/sale_payment_method/migrations/0.1/post-migration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/payment_method.py" afterPath="$PROJECT_DIR$/sale_payment_method/payment_method.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/payment_method_view.xml" afterPath="$PROJECT_DIR$/sale_payment_method/payment_method_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/sale.py" afterPath="$PROJECT_DIR$/sale_payment_method/sale.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/sale_view.xml" afterPath="$PROJECT_DIR$/sale_payment_method/sale_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/sale_payment_method/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method/security/rules.xml" afterPath="$PROJECT_DIR$/sale_payment_method/security/rules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/README.rst" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/__init__.py" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/__openerp__.py" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/i18n/fr.po" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/i18n/sale_payment_method_automatic_workflow.pot" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/i18n/sale_payment_method_automatic_workflow.pot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/__init__.py" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/account_invoice.py" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/account_invoice.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/automatic_workflow_job.py" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/automatic_workflow_job.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/payment_method.py" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/payment_method.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/sale_order.py" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/model/sale_order.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/view/payment_method_view.xml" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/view/payment_method_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/view/sale_order_view.xml" afterPath="$PROJECT_DIR$/sale_payment_method_automatic_workflow/view/sale_order_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/__init__.py" afterPath="$PROJECT_DIR$/sale_shop/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/__openerp__.py" afterPath="$PROJECT_DIR$/sale_shop/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/models/__init__.py" afterPath="$PROJECT_DIR$/sale_shop/models/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/models/sale_shop.py" afterPath="$PROJECT_DIR$/sale_shop/models/sale_shop.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/security/ir.model.access.csv" afterPath="$PROJECT_DIR$/sale_shop/security/ir.model.access.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/static/description/index.html" afterPath="$PROJECT_DIR$/sale_shop/static/description/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sale_shop/views/shop_view.xml" afterPath="$PROJECT_DIR$/sale_shop/views/shop_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/README.rst" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/__init__.py" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/__openerp__.py" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/__openerp__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/es.po" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/es.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/fi.po" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/fi.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/fr.po" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/fr.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/it.po" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/it.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/sl.po" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/i18n/sl.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/static/src/js/web_widget_one2many_tags.js" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/static/src/js/web_widget_one2many_tags.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/static/src/xml/web_widget_one2many_tags.xml" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/static/src/xml/web_widget_one2many_tags.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_widget_one2many_tags/views/templates.xml" afterPath="$PROJECT_DIR$/web_widget_one2many_tags/views/templates.xml" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="__openerp__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__openerp__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="res.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4068">
+              <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+              <folding>
+                <element signature="e#954#989#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sale.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3870">
+              <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sale_view.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale_view.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="res_view.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res_view.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="75" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partner_view.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/numa_uniqs_base/partner_view.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sale.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/sale.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3474">
+              <caret line="196" column="8" lean-forward="false" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partner.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/partner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1530">
+              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/product.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Magento SKU</find>
+      <find>magento_sku</find>
+      <find>_columns</find>
+      <find>temporada</find>
+      <find>tempo</find>
+      <find>scp</find>
+      <find>temp</find>
+      <find>account_obj</find>
+      <find>sale_order</find>
+      <find>numa_wineem_temporada</find>
+      <find>super(sale_order</find>
+      <find>abajo</find>
+      <find>trabajo</find>
+      <find>aba</find>
+      <find>job</find>
+      <find>view_partner_form</find>
+      <find>tree</find>
+      <find>&lt;tree</find>
+      <find>position=</find>
+      <find>position</find>
+      <find>street</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/numa_uniqs_magento</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/numa_uniqs_base</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/numa_uniqs_magento/res.py" />
+        <option value="$PROJECT_DIR$/numa_wineem_temporada/sale.py" />
+        <option value="$PROJECT_DIR$/numa_wineem_temporada/stock.py" />
+        <option value="$PROJECT_DIR$/numa_uniqs_magento/__openerp__.py" />
+        <option value="$PROJECT_DIR$/numa_uniqs_base/partner_view.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="45" />
+    <option name="y" value="24" />
+    <option name="width" value="1321" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="numa_wineem_temporada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="numa_uniqs_magento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="numa_uniqs_base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="winnem_addons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connector_ecommerce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="winnem_addons" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="winnem_addons" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="winnem_addons" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="winnem_addons" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="winnem_addons" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="winnem_addons" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="winnem_addons" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="winnem_addons" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="winnem_addons" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="winnem_addons" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6281ea81-96c3-4386-803d-b041c6210c92" name="Default" comment="" />
+      <created>1482527505108</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1482527505108</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="45" y="24" width="1321" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29960784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/__openerp__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/partner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__openerp__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magentoerpconnect/product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/external.mappinglines.template.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#954#989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/__openerp__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3582">
+          <caret line="202" column="0" lean-forward="true" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__openerp__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="100" lean-forward="false" selection-start-line="37" selection-start-column="100" selection-end-line="37" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magentoerpconnect/product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/external.mappinglines.template.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="12" />
+          <folding>
+            <element signature="e#954#989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3456">
+          <caret line="194" column="12" lean-forward="false" selection-start-line="194" selection-start-column="4" selection-end-line="194" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__openerp__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#954#989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__openerp__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#954#989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_impresos/report/product_label_form.rml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="124" column="32" lean-forward="false" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magentoerpconnect/product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/external.mappinglines.template.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/__openerp__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attractor_uniqs_group_representante/__openerp__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attractor_uniqs_group_representante/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_base/afip_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connector_ecommerce/account_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/__openerp__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4068">
+          <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding>
+            <element signature="e#954#989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3870">
+          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/sale_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_magento/res_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="75" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_uniqs_base/partner_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3474">
+          <caret line="196" column="8" lean-forward="false" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/partner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numa_wineem_temporada/product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="hg4idea.settings">
+    <option name="CHECK_INCOMING_OUTGOING" value="true" />
+    <option name="RECENT_HG_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+</project>

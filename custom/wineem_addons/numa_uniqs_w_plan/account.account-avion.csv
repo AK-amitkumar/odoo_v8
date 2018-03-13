@@ -1,0 +1,192 @@
+active,company_id,reconcile,code,id,child_consol_ids,tax_ids,currency_id,name,note,parent_id:id,currency_mode,user_type,type
+VERDADERO,Demo AVION,,0,avion_1,,,,AVION,,,current,View,view
+VERDADERO,Demo AVION,,1*,avion_2,,,,ACTIVO,,avion_1,current,View,view
+VERDADERO,Demo AVION,,11*,avion_3,,,,ACTIVO CORRIENTE,,avion_2,current,View,view
+VERDADERO,Demo AVION,,1101*,avion_4,,,,DISPONIBILIDADES,,avion_3,current,View,view
+VERDADERO,Demo AVION,,110101*,avion_5,,,,CAJA,,avion_4,current,View,view
+VERDADERO,Demo AVION,,110101001,avion_6,,,,Caja Moneda Argentina,,avion_5,current,Cash,other
+VERDADERO,Demo AVION,,110102*,avion_7,,,,BANCOS,,avion_4,current,View,view
+VERDADERO,Demo AVION,,110102001,avion_8,,,,Banco Macro Cta. Cte.,,avion_7,current,Cash,other
+VERDADERO,Demo AVION,,110102002,avion_9,,,,Banco Nacion Cta. Cte.,,avion_7,current,Cash,other
+VERDADERO,Demo AVION,,110102003,avion_10,,,,Banco Patagonia Cta. Cte.,,avion_7,current,Cash,other
+VERDADERO,Demo AVION,,1102*,avion_11,,,,CREDITOS POR VENTA,,avion_3,current,View,view
+VERDADERO,Demo AVION,,110201*,avion_12,,,,DEUDORES POR VENTA,,avion_11,current,View,view
+VERDADERO,Demo AVION,VERDADERO,11020100333,avion_13,,,,CARINA NICOLAIDES,,avion_12,current,Receivable,receivable
+VERDADERO,Demo AVION,,110201001,avion_87,,,,Deudores por Ventas Comunes,,avion_12,current,Cash,other
+VERDADERO,Demo AVION,VERDADERO,11020100100,avion_88,,,,SIN MOVIMIENTOS,,avion_12,current,Cash,receivable
+VERDADERO,Demo AVION,,110201002,avion_89,,,,Cheques en Cartera,,avion_12,current,Cash,other
+VERDADERO,Demo AVION,,110201003,avion_90,,,,Cheques Rechazados,,avion_12,current,Cash,other
+VERDADERO,Demo AVION,,11020100101,avion_91,,,,VICTOR HUGO CLAVIJO,,avion_12,current,Receivable,receivable
+VERDADERO,Demo AVION,,110202*,avion_305,,,,OTROS DEUDORES POR VENTAS,,avion_11,current,View,view
+VERDADERO,Demo AVION,,110202001,avion_306,,,,Ds. por Vta. en Gestion Judic.,,avion_305,current,Receivable,receivable
+VERDADERO,Demo AVION,,1103*,avion_307,,,,OTROS CREDITOS CORRIENTES,,avion_3,current,View,view
+VERDADERO,Demo AVION,,110301*,avion_308,,,,ANTICIPOS,,avion_307,current,View,view
+VERDADERO,Demo AVION,,110301001,avion_309,,,,Anticipos a Proveedores,,avion_308,current,Payable,payable
+VERDADERO,Demo AVION,,110301002,avion_310,,,,Deposito Judicial,,avion_308,current,Payable,payable
+VERDADERO,Demo AVION,,110301003,avion_311,,,,Anticipo de Sueldo,,avion_308,current,Payable,payable
+VERDADERO,Demo AVION,,110302*,avion_312,,,,OTROS DEUDORES COMUNES,,avion_307,current,View,view
+VERDADERO,Demo AVION,,110302001,avion_313,,,,Otros Deudores Comunes Cta,,avion_312,current,Receivable,receivable
+VERDADERO,Demo AVION,,110303000,avion_314,,,,VALORES A RENDIR,,avion_307,current,Payable,payable
+VERDADERO,Demo AVION,,110304*,avion_315,,,,ANTICIPOS IMPOSITIVOS,,avion_307,current,View,view
+VERDADERO,Demo AVION,,110304001,avion_316,,,,Iva Credito Fiscal,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304002,avion_317,,,,Iva Saldo Libre Disponibilidad,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304003,avion_318,,,,Retenciones Iva,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304004,avion_319,,,,Retenciones IIBB,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304005,avion_320,,,,Ret Imp a las Ganancias,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304006,avion_321,,,,Ret. Comercio e Industria,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304007,avion_322,,,,Percepciones IVA,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304008,avion_323,,,,Pago a Cuenta IVA,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304009,avion_324,,,,Anticipo de Imp. a las Gcias.,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304010,avion_325,,,,Percepciones IIBB,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304011,avion_326,,,,IVA Saldo Favor Art 24 1ra parr,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110304012,avion_327,,,,IVA Saldo Favor Art 24 2da parr,,avion_315,current,Receivable,receivable
+VERDADERO,Demo AVION,,110305*,avion_328,,,,ACCIONISTAS CUENTAS PARTICULAR,,avion_307,current,View,view
+VERDADERO,Demo AVION,,110305001,avion_329,,,,Socio Daniel Giacone,,avion_328,current,Cash,other
+VERDADERO,Demo AVION,,110306*,avion_330,,,,DOCUMENTOS A COBRAR,,avion_307,current,View,view
+VERDADERO,Demo AVION,,110306001,avion_331,,,,Otros Documentos a Cobrar,,avion_330,current,Receivable,receivable
+VERDADERO,Demo AVION,,1104*,avion_332,,,,BIENES DE CAMBIO,,avion_3,current,View,view
+VERDADERO,Demo AVION,,110401000,avion_333,,,,Productos Terminados,,avion_332,current,Cash,other
+VERDADERO,Demo AVION,,1105*,avion_334,,,,STOCK DE INSUMOS,,avion_3,current,View,view
+VERDADERO,Demo AVION,,110501000,avion_335,,,,Stock de Telas,,avion_334,current,Cash,other
+VERDADERO,Demo AVION,,110502000,avion_336,,,,Servicios Activados,,avion_334,current,Cash,other
+VERDADERO,Demo AVION,,12*,avion_337,,,,ACTIVO  NO CORRIENTE,,avion_2,current,View,view
+VERDADERO,Demo AVION,,1201*,avion_338,,,,INSTALACIONES,,avion_337,current,View,view
+VERDADERO,Demo AVION,,120101000,avion_339,,,,Instalaciones Cta,,avion_338,current,Asset,other
+VERDADERO,Demo AVION,,1202*,avion_340,,,,PARQUE INFORMATICO,,avion_337,current,View,view
+VERDADERO,Demo AVION,,120201000,avion_341,,,,Parque Informatico Cta,,avion_340,current,Asset,other
+VERDADERO,Demo AVION,,1203*,avion_342,,,,MUEBLES Y UTILES,,avion_337,current,View,view
+VERDADERO,Demo AVION,,120301000,avion_343,,,,Muebles y utiles Cta,,avion_342,current,Asset,other
+VERDADERO,Demo AVION,,2*,avion_344,,,,PASIVO,,avion_1,current,View,view
+VERDADERO,Demo AVION,,21*,avion_345,,,,PASIVO CORRIENTE,,avion_344,current,View,view
+VERDADERO,Demo AVION,,2101*,avion_346,,,,CUENTAS POR PAGAR,,avion_345,current,View,view
+VERDADERO,Demo AVION,,210101*,avion_347,,,,DEUDAS COMERCIALES,,avion_346,current,View,view
+VERDADERO,Demo AVION,,210101001,avion_348,,,,Proveedores Varios,,avion_347,current,Payable,payable
+VERDADERO,Demo AVION,,210101002,avion_349,,,,Anticipo de Clientes,,avion_347,current,Payable,payable
+VERDADERO,Demo AVION,,2102*,avion_350,,,,PRESTAMOS,,avion_345,current,View,view
+VERDADERO,Demo AVION,,2103*,avion_351,,,,REM. Y CARGAS SOC. A PAGAR,,avion_345,current,View,view
+VERDADERO,Demo AVION,,210300001,avion_352,,,,Sueldos y Jornales a Pagar,,avion_351,current,Payable,payable
+VERDADERO,Demo AVION,,210300002,avion_353,,,,Aportes y Contrib. a Pagar,,avion_351,current,Payable,payable
+VERDADERO,Demo AVION,,210300003,avion_354,,,,Otras Leyes Soc.a Pagar,,avion_351,current,Payable,payable
+VERDADERO,Demo AVION,,210300004,avion_355,,,,Sac a Pagar,,avion_351,current,Payable,payable
+VERDADERO,Demo AVION,,2104*,avion_356,,,,CARGAS FISCALES,,avion_345,current,View,view
+VERDADERO,Demo AVION,,210401*,avion_357,,,,AFIP,,avion_356,current,View,view
+VERDADERO,Demo AVION,,210401001,avion_358,,,,Iva Debito Fiscal Bs. y Ss.,,avion_357,current,Payable,payable
+VERDADERO,Demo AVION,,210401002,avion_359,,,,Ingresos Brutos a Pagar,,avion_357,current,Payable,payable
+VERDADERO,Demo AVION,,210401003,avion_360,,,,Ret. Gcias. a pagar,,avion_357,current,Payable,payable
+VERDADERO,Demo AVION,,210401004,avion_361,,,,IVA Saldo a Pagar,,avion_357,current,Payable,payable
+VERDADERO,Demo AVION,,210402*,avion_362,,,,MUNICIPALIDAD,,avion_356,current,View,view
+VERDADERO,Demo AVION,,210402001,avion_363,,,,Comerc. e Industria a Pagar,,avion_362,current,Payable,payable
+VERDADERO,Demo AVION,,3*,avion_364,,,,PATRIMONIO NETO,,avion_1,current,View,view
+VERDADERO,Demo AVION,,310000000,avion_365,,,,CAPITAL,,avion_364,current,Equity,other
+VERDADERO,Demo AVION,,4*,avion_366,,,,RESULTADOS,,avion_1,current,View,view
+VERDADERO,Demo AVION,,41*,avion_367,,,,INGRESOS,,avion_366,current,View,view
+VERDADERO,Demo AVION,,4101*,avion_368,,,,INGRESOS POR VENTAS,,avion_367,current,View,view
+VERDADERO,Demo AVION,,410101000,avion_369,,IVA-VENTAS,,Ventas Gravadas,,avion_368,current,Income,other
+VERDADERO,Demo AVION,,4102*,avion_370,,,,OTROS INGRESOS,,avion_367,current,Receivable,view
+VERDADERO,Demo AVION,,410201000,avion_371,,,,Intereses Ganados,,avion_370,current,Income,other
+VERDADERO,Demo AVION,,410202000,avion_372,,,,Otras Ganancias,,avion_370,current,Income,other
+VERDADERO,Demo AVION,,42*,avion_373,,,,EGRESOS,,avion_366,current,View,view
+VERDADERO,Demo AVION,,4201*,avion_374,,,,COSTO DE MERCADERIA VENDIDA,,avion_373,current,View,view
+VERDADERO,Demo AVION,,420101000,avion_375,,,,Costo de Mercaderia Vendida Cta,,avion_374,current,Expense,other
+VERDADERO,Demo AVION,,4202*,avion_376,,,,GASTOS DE PRODUCCION,,avion_373,current,View,view
+VERDADERO,Demo AVION,,420201000,avion_377,,,,Sueldos de Produccion,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420202000,avion_378,,,,Cargas Sociales de Produccion,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420203000,avion_379,,,,Gratificacion Extraordinaria,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420204000,avion_380,,,,Horas Extras,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420205000,avion_381,,,,Soiva y Foniva,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420206000,avion_382,,,,Refrig y Comida de Produccion,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420207000,avion_383,,,,Viaticos de prod y fletes int,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420208000,avion_384,,,,Mobiliario para Produccion,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420209000,avion_385,,,,Manten. de maquinas de coser,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420210000,avion_386,,,,Capacitacion de Produccion,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420211000,avion_387,,,,Discontinuos,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420212000,avion_388,,,,Utileria,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420213000,avion_389,,,,Fletes de Materia Prima,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420214000,avion_390,,,,ImprentaLibreria,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420215000,avion_391,,,,Insumos Avios,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420216000,avion_392,,,,Insumos varios para diseno,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420217000,avion_393,,,,Insumos varios para muestras,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420218000,avion_394,,,,Control de Calidad,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420219000,avion_395,,,,Servicio de Confeccion,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420220000,avion_396,,,,Servicio de Bordado,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420221000,avion_397,,,,Servicio de Corte,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420222000,avion_398,,,,Servicio de Estampado,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420223000,avion_399,,,,Servicio de Lavado,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420224000,avion_400,,,,Servicio de Tizado,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420225000,avion_401,,,,Packaging,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420226000,avion_402,,,,Servicio de Ojal y Boton,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420227000,avion_403,,,,Disenador Grafico,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420228000,avion_404,,,,Fotografia,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420229000,avion_405,,,,Modelos,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420230000,avion_406,,,,Produccion Catalogo,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420231000,avion_407,,,,Servicio de Diseno,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420232000,avion_408,,,,Servicio de Moldes,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420233000,avion_409,,,,Servicio de Muestras,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,420234000,avion_410,,,,Diferencia por Ajuste de Stock,,avion_376,current,Payable,payable
+VERDADERO,Demo AVION,,4203*,avion_411,,,,GASTOS DE COMERCIALIZACION,,avion_373,current,View,view
+VERDADERO,Demo AVION,,420301000,avion_412,,,,Sueldos de Ventas,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420302000,avion_413,,,,Cargas Sociales Ventas,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420303000,avion_414,,,,Gratif. Extraord. Ventas,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420304000,avion_415,,,,Comision de Representantes,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420305000,avion_416,,,,Viaticos de Ventas,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420306000,avion_417,,,,Refrigerios y Comidas Ventas,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420307000,avion_418,,,,Presentaciones Comerciales,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420308000,avion_419,,,,Publicidad,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420309000,avion_420,,,,Telefonia Movil Ventas,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420310000,avion_421,,,,NC Ajustes de Cta Cte Clientes,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,420311000,avion_422,,,,Gastos de Promocion,,avion_411,current,Payable,payable
+VERDADERO,Demo AVION,,4204*,avion_423,,,,GASTOS DE LOGISTICA,,avion_373,current,View,view
+VERDADERO,Demo AVION,,420401000,avion_424,,,,Sueldos de Logistica,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420402000,avion_425,,,,Cargas Sociales de Logisticas,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420403000,avion_426,,,,Gratific. Extraord. Logistica,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420404000,avion_427,,,,Viaticos Logistica,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420405000,avion_428,,,,Refrig. y Comida Logistica,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420406000,avion_429,,,,Packaging Log. Cajas+Bol blan,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420407000,avion_430,,,,Ajustes de Stock,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420408000,avion_431,,,,Flete Entrega Prendas Encom,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420409000,avion_432,,,,Rodados Gasoil,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420410000,avion_433,,,,Rodados Reparaciones,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420411000,avion_434,,,,Seguros Vehiculos,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420412000,avion_435,,,,Impuestos  Automotor Patente,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420413000,avion_436,,,,Lavadero Rodados,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,420414000,avion_437,,,,Aceites y Lubricantes,,avion_423,current,Payable,payable
+VERDADERO,Demo AVION,,4205*,avion_438,,,,GASTOS DE ADMINISTRACION,,avion_373,current,View,view
+VERDADERO,Demo AVION,,420501000,avion_439,,,,Sueldos de Adm.,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420502000,avion_440,,,,Cargas Sociales Adm.,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420503000,avion_441,,,,Gratif. Extraord. Adm.,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420504000,avion_442,,,,Viaticos Adm.,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420505000,avion_443,,,,Refrig. y Coimda Adm.,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420506000,avion_444,,,,Unif. y Ropa de Trabajo Adm,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420507000,avion_445,,,,Libreria,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420508000,avion_446,,,,Imprenta Facturas,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420509000,avion_447,,,,Honorarios y Asesoramiento,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420510000,avion_448,,,,Insumos Informaticos,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420511000,avion_449,,,,Programacion y Sistemas,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420512000,avion_450,,,,Agua y Gas,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420513000,avion_451,,,,Telefonia Fija e Internet,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420514000,avion_452,,,,Telefonia Movil Adm.,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420515000,avion_453,,,,Serv. Postales y Encomiendas,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420516000,avion_454,,,,Serv. Varios y de Terceros,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420517000,avion_455,,,,Limpieza y Desinfeccion,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420518000,avion_456,,,,Dif. de Caja,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420519000,avion_457,,,,Cursos de Capacitacion Adm.,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420520000,avion_458,,,,Perdidas por Robo,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420521000,avion_459,,,,Otros Gastos,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420522000,avion_460,,,,Alquileres Oficinas,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420523000,avion_461,,,,Reparaciones Varias,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420524000,avion_462,,,,Energia Electrica,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,420525000,avion_463,,,,Seguros,,avion_438,current,Payable,payable
+VERDADERO,Demo AVION,,4206*,avion_464,,,,GASTOS FINANCIEROS,,avion_373,current,View,view
+VERDADERO,Demo AVION,,420601000,avion_465,,,,Intereses Comerciales,,avion_464,current,Payable,payable
+VERDADERO,Demo AVION,,420602000,avion_466,,,,Gastos Bancarios,,avion_464,current,Payable,payable
+VERDADERO,Demo AVION,,420603000,avion_467,,,,Imp. Debitos y Creditos Bancar,,avion_464,current,Payable,payable
+VERDADERO,Demo AVION,,420604000,avion_468,,,,Intereses Financieros,,avion_464,current,Payable,payable
+VERDADERO,Demo AVION,,4207*,avion_469,,,,IMPUESTOS,,avion_373,current,View,view
+VERDADERO,Demo AVION,,420701000,avion_470,,,,Impuestos a los Ing. Brutos,,avion_469,current,Payable,payable
+VERDADERO,Demo AVION,,420702000,avion_471,,,,Impuesto Municipal,,avion_469,current,Payable,payable
+VERDADERO,Demo AVION,,420703000,avion_472,,,,Impuesto a las Ganancias,,avion_469,current,Payable,payable
+VERDADERO,Demo AVION,,420704000,avion_473,,,,Multas,,avion_469,current,Payable,payable
+VERDADERO,Demo AVION,,420705000,avion_474,,,,Intereses Resarcitorios,,avion_469,current,Payable,payable
+VERDADERO,Demo AVION,,420706000,avion_475,,,,Impuestos Internos,,avion_469,current,Payable,payable
+VERDADERO,Demo AVION,,4208*,avion_476,,,,PREVISIONES,,avion_373,current,View,view
+VERDADERO,Demo AVION,,420801000,avion_477,,,,Prevision Sac,,avion_476,current,Payable,payable

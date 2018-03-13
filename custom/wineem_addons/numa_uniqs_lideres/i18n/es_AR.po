@@ -1,0 +1,155 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* numa_uniqs_lideres
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.4\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2013-08-06 02:27+0000\n"
+"PO-Revision-Date: 2013-08-06 02:27+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_stock_partial_picking_box_create
+msgid "stock.partial.picking.box.create"
+msgstr "stock.partial.picking.box.create"
+
+#. module: numa_uniqs_lideres
+#: constraint:stock.move:0
+msgid "You must assign a production lot for this product"
+msgstr "Debe asignar un lote de producción para este producto"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_stock_picking
+msgid "Picking List"
+msgstr "Lista de selección"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_sale_so_massive_state_change
+msgid "sale.so_massive_state_change"
+msgstr "sale.so_massive_state_change"
+
+#. module: numa_uniqs_lideres
+#: model:ir.actions.act_window,name:numa_uniqs_lideres.massive_state_change_action
+#: view:sale.so_massive_state_change:0
+msgid "Massive state change"
+msgstr "Cambio masivo a presupuesto"
+
+#. module: numa_uniqs_lideres
+#: view:sale.order:0
+msgid "Back to draft"
+msgstr "Convertir en presupuesto"
+
+#. module: numa_uniqs_lideres
+#: field:res.partner,leader_id:0
+#: field:sale.order,leader_id:0
+#: field:stock.move,leader_id:0
+#: field:stock.picking,leader_id:0
+msgid "Leader"
+msgstr "Lider"
+
+#. module: numa_uniqs_lideres
+#: code:addons/numa_uniqs_lideres/box.py:44
+#, python-format
+msgid "Only opened and closed boxes could be cancelled!"
+msgstr "Solo cajas abiertas o cerradas pueden ser canceladas!"
+
+#. module: numa_uniqs_lideres
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique !"
+msgstr "¡La referencia del pedido debe ser única!"
+
+#. module: numa_uniqs_lideres
+#: code:addons/numa_uniqs_lideres/box.py:43
+#, python-format
+msgid "Error !"
+msgstr "Error !"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_sale_campaign
+msgid "sale.campaign"
+msgstr "sale.campaign"
+
+#. module: numa_uniqs_lideres
+#: constraint:stock.move:0
+msgid "You try to assign a lot which is not from the same product"
+msgstr "Está intentando asignar un lote que no es del mismo producto"
+
+#. module: numa_uniqs_lideres
+#: view:sale.so_massive_state_change:0
+msgid "Confirm a massive change to draft state"
+msgstr "Confirmar el cambio masivo a presupuesto"
+
+#. module: numa_uniqs_lideres
+#: model:ir.actions.act_window,name:numa_uniqs_lideres.campaign_action
+#: model:ir.ui.menu,name:numa_uniqs_lideres.campaign_menu
+msgid "Campaigns"
+msgstr "Campañas"
+
+#. module: numa_uniqs_lideres
+#: view:sale.so_massive_state_change:0
+msgid "Change to draft"
+msgstr "Cambiar a presupuesto"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_stock_partial_picking
+msgid "Partial Picking"
+msgstr "Albarán parcial"
+
+#. module: numa_uniqs_lideres
+#: field:sale.campaign,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: numa_uniqs_lideres
+#: view:stock.move:0
+#: view:stock.picking:0
+msgid "No leader"
+msgstr "Sin lider"
+
+#. module: numa_uniqs_lideres
+#: view:sale.campaign:0
+#: field:sale.order,campaign:0
+#: field:sale.so_massive_state_change,campaign:0
+#: field:stock.box,campaign:0
+#: field:stock.move,campaign:0
+#: field:stock.picking,campaign:0
+msgid "Campaign"
+msgstr "Campaña"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_stock_box
+msgid "stock.box"
+msgstr "stock.box"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_account_voucher
+msgid "Accounting Voucher"
+msgstr "Voucher de contabilidad"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: numa_uniqs_lideres
+#: model:ir.model,name:numa_uniqs_lideres.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: numa_uniqs_lideres
+#: field:res.partner,is_leader:0
+msgid "Is leader?"
+msgstr "Es lider?"
+

@@ -1,0 +1,2012 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* numa_uniqs_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.4\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2015-07-07 21:50+0000\n"
+"PO-Revision-Date: 2015-07-07 21:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: numa_uniqs_base
+#: view:account.invoice_so_fix:0
+msgid "Corregir"
+msgstr "Corregir"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,b_cn_next_number:0
+msgid "Next B credit note"
+msgstr "Próxima Nota de crédito B"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip,max_b_no_id:0
+msgid "Max. amount no id"
+msgstr "Importe máximo sin identificación"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_odebt_90:0
+msgid "Total partially paid debt, overrun (61-90 days)"
+msgstr "Total deudas parcialmente canceladas vencidas (61-90 días)"
+
+#. module: numa_uniqs_base
+#: view:wineem.partner_initial_balance:0
+msgid "Carga de saldos iniciales de los clientes"
+msgstr "Carga de saldos iniciales de los clientes"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.rg830_rate:0
+#: view:numa_ar_base.rg830_table:0
+msgid "AFIP RG830 Rates"
+msgstr "Tasas según AFIP RG830"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.afip_sales_point_action
+#: model:ir.ui.menu,name:numa_uniqs_base.afip_sales_point_menu
+msgid "AFIP Sales Point"
+msgstr "Punto de ventas AFIP"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rg2226_exception:0
+msgid "Exceptuado RG2226"
+msgstr "Exceptuado RG2226"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.partner_ledger_wizard,reconcil:0
+msgid "Include Reconciled Entries"
+msgstr "Incluir entradas reconciliadas"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "020-Nota de Débito E"
+msgstr "020-Nota de Débito E"
+
+#. module: numa_uniqs_base
+#: field:res.company,vat_condition:0
+#: view:res.partner:0
+#: field:res.partner,vat_condition:0
+msgid "VAT condition"
+msgstr "Condición de IVA"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_numa_ar_base_partner_ledger_wizard
+#: model:ir.model,name:numa_uniqs_base.model_numa_uniqs_base_partner_ledger_wizard
+#: view:numa_ar_base.partner_ledger_wizard:0
+msgid "Partner Ledger"
+msgstr "Cuenta corriente del partner"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,shop_id:0
+#: help:stock.picking,shop_id:0
+msgid "Issuing shop"
+msgstr "Sucursal emisora"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,a_cn_next_number:0
+msgid "Next A credit note"
+msgstr "Proxima Nota de crédito A"
+
+#. module: numa_uniqs_base
+#: field:res.company,vat:0
+msgid "VAT"
+msgstr "IVA"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_res_partner
+msgid "Partner"
+msgstr "Socio"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,c_dn_next_number:0
+msgid "Next C debit note"
+msgstr "Próxima Nota de débito C"
+
+#. module: numa_uniqs_base
+#: field:res.partner,balance:0
+msgid "Partner balance"
+msgstr "Saldo del partner"
+
+#. module: numa_uniqs_base
+#: help:res.company,store_points_ids:0
+msgid "Registered company store points"
+msgstr "Puntos de almacén registrados"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,b_next_number:0
+msgid "Next B invoice/debit note/credit note"
+msgstr "Próxima factura/NC/ND B"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_store_point,r_copies:0
+msgid "Number of copies"
+msgstr "Número de copias"
+
+#. module: numa_uniqs_base
+#: selection:numa_ar_base.partner_ledger_wizard,result_selection:0
+msgid "Customer and Supplier"
+msgstr "Cliente y proveedor"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.rg830_rate:0
+msgid "AFIP RG830 Rate"
+msgstr "Tasa AFIP RG830"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip_store_point:0
+#: field:stock.picking,afip_id:0
+msgid "AFIP store point"
+msgstr "Punto de almacén AFIP"
+
+#. module: numa_uniqs_base
+#: help:res.partner,rg830_exception:0
+msgid "Exeptuado de retenciones de Ganancias, régimen general, RG 830/00"
+msgstr "Exeptuado de retenciones de Ganancias, régimen general, RG 830/00"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,name:numa_uniqs_base.sr
+msgid "Señor"
+msgstr "Señor"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,separate_sequences:0
+msgid "Use separate sequences?"
+msgstr "Usa secuencias separadas?"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "0-30 days"
+msgstr "0-30 días"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_ocredit_90:0
+msgid "Total partially paid credit, overrun (61-90 days)"
+msgstr "Total crédito parcialmente cancelado vencido (61-90 días)"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_table,no_imponible:0
+msgid "Monto no imponible"
+msgstr "Monto no imponible"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Contact Name"
+msgstr "Nombre del contacto"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "008-Nota de Crédito B"
+msgstr "008-Nota de Crédito B"
+
+#. module: numa_uniqs_base
+#: field:stock.picking,afip_number:0
+msgid "AFIP number"
+msgstr "Número AFIP"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "012-Nota de Débito C"
+msgstr "012-Nota de Débito C"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_account_invoice_so_fix
+msgid "account.invoice_so_fix"
+msgstr "account.invoice_so_fix"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "007-Nota de Débito B"
+msgstr "007-Nota de Débito B"
+
+#. module: numa_uniqs_base
+#: field:res.currency,afip_desc:0
+msgid "AFIP Description"
+msgstr "Descripción AFIP"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_credit_90:0
+#: field:res.partner,document_debt_90:0
+msgid "Total received documents, not due (61-90 days)"
+msgstr "Total documentos recibidos, no vencidos (61-90 días)"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,a_cn_printer:0
+msgid "Printer for A credit notes"
+msgstr "Impresora Notas de Crédito A"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Communication"
+msgstr "Comunicación"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rej_rec_doc_90plus:0
+msgid "Total rejected received documents (91+ days)"
+msgstr "Documentos recibidos rechazados (91+ días)"
+
+#. module: numa_uniqs_base
+#: field:res.partner.bank,cbu:0
+msgid "CBU"
+msgstr "CBU"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.afip,rs_max_inv_wo_wt_rg:0
+#: help:numa_ar_base.afip,rs_max_inv_wo_wt_ser:0
+msgid "Maximun accumulated revenue for the simplified regimen (products), before witholding taxes"
+msgstr "Máximo de facturación para monotributistas (productos), antes de realizar percepciones"
+
+#. module: numa_uniqs_base
+#: field:res.company,start_date:0
+msgid "Company start date"
+msgstr "Inicio de actividades"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.action_print_partner_ledger
+msgid "Print Partner Ledger"
+msgstr "Imprimir cuenta corriente"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,b_dn_printer:0
+msgid "Printer for B debit notes"
+msgstr "Impresora Notas de débito B"
+
+#. module: numa_uniqs_base
+#: view:wineem.partner_fix_parent:0
+msgid "Corrección de padre en Clientes"
+msgstr "Corrección de padre en Clientes"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,afip_concept:0
+msgid "AFIP Concepts"
+msgstr "Conceptos AFIP"
+
+#. module: numa_uniqs_base
+#: field:res.partner,debt_90plus:0
+msgid "Total debt, not due (91+ days)"
+msgstr "Deudas, no vencidas (91+ días)"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.rg830_rate,no_inscriptos:0
+msgid "Porcentaje de retención a sujetos no inscriptos"
+msgstr "Porcentaje de retención a sujetos no inscriptos"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rej_pay_doc_balance:0
+msgid "Total rejected issued documents balance"
+msgstr "Saldo de documentos emitidos rechazados"
+
+#. module: numa_uniqs_base
+#: constraint:stock.move:0
+msgid "You try to assign a lot which is not from the same product"
+msgstr "Está intentando asignar un lote que no es del mismo producto"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_odebt_60:0
+msgid "Total partially paid debt, overrun (31-60 days)"
+msgstr "Total deuda vencida pagada parcialmente (31-60 días)"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "91+ days"
+msgstr "91+ días"
+
+#. module: numa_uniqs_base
+#: field:res.partner,ocredit_60:0
+msgid "Total credit, overrun (31-60 days)"
+msgstr "Crédito total, vencido (31-60 días)"
+
+#. module: numa_uniqs_base
+#: field:res.partner,credit_90:0
+msgid "Total credit, not due (61-90 days)"
+msgstr "Total crédito no vencido (61-90 días)"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_debt_60:0
+msgid "Total partially paid debt, not due (31-60 days)"
+msgstr "Total deuda no vencida parcialmente pagada (31-60 días)"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,b_cn_printer:0
+msgid "Printer for B credit notes"
+msgstr "Impresoras Notas de crédito B"
+
+#. module: numa_uniqs_base
+#: field:wineem.partner_initial_balance,period:0
+msgid "Period"
+msgstr "Período"
+
+#. module: numa_uniqs_base
+#: field:res.partner,odebt_90:0
+msgid "Total debt, overrun (61-90 days)"
+msgstr "Deudas, vencidas (61-90 días)"
+
+#. module: numa_uniqs_base
+#: model:ir.ui.menu,name:numa_uniqs_base.menu_action_afip_optional_type
+msgid "Optional type"
+msgstr "Tipo opcional"
+
+#. module: numa_uniqs_base
+#: view:wineem.partner_initial_balance:0
+msgid "Borrar datos y fijar saldos iniciales"
+msgstr "Borrar datos y fijar saldos iniciales"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+msgid "Special taxes computed on issued credit notes."
+msgstr "Impuestos especiales en notas de crédito."
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,a_i_next_number:0
+msgid "Next A invoice note"
+msgstr "Próxima Factura A"
+
+#. module: numa_uniqs_base
+#: view:wineem.partner_fix_parent:0
+msgid "Corregir padres"
+msgstr "Corregir padres"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,shortcut:numa_uniqs_base.srl
+msgid "S.R.L."
+msgstr "S.R.L."
+
+#. module: numa_uniqs_base
+#: field:account.invoice,sales_point:0
+msgid "Sales Point"
+msgstr "Punto de Ventas"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "31-60 days"
+msgstr "31-60 días"
+
+#. module: numa_uniqs_base
+#: view:account.mass_shop_change:0
+#: model:ir.actions.act_window,name:numa_uniqs_base.mass_shop_change_action
+msgid "Invoice shop change"
+msgstr "Cambio de la sucursa de la factura"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.afip,max_b_no_id:0
+msgid "Maximun invoice amount, type B, without name and ID (CUIT/CUIL/DNI)"
+msgstr "Importe máximo de factura, tipo B, sin nombre e identificación (CUIT/CUIL/DNI)"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.partner_ledger_wizard,include_children:0
+msgid "Include children partners movements"
+msgstr "Incluir movimientos de los hijos"
+
+#. module: numa_uniqs_base
+#: field:wineem.partner_initial_balance,journal:0
+msgid "Journal"
+msgstr "Diario"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,a_next_number:0
+msgid "Next A invoice/debit note/credit note"
+msgstr "Próxima factura/NC/ND A"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,c_next_number:0
+msgid "Next C invoice/debit note/credit note"
+msgstr "Próxima factura/NC/ND C"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "Monotributista Social"
+msgstr "Monotributista Social"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "Proveedor del Exterior"
+msgstr "Proveedor del Exterior"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "IVA Resp.Inscripto, Agente de Percepción"
+msgstr "IVA Resp.Inscripto, Agente de Percepción"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip_sales_point:0
+msgid "B docs"
+msgstr "Documentos B"
+
+#. module: numa_uniqs_base
+#: field:res.company,taxes_on_refund_additional:0
+msgid "Additional taxes on refund (credit notes). It will be added to refund total"
+msgstr "Impuestos adicionales en devoluciones (notas de crédito). Serán agregados al importe total"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,b_dup:0
+msgid "B docs duplicates?"
+msgstr "Docs B duplicados?"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_numa_ar_base_afip_sales_point
+msgid "numa_ar_base.afip_sales_point"
+msgstr "numa_ar_base.afip_sales_point"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.afip,rg830_min:0
+msgid "Régimen general de retención de ganancias RG 830/00, minimun ammount"
+msgstr "Régimen general de retención de ganancias RG 830/00, minimun ammount"
+
+#. module: numa_uniqs_base
+#: help:wineem.partner_initial_balance,capital_account:0
+msgid "Account to be used as Capital for closing the initial movement"
+msgstr "Cuenta a usar como Capital para balancear el asiento inicial"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rej_rec_doc_balance:0
+msgid "Total rejected received documents balance"
+msgstr "Saldo de documentos rechazados"
+
+#. module: numa_uniqs_base
+#: help:res.partner,default_rg830_code:0
+msgid "RG830 code to be used as default on payments to this supplier"
+msgstr "Código de la RG830 para usar por defecto en pagos a este proveedor"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+msgid "The following are special taxes that will generate an couple of move lines on tax's debit and credit defined accounts. They will not be added to documents."
+msgstr "Los siguientes son impuestos especiales que generan un par de lineas de asiento en base a las cuentas crédito y débiot. No serán agregados al importe total."
+
+#. module: numa_uniqs_base
+#: sql_constraint:res.country:0
+msgid "The code of the country must be unique !"
+msgstr "¡El código de país debe ser único!"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "013-Nota de Crédito C"
+msgstr "013-Nota de Crédito C"
+
+#. module: numa_uniqs_base
+#: field:res.company,legal_country_id:0
+#: field:res.partner,legal_country_id:0
+msgid "Legal country"
+msgstr "País a fines legales"
+
+#. module: numa_uniqs_base
+#: model:account.payment.term,note:numa_uniqs_base.contado_30_60
+msgid "Se saldará el 33% al contado, 33% a 30 días y el saldo a 60 días fecha factura.\n"
+"De no cumplirse con los términos de pago, se aplicarán los intereses punitorios correspondiente hasta la cancelación total de la deuda"
+msgstr "Se saldará el 33% al contado, 33% a 30 días y el saldo a 60 días fecha factura.\n"
+"De no cumplirse con los términos de pago, se aplicarán los intereses punitorios correspondiente hasta la cancelación total de la deuda"
+
+#. module: numa_uniqs_base
+#: selection:numa_ar_base.partner_ledger_wizard,result_selection:0
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip_sales_point:0
+msgid "A docs"
+msgstr "Documentos A"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,name:numa_uniqs_base.sa
+msgid "Sociedad Anónima"
+msgstr "Sociedad Anónima"
+
+#. module: numa_uniqs_base
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique !"
+msgstr "¡La referencia del pedido debe ser única!"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,c_i_printer:0
+msgid "Printer for C invoices"
+msgstr "Impresora Facturas C"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,c_cn_next_number:0
+msgid "Next C credit note"
+msgstr "Próxima Nota de crédito C"
+
+#. module: numa_uniqs_base
+#: field:res.company,rs_type:0
+#: field:res.partner,rs_type:0
+msgid "RS type"
+msgstr "Tipo de monotributista"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,c_cn_printer:0
+msgid "Printer for C credit notes"
+msgstr "Impresora Notas de crédito C"
+
+#. module: numa_uniqs_base
+#: help:wineem.partner_initial_balance,journal:0
+msgid "Journal to assign the movement to"
+msgstr "Diario a asignar el movimiento"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,afip_service_start:0
+msgid "AFIP Service start"
+msgstr "Servicios fecha inicial"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,afip_service_start:0
+msgid "AFIP Service end"
+msgstr "Servicios fecha final"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.afip_store_point,name:0
+msgid "Store point description"
+msgstr "Descripción del punto de almacén"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,name:numa_uniqs_base.sh
+msgid "Sociedad de Hecho"
+msgstr "Sociedad de Hecho"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,afip_id:0
+msgid "AFIP sales point id"
+msgstr "Identificador del punto de venta AFIP"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+#: view:res.partner:0
+msgid "AFIP information"
+msgstr "Información AFIP"
+
+#. module: numa_uniqs_base
+#: field:res.company,taxes_on_refund:0
+msgid "Taxes on credit notes. Special processing, debit and credit account used to generate complementary move. Not added to refund total"
+msgstr "Impuestos en notas de crédito. Procesamiento especial, se usa las cuentas débito y credito para crear el asiento. No se agrega al total"
+
+#. module: numa_uniqs_base
+#: view:account.invoice_so_fix:0
+msgid "Invoice Sales Order Fix"
+msgstr "Invoice Sales Order Fix"
+
+#. module: numa_uniqs_base
+#: constraint:account.tax.code:0
+msgid "Error ! You can not create recursive accounts."
+msgstr "Error! No se pueden crear cuentas recursivas."
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,e_i_printer:0
+msgid "Printer for E invoices"
+msgstr "Impresora Facturas E"
+
+#. module: numa_uniqs_base
+#: field:res.partner,debt_invoice:0
+msgid "Total debt, not due"
+msgstr "Total deuda, no vencida"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_rate,descripcion:0
+msgid "Descripcion"
+msgstr "Descripción"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_numa_ar_base_rg830_table
+msgid "numa_ar_base.rg830_table"
+msgstr "numa_ar_base.rg830_table"
+
+#. module: numa_uniqs_base
+#: field:res.partner,credit_60:0
+msgid "Total credit, not due (31-60 days)"
+msgstr "Total créditos no vencidos (31-60 días)"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+#: field:res.company,store_points_ids:0
+msgid "Store points"
+msgstr "Puntos de almacén"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_credit_90plus:0
+#: field:res.partner,document_debt_90plus:0
+msgid "Total received documents, not due (91+ days)"
+msgstr "Total documentos recibidos no vencidos (91+ días)"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,e_dn_printer:0
+msgid "Printer for E debit notes"
+msgstr "Impresoras Notas de débito E"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_afip_responsability
+msgid "VAT Responsability"
+msgstr "Responsabilidad IVA"
+
+#. module: numa_uniqs_base
+#: view:afip.document_type:0
+#: model:ir.actions.act_window,name:numa_uniqs_base.act_afip_document_type
+msgid "AFIP Document type"
+msgstr "Tipo de documento AFIP"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.partner_ledger_wizard:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,out_picking:0
+msgid "Based on picking"
+msgstr "Remito"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.partner_ledger_wizard,start_date:0
+msgid "Start date"
+msgstr "Fecha inicial"
+
+#. module: numa_uniqs_base
+#: model:ir.ui.menu,name:numa_uniqs_base.menu_action_afip_document_type
+#: field:res.partner,document_type_id:0
+msgid "Document type"
+msgstr "Tipo de documento"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+msgid "Special taxes computed on issued invoices and debit notes."
+msgstr "Impuestos especiales calculados en facturas y notas de débito."
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,name:numa_uniqs_base.sra
+msgid "Señora"
+msgstr "Señora"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_odebt_90plus:0
+msgid "Total partially paid debt, overrun (91+ days)"
+msgstr "Total deudas parcialmente canceladas vencidas (91+ días)"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_numa_ar_base_afip
+msgid "numa_ar_base.afip"
+msgstr "numa_ar_base.afip"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Supplier Invoices, not due"
+msgstr "Facturas del proveedor, no vencidas"
+
+#. module: numa_uniqs_base
+#: view:account.invoice_so_fix:0
+msgid "Corrección de relación facturas a pedidos"
+msgstr "Corrección de relación facturas a pedidos"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_wineem_partner_initial_balance
+msgid "wineem.partner_initial_balance"
+msgstr "wineem.partner_initial_balance"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,rs_type:0
+msgid "Monotributista, venta de bienes"
+msgstr "Monotributista, venta de bienes"
+
+#. module: numa_uniqs_base
+#: view:account.mass_shop_change:0
+msgid "Shop change"
+msgstr "Cambiar sucursal"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "IVA Sujeto Exento"
+msgstr "IVA Sujeto Exento"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+#: field:res.company,sales_points_ids:0
+msgid "Sales points"
+msgstr "Puntos de venta"
+
+#. module: numa_uniqs_base
+#: view:wineem.partner_initial_balance:0
+msgid "          NO ES REVERSIBLE"
+msgstr "          NO ES REVERSIBLE"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+msgid "Taxation on invoices"
+msgstr "Impuestos en facturas"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.partner_ledger_wizard:0
+#: field:numa_ar_base.partner_ledger_wizard,fiscalyear_ids:0
+msgid "Fiscal years"
+msgstr "Años fiscales"
+
+#. module: numa_uniqs_base
+#: help:res.partner,rg830_exc_from:0
+msgid "Fecha inicial de la excepción bajo la RG 830/00"
+msgstr "Fecha inicial de la excepción bajo la RG 830/00"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_ocredit_90plus:0
+#: field:res.partner,document_odebt_90plus:0
+msgid "Total received documents, overrun (91+ days)"
+msgstr "Total documentos recibidos vencidos (91+ días)"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.action_afip_form
+#: model:ir.ui.menu,name:numa_uniqs_base.menu_action_afip_form
+msgid "Basic data AFIP"
+msgstr "Datos básicos AFIP"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.afip_store_point_action
+#: model:ir.ui.menu,name:numa_uniqs_base.afip_store_point_menu
+msgid "AFIP Store Point"
+msgstr "Punto de almacén AFIP"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,rep_id:0
+msgid "Rep id"
+msgstr "ID Representante"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_res_currency
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,name:numa_uniqs_base.coop
+msgid "Cooperativa"
+msgstr "Cooperativa"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_ocredit_60:0
+msgid "Total partially paid credit, overrun (31-60 days)"
+msgstr "Total crédito parcialmente cancelado vencido (31-60 días)"
+
+#. module: numa_uniqs_base
+#: field:res.partner,ocredit_90plus:0
+msgid "Total credit, overrun (91+ days)"
+msgstr "Total crédito vencido (91+ días)"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_debt_90plus:0
+msgid "Total partially paid debt, not due (91+ days)"
+msgstr "Total deuda parcialmente cancelada vencida (91+ días)"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Invoices, partially payed, not due"
+msgstr "Facturas parcialmente pagas, no vencidas"
+
+#. module: numa_uniqs_base
+#: help:res.partner,rg2226_exc_til:0
+msgid "Fecha final de la excepción bajo la RG 2226"
+msgstr "Fecha final de la excepción bajo la RG 2226"
+
+#. module: numa_uniqs_base
+#: view:wineem.partner_initial_balance:0
+msgid "Asiento inicial a generar"
+msgstr "Asiento inicial a generar"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip_sales_point:0
+msgid "General Settings"
+msgstr "Configuraci´on general"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "IVA Resp. Inscripto"
+msgstr "IVA Resp. Inscripto"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rej_pay_doc:0
+#: field:res.partner,rej_pay_doc_30:0
+#: field:res.partner,rej_rec_doc:0
+#: field:res.partner,rej_rec_doc_30:0
+msgid "Total rejected received documents (0-30 days)"
+msgstr "Documentos recibidos rechazados (0-30 días)"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_stock_invoice_onshipping
+msgid "Stock Invoice Onshipping"
+msgstr "Stock factura en el envío"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_store_point,r_next_number:0
+msgid "Next move document number"
+msgstr "Número siguiente remito"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip,rs_max_inv_wo_wt_rg:0
+msgid "Product sales limit (products)"
+msgstr "Importe máximo de ventas (productos)"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,a_dn_printer:0
+msgid "Printer for A debit notes"
+msgstr "Impresora Notas de débito A"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rej_pay_doc_90plus:0
+msgid "Total rejected issued documents (91+ days)"
+msgstr "Documentos emitidos rechazados (91+ días)"
+
+#. module: numa_uniqs_base
+#: field:afip.optional_type,value_computation:0
+msgid "Value computation"
+msgstr "Cálculo del valor"
+
+#. module: numa_uniqs_base
+#: field:wineem.partner_initial_balance,data:0
+msgid "Data"
+msgstr "Datos"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+msgid "Additional taxes will be computed on document totals and they will increase the final document amount."
+msgstr "Los impuestos adicional serán calculados sobre los totales y añadidos al importe total."
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Supplier Invoices, partially payed, not due"
+msgstr "Facturas del proveedor pacialmente pagas, no vencidas"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_credit:0
+#: field:res.partner,document_debt:0
+msgid "Total received documents, not due"
+msgstr "Total documentos recibidos no vencidos"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rg830_exception:0
+msgid "Exceptuado RG830"
+msgstr "Exceptuado RG830"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_credit:0
+msgid "Total partially paid credit, not due"
+msgstr "Total crédito parcialmente cancelado no vencido"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "021-Nota de Crédito E"
+msgstr "021-Nota de Crédito E"
+
+#. module: numa_uniqs_base
+#: field:afip.document_type,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: numa_uniqs_base
+#: view:wineem.partner_initial_balance:0
+msgid "ATENCION: Esta acción borra los movimientos actuales y deja solo los saldos iniciales"
+msgstr "ATENCION: Esta acción borra los movimientos actuales y deja solo los saldos iniciales"
+
+#. module: numa_uniqs_base
+#: field:wineem.partner_initial_balance,fiscalyear:0
+msgid "Fiscal year"
+msgstr "Año fiscal"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.partner_ledger_wizard:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_stock_picking
+msgid "Picking List"
+msgstr "Lista de selección"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,rs_type:0
+msgid "Monotributista, venta de servicios"
+msgstr "Monotributista, venta de servicios"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,afip_number:0
+msgid "AFIP sequence number"
+msgstr "Número de secuencia AFIP"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_table,monto:0
+msgid "Monto fijo"
+msgstr "Monto fijo"
+
+#. module: numa_uniqs_base
+#: field:res.partner,payments_this_month:0
+msgid "Payments this month"
+msgstr "Pagos durante este mes"
+
+#. module: numa_uniqs_base
+#: model:account.payment.term,name:numa_uniqs_base.pago_30_dias
+msgid "Pago 30 días"
+msgstr "Pago 30 días"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rej_pay_doc_90:0
+msgid "Total rejected issued documents (61-90 days)"
+msgstr "Documentos recibidos rechazdos (61-90 días)"
+
+#. module: numa_uniqs_base
+#: field:afip.document_type,name:0
+#: field:afip.optional_type,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,e_dup:0
+msgid "E docs duplicates?"
+msgstr "Docs E duplicados?"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "Responsable Monotributo"
+msgstr "Responsable Monotributo"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_credit_90plus:0
+msgid "Total partially paid credit, not due (91+ days)"
+msgstr "Total crédito parcialmente cancelado no vencido (91+ días)"
+
+#. module: numa_uniqs_base
+#: help:res.partner,rg2226_exc_from:0
+msgid "Fecha inicial de la excepción bajo la RG 2226"
+msgstr "Fecha inicial de la excepción bajo la RG 2226"
+
+#. module: numa_uniqs_base
+#: help:res.partner,rg830_exc_til:0
+msgid "Fecha final de la excepción bajo la RG 830/00"
+msgstr "Fecha final de la excepción bajo la RG 830/00"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Invoices, not due"
+msgstr "Facturas, no vencidas"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,a_i_printer:0
+msgid "Printer for A invoices"
+msgstr "Impresora Facturas A"
+
+#. module: numa_uniqs_base
+#: field:res.partner,credit_invoice:0
+msgid "Total credit, not due"
+msgstr "Total crédito, no vencido"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip,b_inv_max_no_name:0
+msgid "B invoice, max no name"
+msgstr "Importe máximo facturas B, sin identificar"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_store_point,afip_id:0
+msgid "AFIP store id"
+msgstr "Punto de almacén AFIP"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_account_tax_code
+msgid "Tax Code"
+msgstr "Código de impuesto"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Supplier Invoices, overdue"
+msgstr "Facturas del proveedor, vencidas"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_ocredit_60:0
+#: field:res.partner,document_odebt_60:0
+msgid "Total received documents, overrun (31-60 days)"
+msgstr "Total documentos recibidos vencidos (31-60 dias)"
+
+#. module: numa_uniqs_base
+#: field:res.partner,payments_last_year:0
+msgid "Payments last year"
+msgstr "Pagos en el último año"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_rate,monto_no_sujeto:0
+msgid "Monto no sujeto a retencion"
+msgstr "Monto no sujeto a retencion"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.partner_ledger_wizard,result_selection:0
+msgid "Role"
+msgstr "Rol"
+
+#. module: numa_uniqs_base
+#: field:res.partner,cuit_dni:0
+msgid "CUIT/CUIL/DNI"
+msgstr "CUIT/CUIL/DNI"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "002-Nota de Débito A"
+msgstr "002-Nota de Débito A"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,c_dup:0
+msgid "C docs duplicates?"
+msgstr "Docs C duplicados?"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.afip,b_inv_max_no_name:0
+msgid "For B type invoices, the maximun amount allowed without name and CUIT information"
+msgstr "Para facturas del tipo B, el importe máximo permitido en caso de no indicar nombre y número de CUIT"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_odebt_30:0
+msgid "Total partially paid debt, overrun (0-30 days)"
+msgstr "Total deuda vencida parcialmente pagada (0-30 días)"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.action_rg830_rate_form
+#: model:ir.ui.menu,name:numa_uniqs_base.menu_action_rg830_rate_form
+msgid "AFIP RG830 rates"
+msgstr "Tasas RG830 AFIP"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_ocredit_30:0
+msgid "Total partially paid credit, overrun (0-30 days)"
+msgstr "Total crédito parcialmente cancelado vencido (0-30 días)"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "091-Presupuesto NC X"
+msgstr "091-Presupuesto NC X"
+
+#. module: numa_uniqs_base
+#: field:res.partner,default_rg830_code:0
+msgid "Default RG830 code"
+msgstr "Código RG830 por defecto"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_stock_move
+msgid "Stock Move"
+msgstr "Moviemiento de stock"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,afip_invoice_type:0
+msgid "AFIP Invoice type"
+msgstr "Tipo de factura AFIP"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "019-Factura E"
+msgstr "019-Factura E"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.partner_ledger_wizard:0
+msgid "Report Options"
+msgstr "Opciones del reporte"
+
+#. module: numa_uniqs_base
+#: field:res.partner,odebt_90plus:0
+msgid "Total debt, overrun (91+ days)"
+msgstr "Deudas, vencidas (91+ días)"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_credit_30:0
+msgid "Total partially paid credit, not due (0-30 days)"
+msgstr "Total crédito parcialmente cancelado no vencido (0-30 días)"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,e_cn_printer:0
+msgid "Printer for E credit notes"
+msgstr "Impresora Notas de crédito E"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.partner_ledger_wizard:0
+msgid "This report is an analysis done by a partner. It is a PDF report containing one line per movement representing the cumulative credit balance"
+msgstr "Este reporte es un análisis por partner. Es un reporte PDF con la cuenta corriente y el correspondiente saldo"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,shortcut:numa_uniqs_base.sr
+msgid "Sr."
+msgstr "Sr."
+
+#. module: numa_uniqs_base
+#: view:wineem.partner_initial_balance:0
+msgid "          Todos las órdenes de entrega aparecerán como facturadas y todos los pedidos como terminados"
+msgstr "          Todos las órdenes de entrega aparecerán como facturadas y todos los pedidos como terminados"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_stock_location
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: numa_uniqs_base
+#: field:res.company,legal_state_id:0
+#: field:res.partner,legal_state_id:0
+msgid "Legal state"
+msgstr "Provincia a fines legales"
+
+#. module: numa_uniqs_base
+#: field:wineem.partner_initial_balance,capital_account:0
+msgid "Capital account"
+msgstr "Cuenta de Capital"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.partner_initial_balance_action
+#: model:ir.ui.menu,name:numa_uniqs_base.partner_initial_balance_menu
+#: view:wineem.partner_initial_balance:0
+msgid "Partner initial balance"
+msgstr "Saldos iniciales de clientes"
+
+#. module: numa_uniqs_base
+#: field:res.partner,odebt_60:0
+msgid "Total debt, overrun (31-60 days)"
+msgstr "Deuda, vencida (31-60 días)"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_table,tasa:0
+msgid "Alicuota"
+msgstr "Alicuota"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,a_dup:0
+msgid "A docs duplicates?"
+msgstr "Docs A duplicados?"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,e_i_next_number:0
+msgid "Next E invoice note"
+msgstr "Próxima Factura E"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rg2226_exc_til:0
+#: field:res.partner,rg830_exc_til:0
+msgid "Excepción valida hasta"
+msgstr "Excepción valida hasta"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_concept:0
+msgid "Productos"
+msgstr "Productos"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "090-Presupuesto X"
+msgstr "090-Presupuesto X"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.invoice_so_fix_action
+#: model:ir.ui.menu,name:numa_uniqs_base.invoice_so_fix_menu
+msgid "Invoice SO Fix"
+msgstr "Arreglo SO de Factura"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.action_bank_account_owner_form
+#: model:ir.ui.menu,name:numa_uniqs_base.menu_action_bank_account_owner_form
+msgid "Titulares de cuenta"
+msgstr "Titulares de cuenta"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_debt:0
+msgid "Total partially paid debt, not due"
+msgstr "Total deuda parcialmente cancelada no vencida"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Partner Contacts"
+msgstr "Contactos del partner"
+
+#. module: numa_uniqs_base
+#: field:res.partner,ocredit:0
+msgid "Total credit, overrun"
+msgstr "Total crédito vencido"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+msgid "Taxes to be added on invoices and debit notes."
+msgstr "Impuestos agregados en facturas y notas de débito."
+
+#. module: numa_uniqs_base
+#: field:res.company,taxes_on_invoice:0
+msgid "Taxes on invoicing and debit notes. Special processing, debit and credit account used to generate complementary move. Not added to invoice total"
+msgstr "Impuestos en facturas y notas de débito."
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip_sales_point:0
+msgid "C docs"
+msgstr "Documentos C"
+
+#. module: numa_uniqs_base
+#: help:stock.invoice.onshipping,shop_id:0
+msgid "Shop to use for invoicing"
+msgstr "Sucursal a usar para facturación"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip,rs_max_inv_wo_wt_ser:0
+msgid "Service sales limit (services)"
+msgstr "Límite de venta (servicios)"
+
+#. module: numa_uniqs_base
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Error: La UdM por omisión y la UdM de compra deben estar en la misma categoría."
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_rate,use_tabla:0
+msgid "Usa tabla de escala?"
+msgstr "Usa tabla de escala?"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_ocredit_90:0
+#: field:res.partner,document_odebt_90:0
+msgid "Total received documents, overrun (61-90 days)"
+msgstr "Total documentos recibidos vencidos (61-90 días)"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_afip_document_type
+msgid "AFIP document types"
+msgstr "Tipos documento AFIP"
+
+#. module: numa_uniqs_base
+#: model:account.payment.term,note:numa_uniqs_base.pago_30_dias
+#: model:account.payment.term,note:numa_uniqs_base.pago_contado
+msgid "El pago se realizará a 30 días fecha factura.\n"
+"En caso de no respetarse el plazo, no se aplicará el crédito por pago en fecha"
+msgstr "El pago se realizará a 30 días fecha factura.\n"
+"En caso de no respetarse el plazo, no se aplicará el crédito por pago en fecha"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,shortcut:numa_uniqs_base.sh
+msgid "SdH"
+msgstr "SdH"
+
+#. module: numa_uniqs_base
+#: help:res.company,sales_points_ids:0
+msgid "Registered company sales points"
+msgstr "Puntos de venta registrados"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,e_cn_next_number:0
+msgid "Next E credit note"
+msgstr "Próxima Nota de crédito E"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rej_rec_doc_90:0
+msgid "Total rejected received documents (61-90 days)"
+msgstr "Documentos recibidos rechazados (61-90 días)"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_afip_responsability_relation
+msgid "Responsability relation"
+msgstr "Relación de responsabilidad"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_rate,inscriptos:0
+msgid "Inscriptos"
+msgstr "Inscriptos"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_credit_60:0
+#: field:res.partner,document_debt_60:0
+msgid "Total received documents, not due (31-60 days)"
+msgstr "Total documentos recibidos no vencidos (31-60 días)"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,shortcut:numa_uniqs_base.srta
+msgid "Srta."
+msgstr "Srta."
+
+#. module: numa_uniqs_base
+#: model:account.payment.term,name:numa_uniqs_base.contado_30_60_90
+msgid "Pago contado, 30, 60 y 90 días"
+msgstr "Pago contado, 30, 60 y 90 días"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_ocredit_30:0
+#: field:res.partner,document_odebt_30:0
+msgid "Total received documents, overrun (0-30 days)"
+msgstr "Total documentos recibidos vencidos (0-30 días)"
+
+#. module: numa_uniqs_base
+#: field:afip.document_type,active:0
+#: field:afip.optional_type,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_store_point,r_printer:0
+msgid "Printer for Out Pickings"
+msgstr "Impresora Ordenes de Entrega"
+
+#. module: numa_uniqs_base
+#: field:res.partner,ocredit_90:0
+msgid "Total credit, overrun (61-90 days)"
+msgstr "Total crédito vencido (61-90 días)"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_numa_ar_base_rg830_rate
+msgid "numa_ar_base.rg830_rate"
+msgstr "numa_ar_base.rg830_rate"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_debt_90:0
+msgid "Total partially paid debt, not due (61-90 days)"
+msgstr "Total deuda parcialmente cancelada no vencida (61-90 días)"
+
+#. module: numa_uniqs_base
+#: field:res.partner,odebt_30:0
+msgid "Total debt, overrun (0-30 days)"
+msgstr "Deuda, vencida (0-30 días)"
+
+#. module: numa_uniqs_base
+#: help:account.invoice,debit_note:0
+msgid "Generate a debit note instead of an invoice?"
+msgstr "Generar una Nota de Debito en vez de una Factura?"
+
+#. module: numa_uniqs_base
+#: model:ir.module.module,description:numa_uniqs_base.module_meta_information
+msgid "\n"
+"Argentinean Localisation\n"
+""
+msgstr "\n"
+"Argentinean Localisation\n"
+""
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_credit_30:0
+#: field:res.partner,document_debt_30:0
+msgid "Total received documents, not due (0-30 days)"
+msgstr "Total documentos recibidos no vencidos (0-30 días)"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Salesmen and Rep"
+msgstr "Vendedores y Reps."
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,c_dn_printer:0
+msgid "Printer for C debit notes"
+msgstr "Impresora Notas de débito C"
+
+#. module: numa_uniqs_base
+#: field:res.partner,document_ocredit:0
+#: field:res.partner,document_odebt:0
+msgid "Total received documents, overrun"
+msgstr "Total documentos recibidos vencidos"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,e_dn_next_number:0
+msgid "Next E debit note"
+msgstr "Próxima Nota de débito E"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "Pequeño Contribuyente Eventual Social"
+msgstr "Pequeño Contribuyente Eventual Social"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,a_dn_next_number:0
+msgid "Next A debit note"
+msgstr "Próxima Nota de débito A"
+
+#. module: numa_uniqs_base
+#: field:res.country,cuit_otro:0
+msgid "CUIT otro"
+msgstr "CUIT otro"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+msgid "Taxes to be added on credit notes (refund)."
+msgstr "Impuestos agregados en notas de crédito."
+
+#. module: numa_uniqs_base
+#: field:res.company,taxes_on_invoice_additional:0
+msgid "Additional taxes on invoicing and debit notes. It will be added to invoice total"
+msgstr "Impuestos adicionales en facturas y notas de débito. Se agregan al importe total"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "IVA Liberado - Ley 19640"
+msgstr "IVA Liberado - Ley 19640"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "Sujeto no Categorizado"
+msgstr "Sujeto no Categorizado"
+
+#. module: numa_uniqs_base
+#: field:res.country,cuit_fisica:0
+msgid "CUIT persona fisica"
+msgstr "CUIT persona fisica"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "Pequeño Contribuyente Eventual"
+msgstr "Pequeño Contribuyente Eventual"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,name:numa_uniqs_base.sea
+msgid "Sociedad Encomandita por Acciones"
+msgstr "Sociedad Encomandita por Acciones"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_table,hasta:0
+msgid "Hasta"
+msgstr "Hasta"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_wineem_partner_fix_parent
+msgid "wineem.partner_fix_parent"
+msgstr "wineem.partner_fix_parent"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rej_rec_doc_60:0
+msgid "Total rejected received documents (31-60 days)"
+msgstr "Documentos recibidos rechazados (31-60 días)"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.afip_sales_point,name:0
+msgid "Sales point description"
+msgstr "Descripción del punto de venta"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.partner_ledger_wizard,include_children:0
+msgid "Include children"
+msgstr "Incluye hijos"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Postal Address"
+msgstr "Dirección postal"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_rate,no_inscriptos:0
+msgid "No inscriptos"
+msgstr "No inscriptos"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,b_i_next_number:0
+msgid "Next B invoice note"
+msgstr "Próxima Factura B"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_ocredit:0
+msgid "Total partially paid credit, overrun"
+msgstr "Total crédito parcialmente cancelado vencido"
+
+#. module: numa_uniqs_base
+#: field:res.partner,salesmen_ids:0
+msgid "Salesmen"
+msgstr "Vendedores"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Invoices, partially payed, overdue"
+msgstr "Facturas, parcialmente pagas, vencidas"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip,rs_wt_gan:0
+msgid "SR Rent retention"
+msgstr "Retención de ganancias a Monotributo"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Total"
+msgstr "Total"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_afip_optional_type
+msgid "AFIP optional types"
+msgstr "Tipos opcionales AFIP"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Financial information"
+msgstr "Información financiera"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.rg830_rate,descripcion:0
+msgid "Conceptos sujetos a retención"
+msgstr "Conceptos sujetos a retención"
+
+#. module: numa_uniqs_base
+#: help:wineem.partner_initial_balance,period:0
+msgid "Period to set the initial movement"
+msgstr "Período a usar para el asiento inicial"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip,rg830_min:0
+msgid "RG830/00, minimun ammount"
+msgstr "Importe mínimo RG830/00"
+
+#. module: numa_uniqs_base
+#: field:wineem.partner_initial_balance,filename:0
+msgid "Filename"
+msgstr "Nombre de archivo"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,afip_invoicing_type:0
+msgid "AFIP Invoicing Type"
+msgstr "Tipo de facturación AFIP"
+
+#. module: numa_uniqs_base
+#: constraint:res.currency:0
+msgid "The rounding factor cannot be 0 !"
+msgstr "El factor de redondeo no puede ser 0 !"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,company_id:0
+#: field:numa_ar_base.afip_store_point,company_id:0
+#: field:stock.invoice.onshipping,company_id:0
+#: field:wineem.partner_initial_balance,company:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip:0
+msgid "AFIP General Properties"
+msgstr "Propiedades generales AFIP"
+
+#. module: numa_uniqs_base
+#: field:account.mass_shop_change,shop:0
+msgid "New shop"
+msgstr "Nueva sucursal"
+
+#. module: numa_uniqs_base
+#: field:res.partner,credit_90plus:0
+msgid "Total credit, not due (91+ days)"
+msgstr "Total crédito no vencido (91+ días)"
+
+#. module: numa_uniqs_base
+#: field:account.tax.code,parent_afip_code:0
+msgid "Parent AFIP Code"
+msgstr "Código AFIP Padre"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.partner_ledger_wizard,reconcil:0
+msgid "Consider reconciled entries"
+msgstr "Considerar entradas reconciliadas"
+
+#. module: numa_uniqs_base
+#: model:account.payment.term,name:numa_uniqs_base.contado_30_60
+msgid "Pago contado, 30 y 60 días"
+msgstr "Pago contado, 30 y 60 días"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_table,desde:0
+msgid "Desde"
+msgstr "Desde"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "Consumidor final"
+msgstr "Consumidor final"
+
+#. module: numa_uniqs_base
+#: field:stock.invoice.onshipping,shop_id:0
+#: field:stock.picking,shop_id:0
+msgid "Shop"
+msgstr "Sucursal"
+
+#. module: numa_uniqs_base
+#: field:res.partner,credit_30:0
+msgid "Total credit, not due (0-30 days)"
+msgstr "Total crédito no vencido (0-30 días)"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.afip,rs_wt_iva:0
+msgid "VAT retention to supplier exceeding the yearly revenue limit"
+msgstr "Retención de IVA a monotributista que excede límite anual"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,shortcut:numa_uniqs_base.sra
+msgid "Sra."
+msgstr "Sra."
+
+#. module: numa_uniqs_base
+#: field:res.country,cuit_juridica:0
+msgid "CUIT persona juridica"
+msgstr "CUIT persona juridica"
+
+#. module: numa_uniqs_base
+#: help:sale.shop,afip_sales_point_id:0
+msgid "AFIP sales point to be used on operations based on this shop"
+msgstr "Punto de ventas AFIP a utilizar en las operaciones de esta sucursal"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: numa_uniqs_base
+#: selection:numa_ar_base.partner_ledger_wizard,result_selection:0
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: numa_uniqs_base
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr "¡Error! No puede crear compañías recursivas."
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,e_next_number:0
+msgid "Next E invoice/debit note/credit note"
+msgstr "Próxima factura/NC/ND E"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_afip_document_class
+msgid "Document class"
+msgstr "Clase de documento"
+
+#. module: numa_uniqs_base
+#: field:res.partner,odebt:0
+msgid "Total debt, overrun"
+msgstr "Deuda, vencida"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rg2226_exc_from:0
+#: field:res.partner,rg830_exc_from:0
+msgid "Excepcion valida desde"
+msgstr "Excepcion valida desde"
+
+#. module: numa_uniqs_base
+#: view:res.company:0
+msgid "Country and State for all legal and commercial purposes"
+msgstr "País y provincia a los fines legales"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_account_mass_shop_change
+msgid "account.mass_shop_change"
+msgstr "account.mass_shop_change"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip_sales_point:0
+#: field:sale.shop,afip_sales_point_id:0
+msgid "AFIP sales point"
+msgstr "Punto de venta AFIP"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "011-Factura C"
+msgstr "011-Factura C"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,shortcut:numa_uniqs_base.sea
+msgid "S.E.A."
+msgstr "S.E.A."
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip_sales_point:0
+#: view:numa_ar_base.afip_store_point:0
+msgid "Document sequences"
+msgstr "Secuencias de documentos"
+
+#. module: numa_uniqs_base
+#: field:afip.optional_type,apply_rule:0
+msgid "Apply rule"
+msgstr "Aplicar regla"
+
+#. module: numa_uniqs_base
+#: field:stock.location,afip_store_point_id:0
+msgid "AFIP Store point"
+msgstr "Punto de almacén de AFIP"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,c_i_next_number:0
+msgid "Next C invoice note"
+msgstr "Próxima Factura C"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,name:numa_uniqs_base.srta
+msgid "Señorita"
+msgstr "Señorita"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,afip_sales_point:0
+msgid "AFIP point of sales"
+msgstr "Punto de ventas AFIP"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_credit_90:0
+msgid "Total partially paid credit, not due (61-90 days)"
+msgstr "Total credito parcialmente cancelado no vencido (61-90 días)"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.action_rg830_table_form
+#: model:ir.ui.menu,name:numa_uniqs_base.menu_action_rg830_table_form
+#: view:numa_ar_base.rg830_table:0
+msgid "AFIP RG830 table"
+msgstr "Tabla de tasas de la RG830 AFIP"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,shortcut:numa_uniqs_base.sa
+msgid "S.A."
+msgstr "S.A."
+
+#. module: numa_uniqs_base
+#: help:res.partner,rg2226_exception:0
+msgid "Exeptuado de percepciones y retenciones de Ganancias e IVA por la RG 2226"
+msgstr "Exeptuado de percepciones y retenciones de Ganancias e IVA por la RG 2226"
+
+#. module: numa_uniqs_base
+#: field:res.partner,total_supplier_dp:0
+msgid "Supplier downpayments"
+msgstr "Adelantos a proveedores"
+
+#. module: numa_uniqs_base
+#: field:res.partner,ocredit_30:0
+msgid "Total credit, overrun (0-30 days)"
+msgstr "Total crédito vencido (0-30 días)"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_debt_30:0
+msgid "Total partially paid debt, not due (0-30 days)"
+msgstr "Total deuda parcialmenta cancelada no vencida (0-30 días)"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.rg830_rate,codigo_de_regimen:0
+msgid "Codigo de regimen"
+msgstr "Código de régimen"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_odebt:0
+msgid "Total partially paid debt, overrun"
+msgstr "Total deuda parcialmente cancelada vencida"
+
+#. module: numa_uniqs_base
+#: field:res.partner.bank,cuit:0
+msgid "CUIT"
+msgstr "CUIT"
+
+#. module: numa_uniqs_base
+#: field:res.partner,debt_90:0
+msgid "Total debt, not due (61-90 days)"
+msgstr "Deudas, no vencidas (61-90 días)"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.rg830_rate,inscriptos:0
+msgid "Porcentaje de retención a sujetos inscriptos"
+msgstr "Porcentaje de retención a sujetos inscriptos"
+
+#. module: numa_uniqs_base
+#: field:account.tax.code,afip_code:0
+#: field:afip.document_type,afip_code:0
+#: field:afip.optional_type,afip_code:0
+#: field:res.currency,afip_code:0
+msgid "AFIP Code"
+msgstr "AFIP Code"
+
+#. module: numa_uniqs_base
+#: model:ir.actions.act_window,name:numa_uniqs_base.partner_fix_action
+#: model:ir.ui.menu,name:numa_uniqs_base.partner_fix_menu
+#: view:wineem.partner_fix_parent:0
+msgid "Partner Fix"
+msgstr "Partner Fix"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_credit_60:0
+msgid "Total partially paid credit, not due (31-60 days)"
+msgstr "Total crédito parcialmente cancelado no vencido (31-60 días)"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "006-Factura B"
+msgstr "006-Factura B"
+
+#. module: numa_uniqs_base
+#: field:res.currency,afip_dt_from:0
+msgid "AFIP Valid from"
+msgstr "AFIP Valid from"
+
+#. module: numa_uniqs_base
+#: model:ir.module.module,shortdesc:numa_uniqs_base.module_meta_information
+msgid "Argentina: Basic country data and adaptations for UNIQS/Wineem by NUMA"
+msgstr "Argentina: Datos básicos de país y adaptaciones para UNIQS/Wineem por NUMA"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_sale_shop
+msgid "Sales Shop"
+msgstr "Tienda ventas"
+
+#. module: numa_uniqs_base
+#: view:afip.optional_type:0
+#: model:ir.actions.act_window,name:numa_uniqs_base.act_afip_optional_type
+msgid "AFIP Optional type"
+msgstr "Tipo opcional AFIP"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "001-Factura A"
+msgstr "001-Factura A"
+
+#. module: numa_uniqs_base
+#: help:stock.location,afip_store_point_id:0
+msgid "AFIP Store point used to get official sequences"
+msgstr "Punto de almacén de AFIP para la secuencia de remitos"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_numa_ar_base_afip_store_point
+msgid "numa_ar_base.afip_store_point"
+msgstr "numa_ar_base.afip_store_point"
+
+#. module: numa_uniqs_base
+#: field:res.partner,debt_30:0
+msgid "Total debt, not due (0-30 days)"
+msgstr "Deuda, no vencida (0-30 días)"
+
+#. module: numa_uniqs_base
+#: field:res.partner,debt_60:0
+msgid "Total debt, not due (31-60 days)"
+msgstr "Deuda, no vencida (31-60 días)"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_account_invoice_tax
+msgid "Invoice Tax"
+msgstr "Impuestos sobre Factura"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_concept:0
+msgid "Servicios"
+msgstr "Servicios"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_invoice_type:0
+msgid "003-Nota de Crédito A"
+msgstr "003-Nota de Crédito A"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr "Cuentas de banco"
+
+#. module: numa_uniqs_base
+#: model:account.payment.term,name:numa_uniqs_base.pago_contado
+msgid "Pago contado"
+msgstr "Pago contado"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Invoices, overdue"
+msgstr "Facturas, vencidas"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,name:numa_uniqs_base.srl
+msgid "Sociedad de Responsabilidad Limitada"
+msgstr "Sociedad de Responsabilidad Limitada"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "IVA no responsable"
+msgstr "IVA no responsable"
+
+#. module: numa_uniqs_base
+#: constraint:stock.move:0
+msgid "You must assign a production lot for this product"
+msgstr "Debe asignar un lote de producción para este producto"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Supplier Invoices, partially payed, overdue"
+msgstr "Facturas de proveedor, parcialmente pagas, vencidas"
+
+#. module: numa_uniqs_base
+#: model:res.partner.title,shortcut:numa_uniqs_base.coop
+msgid "Coop."
+msgstr "Coop."
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,name:0
+#: field:numa_ar_base.afip_store_point,name:0
+#: view:res.partner:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,b_i_printer:0
+msgid "Printer for B invoices"
+msgstr "Impresoras Facturas B"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: numa_uniqs_base
+#: sql_constraint:res.country:0
+msgid "The name of the country must be unique !"
+msgstr "¡El nombre del país debe ser único!"
+
+#. module: numa_uniqs_base
+#: help:numa_ar_base.afip,rs_wt_gan:0
+msgid "Rent retention to supplier exceeding the yearly revenue limit"
+msgstr "Retención de ganancias a monotributo excedido"
+
+#. module: numa_uniqs_base
+#: field:account.invoice,debit_note:0
+msgid "Debit Note?"
+msgstr "Nota de débito?"
+
+#. module: numa_uniqs_base
+#: field:res.partner,rej_pay_doc_60:0
+msgid "Total rejected issued documents (31-60 days)"
+msgstr "Documentos emitidos rechazados (31-60 días)"
+
+#. module: numa_uniqs_base
+#: model:account.payment.term,note:numa_uniqs_base.contado_30_60_90
+msgid "Se saldará el 25% al contado, 25% a 30 días, el 25% a 60 días y el saldo a 90 días fecha factura.\n"
+"De no cumplirse con los términos de pago, se aplicarán los intereses punitorios correspondiente hasta la cancelación total de la deuda"
+msgstr "Se saldará el 25% al contado, 25% a 30 días, el 25% a 60 días y el saldo a 90 días fecha factura.\n"
+"De no cumplirse con los términos de pago, se aplicarán los intereses punitorios correspondiente hasta la cancelación total de la deuda"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,afip_invoicing_type:0
+msgid "Invoicing type"
+msgstr "Tipo de facturación"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_res_country
+msgid "Country"
+msgstr "País"
+
+#. module: numa_uniqs_base
+#: view:res.partner:0
+msgid "61-90 days"
+msgstr "61-90 días"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,rs_type:0
+msgid "No aplicable"
+msgstr "No aplicable"
+
+#. module: numa_uniqs_base
+#: field:res.partner,partial_ocredit_90plus:0
+msgid "Total partially paid credit, overrun (91+ days)"
+msgstr "Total crédito parcialmente cancelado vencido (91+ días)"
+
+#. module: numa_uniqs_base
+#: selection:account.invoice,afip_concept:0
+msgid "Productos y Servicios"
+msgstr "Productos y Servicios"
+
+#. module: numa_uniqs_base
+#: model:ir.model,name:numa_uniqs_base.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip_sales_point:0
+msgid "Document Automatic printing"
+msgstr "Impresión automática de documentos"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "IVA Resp. no Inscripto"
+msgstr "IVA Resp. no Inscripto"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip,rs_wt_iva:0
+msgid "SR VAT retention"
+msgstr "Retención de IVA Monotributo"
+
+#. module: numa_uniqs_base
+#: field:numa_ar_base.afip_sales_point,b_dn_next_number:0
+msgid "Next B debit note"
+msgstr "Próxima Nota de débito B"
+
+#. module: numa_uniqs_base
+#: view:numa_ar_base.afip_sales_point:0
+msgid "E docs"
+msgstr "Documentos E"
+
+#. module: numa_uniqs_base
+#: field:res.partner,total_customer_dp:0
+msgid "Customer dowmpayments"
+msgstr "Adelantos de cliente"
+
+#. module: numa_uniqs_base
+#: selection:res.partner,vat_condition:0
+msgid "Cliente del Exterior"
+msgstr "Cliente del Exterior"
+

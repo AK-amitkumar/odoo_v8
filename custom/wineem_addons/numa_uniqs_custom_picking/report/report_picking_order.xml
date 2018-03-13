@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="report_picking_order">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <h4 align="right">
+                                <strong>Orden de Picking <span t-field="o.name"/></strong>
+                            </h4>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    Cliente: <span t-field="o.partner_id.name"/><br/>
+                                    Rep/Líder: <span t-field="o.rep"/><br/>
+                                    Dirección: <br/>
+                                    Confirmada el: <span t-field="o.confirmed_on"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <table style="border: 0.5px solid black;border-collapse: collapse;width:100%;">
+                                <thead style="border: 0.5px solid black;border-collapse: collapse;background-color:gray;color:white;">
+                                    <tr>
+                                        <th class="text-center">Referencia</th>
+                                        <th class="text-center">Cant.</th>
+                                        <th class="text-center">Producto</th>
+                                        <th class="text-center">Orden de Entrega</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="o.move_ids" t-as="move">
+                                        <td class="text-center">
+                                            <span t-field="move.product_id.default_code"/>
+                                        </td>
+                                        <td class="text-right">
+                                            <span t-field="move.product_uom_qty"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-field="move.product_id.name"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-field="move.picking_id.name"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                 </t>
+             </t>
+        </template>
+    </data>
+</openerp>

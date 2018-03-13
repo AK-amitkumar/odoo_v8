@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_order_tree">
+            <field name="name">Sale orders with leaders</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="numa_uniqs_box.view_order_tree" />
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="rep_mg_group" position="after" >
+                        <field name="campaign" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_sales_order_filter">
+            <field name="name">Sale orders with leaders filter</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="numa_uniqs_box.view_sales_order_filter" />
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='rep_mg_group']" position="after" >
+                        <field name="campaign" />
+                        <field name="leader_id" />
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_sales_order_form">
+            <field name="name">Sale orders with leaders form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='project_id']" position="after" >
+                        <field name="campaign" />
+                        <field name="leader_id" />
+                        <button name="action_back_to_draft" states="prepared" type="object" string="Back to draft" colspan="2"/>
+                        <button name="action_recalculate_order" states="prepared" type="object" string="Recalculate Order" colspan="2"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="campaing_tree_view">
+            <field name="name">Sale campaign tree view</field>
+            <field name="model">sale.campaign</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Campaign" editable="top" >
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="campaign_action" model="ir.actions.act_window">
+            <field name="name">Campaigns</field>
+            <field name="res_model">sale.campaign</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+        </record>
+        <menuitem  id="campaign_menu" action="campaign_action"
+            parent="base.menu_sale_config_sales" sequence="5"/>
+
+        <record model="ir.ui.view" id="so_massive_state_change_form_view">
+            <field name="name">Sale massive state change form view</field>
+            <field name="model">sale.so_massive_state_change</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Massive state change" >
+                    <label string="Confirm a massive change to draft state" colspan="2"/>
+                    <newline />
+                    <field name="campaign" />
+                    <newline />
+                    <button name="action_change_to_draft" colspan="2" string="Change to draft" type="object" />
+                </form>
+            </field>
+        </record>
+
+        <record id="massive_state_change_action" model="ir.actions.act_window">
+            <field name="name">Massive state change</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.so_massive_state_change</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="so_massive_state_change_form_view"/>
+            <field name="target">new</field>
+            <field name="multi">True</field>
+        </record>
+
+        <record model="ir.values" id="sale_order_change_order_state">
+            <field name="model_id" ref="sale.model_sale_order" />
+            <field name="object" eval="1" />
+            <field name="name">Prepared to quoting Orders</field>
+            <field name="key2">client_action_multi</field>
+            <field name="value" eval="'ir.actions.act_window,' + str(ref('massive_state_change_action'))" />
+            <field name="key">action</field>
+            <field name="model">sale.order</field>
+        </record>
+
+    </data>
+</openerp>

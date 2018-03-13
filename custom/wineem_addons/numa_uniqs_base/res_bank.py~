@@ -1,0 +1,67 @@
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    NUMA
+#    Copyright (C) 2011 NUMA Extreme Systems (<http:www.numaes.com>).
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+##############################################################################
+
+from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
+import time
+
+from osv import fields, osv
+from tools.translate import _
+import decimal_precision as dp
+import netsvc
+
+import pdb
+
+
+class res_partner_bank (osv.osv):
+    _inherit = "res.partner.bank"
+
+    def _get_partner (self, cr, uid, context=None):
+        if not context: context = {}
+        return context.get('partner_id', False)
+
+    def name_get (self, cr, user, ids, context=None):
+        if not context:
+            context={}
+
+        if isinstance(ids, list):
+            names = []
+            for bank_account in self.browse (cr, user, ids):
+                names.append((bank_account.id, "%s [%s - %s]" % (bank_account.owner_name, bank_account.bank.name, bank_account.acc_number)))
+            return names
+        else:
+            bank_account = self.browse (cr, user, ids)
+            return (bank_account.id, "%s [%s - %s]" % (bank_account.owner_name, bank_account.bank.name, bank_account.acc_number))
+
+    _columns = {
+        'cuit': fields.char ('CUIT', size=20, required=True, select=True),
+        'cbu': fields.char ('CBU', size=22, required=True, select=True),
+    }
+
+    _defaults= {
+        'partner_id': _get_partner,
+        'cuit': '***********************',
+        'cbu': '***********************',
+        
+    }
+
+res_partner_bank()
+

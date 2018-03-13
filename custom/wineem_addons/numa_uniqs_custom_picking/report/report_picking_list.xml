@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="report_picking_list">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-foreach="get_pickings(o)" t-as="picking">
+                        <t t-call="report.external_layout">
+                            <div class="page">
+                                <h4><strong>REMITO: <span t-esc="picking.name"/></strong></h4>
+                                <table style="margin:0px;width:100%; border:1px solid #000000;font-size:10px;">
+                                    <tr>
+                                        <th style="width:22%;border-right:1px solid #000000;;background-color:#CECECE;text-align:center;"><div align="center">REPRESENTANTE</div></th>
+                                        <th style="width:22%;border-right:1px solid #000000;background-color:#CECECE;text-align:center;"><div align="center">LÍDER</div></th>
+                                        <th style="width:12%;border-right:1px solid #000000;background-color:#CECECE;text-align:center;"><div align="center">PEDIDO</div></th>
+                                        <th style="width:22%;border-right:1px solid #000000;background-color:#CECECE;text-align:center;"><div align="center">RECEPTOR</div></th>
+                                        <th style="width:22%;border-right:1px solid #000000;background-color:#CECECE;text-align:center;"><div align="center">FECHA DE ENVÍO</div></th>
+                                    </tr>
+                                    <tr style="border-top:1px solid #000000;">
+                                        <th style="border-right:1px solid #000000;"><div align="center"><span t-esc="picking.partner_id.name"/></div></th>
+                                       <th style="border-right:1px solid #000000;" ><div align="center"></div></th>
+                                       <th style="border-right:1px solid #000000;"><div align="center"><span t-esc="picking.sale_id.name"/></div></th>
+                                       <th style="border-right:1px solid #000000;"><div align="center"></div></th>
+                                       <th style="border-right:1px solid #000000;"><div align="center"><span t-esc="picking.date_done"/></div></th>
+                                    </tr>
+                                </table>
+                                <br/>
+                                <br/>
+                                <table class="table table-condensed">
+                                  <thead>
+                                    <tr>
+                                        <th><strong>Producto</strong></th>
+                                        <th class="text-right"><strong>Cantidad</strong></th>
+                                        <th><strong>UdM</strong></th>
+                                        <th><strong>Descuento (%)</strong></th>
+                                        <th><strong>Precio ($)</strong></th>
+                                        <th><strong>Precio con descuento ($)</strong></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr t-foreach="picking.move_lines" t-as="move">
+                                        <td><span t-field="move.product_id"/></td>
+                                        <td class="text-right"><span t-field="move.product_uom_qty"/></td>
+                                        <td><span t-field="move.product_uom"/></td>
+                                        <td class="text-right"><span t-esc="move.procurement_id.sale_line_id.discount"/></td>
+                                        <td class="text-right"><span t-esc="(move.procurement_id.sale_line_id.price_subtotal + (move.procurement_id.sale_line_id.discount/100*move.procurement_id.sale_line_id.price_subtotal))"/></td>
+                                        <td class="text-right"><span t-esc="move.procurement_id.sale_line_id.price_subtotal"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td class="text-right"><span t-esc="get_total_qty(picking)"/></td>
+                                        <td class="text-center">-</td>
+                                        <td class="text-center">-</td>
+                                        <td class="text-center">-</td>
+                                        <td class="text-right"><span t-esc="get_total(picking)"/></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <strong>Descuento Total:</strong> <span t-esc="get_total_discount(picking)"/>
+                            </div>
+                        </t>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</openerp>

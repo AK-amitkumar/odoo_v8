@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <report id="stock.report_picking_list"
+            string="Packing List"
+            model="stock.picking"
+            name="picking_packing_list_print"
+            rml="numa_uniqs_impresos/report/picking_packing_list.rml"
+            auto="False"
+            header = "False"
+            menu="True"
+            multi="False"/>
+
+    </data>
+</openerp>

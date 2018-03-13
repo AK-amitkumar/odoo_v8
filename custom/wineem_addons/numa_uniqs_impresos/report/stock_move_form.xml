@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <report id="report_stock_move_form_print"
+            string="Stock Move print"
+            model="stock.move"
+            name="stock_move_print"
+            rml="numa_uniqs_impresos/report/stock_move_form.rml"
+            auto="False"
+            header = "False"
+            menu="True"
+            multi="True"/>
+
+    </data>
+</openerp>

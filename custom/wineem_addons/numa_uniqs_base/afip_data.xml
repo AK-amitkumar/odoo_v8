@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--
+        ======================
+        afip
+        ======================
+        -->
+        <record id="afip_initial_data" model="numa_ar_base.afip">
+            <field name="rs_max_inv_wo_wt_rg">200000.0</field>
+            <field name="rs_max_inv_wo_wt_se">300000.0</field>
+            <field name="rs_wt_iva">21.0</field>
+            <field name="rs_wt_gan">35.0</field>
+            <field name="rg830_min">5.0</field>
+        </record>
+
+    </data>
+</openerp>

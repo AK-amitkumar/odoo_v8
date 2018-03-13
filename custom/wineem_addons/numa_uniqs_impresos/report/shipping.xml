@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report
+            id="delivery.report_shipping"
+            model="stock.picking"
+            name="wineem_sale.shipping"
+            multi="False"
+            rml="numa_uniqs_impresos/report/shipping.rml"
+            string="Delivery order"/>
+
+    </data>
+</openerp>

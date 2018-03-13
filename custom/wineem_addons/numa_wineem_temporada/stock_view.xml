@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+<!-- 
+Luis Torres: Comentadas lineas reemplazadas (debajo de ellas lo incorporado)
+-->
+        <record id="stock_picking_search" model="ir.ui.view">
+            <field name="name">stock_picking_search</field>
+            <field name="model">stock.picking</field>
+       <!-- <field name="inherit_id" ref="stock.view_picking_out_search"/>-->
+            <field name="inherit_id" ref="stock.view_picking_internal_search"/>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+            <!-- <field name="stock_journal_id" position="after">-->
+                 <field name="partner_id" position="after">
+                    <field name="season" widget="selection"/>
+                    <field name="wclosing" widget="selection"/>
+                 </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="stock_picking_out_form_view">
+            <field name="name">Pickings out with season info</field>
+            <field name="model">stock.picking</field>
+       <!-- <field name="inherit_id" ref="stock.view_picking_out_form" />-->
+            <field name="inherit_id" ref="stock.view_picking_form" />
+            <field name="arch" type="xml">
+                <data>
+                    <field name="backorder_id" position="after" >
+                        <field name="season" />
+                        <field name="wclosing" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_picking_out_tree">
+            <field name="name">Pickings out tree with season info</field>
+            <field name="model">stock.picking</field>
+       <!-- <field name="inherit_id" ref="stock.view_picking_out_tree" /> -->
+            <field name="inherit_id" ref="stock.vpicktree" />
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="partner_id" position="after" >
+                        <field name="season"/>
+                        <field name="wclosing" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record id="view_move_search_reception_outcoming_picking" model="ir.ui.view">
+            <field name="name">stock.move.outgoing.search2</field>
+            <field name="model">stock.move</field>
+      <!-- <field name="inherit_id" ref="stock.view_move_search_reception_outcoming_picking" /> -->
+            <field name="inherit_id" ref="stock.view_move_search" />
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="origin" position="before" >
+                        <field name="season" widget="selection" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <record id="view_move_tree_reception_picking" model="ir.ui.view">
+            <field name="name">stock.move.tree with season</field>
+            <field name="model">stock.move</field>
+      <!-- <field name="inherit_id" ref="stock.view_move_tree_reception_picking"/> -->
+            <field name="inherit_id" ref="stock.view_move_tree_receipt_picking"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="product_id" position="replace" >
+                        <field name="product_id" on_change="onchange_product_id(product_id)" />
+                        <field name="season" />  
+                    </field>
+                </data>
+            </field>
+        </record>
+<!--
+todo liricus ??? -->
+    </data>
+</openerp>

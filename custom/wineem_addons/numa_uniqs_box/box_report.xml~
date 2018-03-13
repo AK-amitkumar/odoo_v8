@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <report id="report_box_form_print"
+            string="Box form"
+            model="stock.box"
+            name="uniqs_box_form.print"
+            rml="numa_uniqs_box/report/box_form.rml"
+            auto="False"
+            header = "True"
+            menu="True"
+            multi="False"/>
+
+        <report id="report_box_label_print"
+            string="Box label"
+            model="stock.box"
+            name="uniqs_box_label.print"
+            rml="numa_uniqs_box/report/box_label.rml"
+            auto="False"
+            header = "False"
+            menu="True"
+            multi="False"/>
+
+        <report id="report_box_detailed_print"
+            string="Detailed report"
+            model="stock.box"
+            name="uniqs_box_detailed.print"
+            rml="numa_uniqs_box/report/box_detailed_form.rml"
+            auto="False"
+            header = "True"
+            menu="True"
+            multi="True"/>
+
+    </data>
+</openerp>

@@ -1,0 +1,1 @@
+/opt/odoo/custom/odoo-argentina/ISSUE_TEMPLATE.md

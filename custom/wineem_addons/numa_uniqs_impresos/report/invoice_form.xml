@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <report id="report_invoice_form_print"
+            string="Factura en preimpreso"
+            model="account.invoice"
+            name="wineem_invoice_print"
+            rml="numa_uniqs_impresos/report/invoice_form.rml"
+            auto="False"
+            header = "False"
+            menu="True"
+            attachment="(object.state in ('open','paid')) and ('INV-'+(object.number or '').replace('/','')+'.pdf')"
+            attachment_use="1"
+            multi="False"/>
+
+    </data>
+</openerp>

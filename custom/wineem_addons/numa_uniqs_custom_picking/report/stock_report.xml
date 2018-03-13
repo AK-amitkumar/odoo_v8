@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+
+        <report id="report_pick_order"
+            string="Pick Order form"
+            model="stock.picking.order"
+            name="pick_order_report"
+            rml="numa_uniqs_custom_picking/report/pick_order.rml"
+            auto="False"
+            header = "True"
+            menu="True"
+            multi="True"/>
+
+        <report
+            string="Picking Order" 
+            id="action_picking_order" 
+            model="stock.picking.order" 
+            report_type="qweb-pdf"
+            name="numa_uniqs_custom_picking.report_picking_order" 
+            file="numa_uniqs_custom_picking.report_picking_order" 
+        />
+        
+        <report 
+            string="Picking List" 
+            id="action_picking_list" 
+            model="stock.picking.order" 
+            report_type="qweb-pdf"
+            name="numa_uniqs_custom_picking.report_picking_list" 
+            file="numa_uniqs_custom_picking.report_picking_list" 
+        />
+    </data>
+</openerp>

@@ -1,0 +1,11 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_document_receipt","numa_ar_base.document_receipt","model_numa_ar_base_document_receipt","base.group_sale_salesman",1,1,1,1
+"access_document_receipt_cash","numa_ar_base.document_receipt_cash","model_numa_ar_base_document_receipt_cash","base.group_sale_salesman",1,1,1,1
+"access_document_receipt_bt","numa_ar_base.document_receipt_bt","model_numa_ar_base_document_receipt_bt","base.group_sale_salesman",1,1,1,1
+"access_document_receipt_qm","numa_ar_base.document_receipt_qm","model_numa_ar_base_document_receipt_qm","base.group_sale_salesman",1,1,1,1
+"access_document_receipt_debt","numa_ar_base.document_receipt_debt","model_numa_ar_base_document_receipt_debt","base.group_sale_salesman",1,1,1,1
+"access_quick_move_manager","numa_ar_base.quick_move","model_numa_ar_base_quick_move","base.group_sale_manager",1,1,1,1
+"access_customer_reconcile","numa_ar_base.customer_reconcile","model_numa_ar_base_customer_reconcile","base.group_sale_salesman",1,1,1,1
+"access_customer_reconcile_uac","numa_ar_base.customer_reconcile_uac","model_numa_ar_base_customer_reconcile_uac","base.group_sale_salesman",1,1,1,1
+"access_customer_reconcile_debt","numa_ar_base.customer_reconcile_debt","model_numa_ar_base_customer_reconcile_debt","base.group_sale_salesman",1,1,1,1
+
