@@ -43,7 +43,7 @@ Luis Torres: Comentadas lineas reemplazadas (debajo de ellas lo incorporado)
             <field name="arch" type="xml">
                 <data>
                     <field name="partner_id" position="after" >
-                        <field name="season"/>
+                        <field name="document_number"/>
                         <field name="wclosing" />
                     </field>
                 </data>

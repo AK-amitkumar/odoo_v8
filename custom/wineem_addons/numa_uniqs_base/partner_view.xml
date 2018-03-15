@@ -289,6 +289,13 @@
             groups="base.group_sale_manager"
             sequence="99"/>
 
+        <record id="magento_fix_action" model="ir.actions.act_window">
+            <field name="name">Correccion Magento</field>
+            <field name="res_model">wineem.magento_fix</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
 
         <!--
         ======================

@@ -72,6 +72,7 @@ Luis Torres: Comentadas lineas reemplazadas (debajo de ellas lo incorporado)
                 <xpath expr="//filter[@string='Procurement Group']" position="after" >
                     <filter string="Representante" icon="terp-personal" domain="[]" context="{'group_by':'rep_mg_group'}"/>
                     <filter string="Campaña" icon="terp-personal" domain="[]" context="{'group_by':'campaign'}"/>
+                    <filter string="Cierre" icon="terp-personal" domain="[]" context="{'group_by':'wclosing'}"/>
                 </xpath>
 
             </field>

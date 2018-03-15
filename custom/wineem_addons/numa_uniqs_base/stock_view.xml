@@ -62,5 +62,22 @@
                 </data>
             </field>
         </record>
+
+        <record id="orders_to_processed_action" model="ir.actions.act_window">
+            <field name="name">Órdenes de Entrega</field>
+            <field name="res_model">stock.picking</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar</field>
+            <field name="domain">[('picking_type_id.code','=','outgoing')]</field>
+            <field name="context">{'default_type': 'out', 'contact_display': 'partner_address', 'search_default_waiting': 1, 'search_default_draft': 1}</field>
+        </record>
+
+        <menuitem id="orders_to_processed_menu"
+                  action="orders_to_processed_action"
+                  parent="base.menu_sales"
+                  groups="base.group_sale_manager"
+                  sequence="100"/>
+
     </data>
 </openerp>

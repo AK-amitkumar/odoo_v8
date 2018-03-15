@@ -70,5 +70,6 @@ class sale_order(osv.osv):
         val = {'state': 'progress'}
         so.write(val)
         return True
-        
+
+
 sale_order()

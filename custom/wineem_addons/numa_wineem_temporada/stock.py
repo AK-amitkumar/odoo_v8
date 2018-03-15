@@ -24,11 +24,15 @@ from openerp.osv import fields,osv
 
 class picking (osv.osv):
     _inherit = "stock.picking"
-    
+
     _columns = {
         'season': fields.many2one ('product.season', 'Season', select=1),
-        'wclosing': fields.related ('partner_id', 'effective_closing', string="Closing", type="many2one", obj="res.partner.closing", readonly=True),
+        'wclosing': fields.related ('partner_id', 'effective_closing', string="Closing", type="many2one",
+                                    obj="res.partner.closing", readonly=True, store=True),
+        'document_number': fields.related ('partner_id', 'document_number', string="DNI", type="char", readonly=True),
+        # 'document_number': fields.char(related='partner_id.document_number', string="DNI"),
     }
+
 
 picking()
 

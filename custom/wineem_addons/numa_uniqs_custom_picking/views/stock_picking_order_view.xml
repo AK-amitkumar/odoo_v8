@@ -130,7 +130,7 @@
             parent="stock.menu_stock_warehouse_mgmt" sequence="40"/>
 
 
-            <record id="stock_picking_to_picking_order_form_view" model="ir.ui.view">
+        <record id="stock_picking_to_picking_order_form_view" model="ir.ui.view">
             <field name="name">Picking to Picking Order form view</field>
             <field name="model">stock.picking_to_picking_order</field>
             <field name="type">form</field>
@@ -153,8 +153,6 @@
             view_mode="form"
             view_type="form"
             target="new" />
-
-
 
     </data>
 </openerp>
