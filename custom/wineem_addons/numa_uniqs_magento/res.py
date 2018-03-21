@@ -61,7 +61,7 @@ class res_partner(osv.osv):
             vals['commercial_closing'] = parfield.id
 
         safe_vals = vals.copy()
-        print "create %s" % safe_vals
+        # print "create %s" % safe_vals
         # print "create new_partner_id  %s" % new_partner_id
 
         #todo liricus:  esto lo voy a poner para importar solo los representantes... luego lo comento
@@ -196,7 +196,7 @@ class res_partner(osv.osv):
             vals['commercial_closing'] = parfield.id
 
         safe_vals = vals.copy()
-        print "save %s" % safe_vals
+        # print "save %s" % safe_vals
         if isinstance(ids, (int, long)):
             ids = [ids]
         # print "save id %s" % ids

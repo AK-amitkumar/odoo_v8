@@ -237,6 +237,7 @@ PartnerBatchImport = PartnerBatchImporter  # deprecated
 class PartnerImportMapper(ImportMapper):
     _model_name = 'magento.res.partner'
 
+
     direct = [
         ('email', 'email'),
         ('dob', 'birthday'),
@@ -333,6 +334,20 @@ class PartnerImportMapper(ImportMapper):
         )
         if partner:
             return {'openerp_id': partner.id}
+
+    @mapping
+    def leader_id(self, record):
+        if record['nombre_lider']:
+            partner = self.env['res.partner'].search([('name', '=', record['nombre_lider'].replace('_', ' '))])
+            if partner:
+                return {'leader_id': partner[0].id}
+
+    @mapping
+    def is_leader(self, record):
+        if record['lider'] and record['lider'] == '4':
+            return {'is_leader': True}
+        else:
+            return {'is_leader': False}
 
 
 @magento

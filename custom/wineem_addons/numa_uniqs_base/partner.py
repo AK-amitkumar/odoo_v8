@@ -1154,7 +1154,7 @@ class magento_fix (osv.osv_memory):
 
         ##########Ajustando parent_id de vendedor###############
         logger.info("Ajustando parent_id %s" % datetime.now())
-        p_ids = partner_obj.search(cr, SUPERUSER, [('parent_id','=',False),('group_id.name','!=','RESPONSABLES'),('group_id','!=',False), ('active','=',True)], context=context)
+        p_ids = partner_obj.search(cr, SUPERUSER, [('parent_id','=',False),('group_id.name','!=','RESPONSABLES'),('group_id.name','!=','ELIMINADOS'),('group_id','!=',False), ('active','=',True)], context=context)
         for partner in partner_obj.browse(cr, SUPERUSER, p_ids, context=context):
             rep_ids = partner_obj.search(cr, SUPERUSER, [('name','=',partner.group_id.name.replace('_',' ')),('group_id.name','=','RESPONSABLES')], context=context)
             logger.info(u"Ajustando parent_id de vendedor [%s %s]" % (partner.name, partner.id))
@@ -1178,9 +1178,10 @@ class magento_fix (osv.osv_memory):
 
         ######################################################################
         logger.info(u"Ajustando property_account_receivable de vendedores %s" % datetime.now())
-
+        #agrego el property_account_receivable', '=', False fijarse bien.
         p_ids = partner_obj.search(cr, SUPERUSER, [('parent_id', '!=', False), ('group_id.name', '!=', 'RESPONSABLES'),
-                                                   ('active', '=', True)], context=context)
+                                                   ('group_id.name', '!=', 'ELIMINADOS'), ('active', '=', True),
+                                                   ('property_account_receivable', '=', False)], context=context)
 
         for partner in partner_obj.browse(cr, SUPERUSER, p_ids, context=context):
             logger.info(u"Ajustando vendedor [%s]" % partner.name)
@@ -1445,6 +1446,16 @@ class magento_fix (osv.osv_memory):
             logger.info(u"Ajustando producto de [%s]" % prod.name)
             prod.write({'taxes_id': [(6, 0, [account_tax.id])]})
 
+        logger.info(u"Ajusto lideres %s" % datetime.now())
+        p_ids = partner_obj.search(cr, SUPERUSER, [('leader_id', '<>', False), ('active','=',True)], context=context)
+        total = len(p_ids)
+        i = 0
+        for partner in partner_obj.browse(cr, SUPERUSER, p_ids, context=context):
+            leader = partner.leader_id
+            i += 1
+            if not leader.is_leader:
+                partner.write({'is_leader': True}, context=context)
+            logger.info(u"registro %s de %s Nombre %s %s" % (i, total, partner.name, partner.id))
 
         logger.info(u"Partner fix terminado inicio (%s) fin (%s)" % (inicio, datetime.now()))
         return {
