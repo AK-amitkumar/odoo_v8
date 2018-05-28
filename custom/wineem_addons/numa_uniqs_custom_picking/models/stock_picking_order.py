@@ -123,7 +123,7 @@ class StockPickingOrder(osv.osv):
             'res_model': 'stock.picking.order.confirm',
             'type': 'ir.actions.act_window',
             'nodestroy': True,
-            'target': 'new',
+            # 'target': 'new',
             'domain': '[]',
             'context': dict(context, active_ids=ids, box_id = po.box_id.id, pick_order_id = po.id)
         }

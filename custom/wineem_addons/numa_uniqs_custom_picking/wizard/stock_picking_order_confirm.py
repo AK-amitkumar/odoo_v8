@@ -62,7 +62,7 @@ class StockPickingOrderConfirm(osv.osv_memory):
         """
         assert ids and len(ids)==1, 'One at the time'
         for poc_line in self.browse(cr, uid, ids[0], context=context).lines:
-            self.write(cr, uid, ids[0], {'actual_qty': 0.0})
+            poc_line.write({'actual_qty': 0})
         return True
 
     def do_set_scan_to_requested(self, cr, uid, ids, context=None):
@@ -128,6 +128,7 @@ class StockPickingOrderConfirm(osv.osv_memory):
         found = False
         incremented = False
         new_lines = []
+
         if rlines:
             for line in rlines:
                 move = move_obj.browse(cr, uid, line['move_id'], context=context)
@@ -159,12 +160,31 @@ class StockPickingOrderConfirm(osv.osv_memory):
         raise osv.except_osv(_('Processing Error'),\
                _('Product scanned is not part of the picking. The scanned code corresponds to a [%s]') % product.name)
 
+    # def onchange_scanned_item_2(self, cr, uid, ids, lines, context=None):
+    #     context = context or {}
+    #     rlines = self.resolve_2many_commands(cr, uid, 'lines', lines, fields=['move_id','actual_qty','requested_qty'], context=context)
+    #     new_lines = []
+    #
+    #     if rlines:
+    #         for line in rlines:
+    #             line['actual_qty'] = 0
+    #             if 'id' in line:
+    #                 del line['id']
+    #             new_lines.append(line)
+    #     return {'value': {'lines': new_lines, 'scanned_item': False}}
+
     def action_confirm_po(self, cr, uid, ids, context=None):
         picking_obj= self.pool.get('stock.picking')
         move_obj = self.pool.get('stock.move')
         porder_obj = self.pool.get('stock.picking.order')
 
-        for poc in self.browse(cr, uid, ids, context=context):
+        pick_order_conf = self.browse(cr, uid, ids, context=context)
+
+        if not pick_order_conf.box_id:
+            raise osv.except_osv(_('Error'), \
+                                 _('Debe seleccionar una caja'))
+
+        for poc in pick_order_conf:
             pick_order = poc.pick_order_id
             cancel_moves = []
             moves = []
@@ -210,7 +230,13 @@ class StockPickingOrderConfirm(osv.osv_memory):
             move_obj.write(cr, uid, new_moves, {'pick_order_id': False})
             for m in moves:
                 move_obj.write(cr, uid, [m], {'product_uom_qty': qtities_to_write[m]})
-        return {'type': 'ir.actions.act_window_close'}
+
+        return {
+            "type": "ir.actions.act_window",
+            "res_model": "stock.picking.order",
+            "views": [[False, "form"]],
+            "res_id": pick_order_conf.pick_order_id.id,
+        }
 
 
 class StockPickingOrderConfirmLine(osv.osv_memory):
