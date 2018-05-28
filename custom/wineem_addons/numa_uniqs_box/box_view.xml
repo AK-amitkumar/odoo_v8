@@ -38,7 +38,8 @@
                         <h1><field name="name" default_focus="1" placeholder="Nombre"/></h1>
                         <group>
                             <group>
-                                <field name="rep_id" on_change="onchange_rep_id(rep_id)" />
+                                <!--<field name="rep_id" on_change="onchange_rep_id(rep_id)" />-->
+                                <field name="rep_id" />
                                 <field name="rep_rep_id" />
                                 <field name="date_opened" />
                                 <field name="date_closed" />

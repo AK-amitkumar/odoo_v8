@@ -37,8 +37,8 @@ class box(osv.osv):
     
     _columns = {
         'name': fields.char ('Box ID', size=32, readonly=True),
-        'rep_id': fields.many2one('res.partner', 'Dest. Representant/Leader', help='Representant, responsible for final delivery to sales reps. Destination of box delivery', readonly=True, required=True, states={'opened': [('readonly', False)]}),
-        # 'rep_id': fields.many2one('res.partner', 'Representant', help="Representant to send the box to",                                                                                     required=True, domain="['|',('group_id.name','=','RESPONSABLES'),('is_leader','=',True)]"),
+        'rep_id': fields.many2one('res.partner', 'Dest. Representant/Leader', help='Representant, responsible for final delivery to sales reps. Destination of box delivery', readonly=True, required=True, domain="['|',('group_id.name','=','RESPONSABLES'),('is_leader','=',True)]"),
+        # 'rep_id': fields.many2one('res.partner', 'Representant', help="Representant to send the box to",                                                                                     required=True, domain="['|',('group_id.name','=','RESPONSABLES'),('is_leader','=',True)], states={'opened': [('readonly', False)]}"),
         'rep_rep_id': fields.related ('rep_id', 'parent_id', type="many2one", relation='res.partner', string='Representant', store=True, readonly=True),
         'rep_shipping_id': fields.many2one('res.partner', 'Shipping Address', readonly=True, states={'opened': [('readonly', False)]}, help="Shipping address for this box."),        
         'date_opened': fields.date ('Date opened', readonly=True, required=True, states={'opened': [('readonly', False)]}), 
@@ -67,17 +67,38 @@ class box(osv.osv):
     def default_get(self, cr, uid, fields_list, context=None):
         res = super(box, self).default_get(cr, uid, fields_list, context=context)
         if 'rep_id' in context:
-            res['rep_id'] = context['rep_id']
+            picking_obj = self.pool.get("stock.picking.order")
+            picking = picking_obj.browse(cr, uid, context['pick_order_id'], context=context)
+            if picking.partner_id:
+                if picking.partner_id.is_leader:
+                    res['rep_id'] = picking.partner_id.id
+                elif picking.partner_id.leader_id:
+                    res['rep_id'] = picking.partner_id.leader_id.id
+                elif picking.partner_id.group_id.name == "RESPONSABLES":
+                    res['rep_id'] = picking.partner_id.id
+                else:
+                    res['rep_id'] = picking.partner_id.parent_id and picking.partner_id.parent_id.id or res.get('rep_id', False)
+            # partner_obj = self.pool.get('res.partner')
+            # rep_id = context['rep_id']
+            # rep = partner_obj.browse(cr, uid, rep_id, context=context)
+            #
+            # if rep.is_leader:
+            #     res['rep_id'] = rep.id
+            # elif rep.leader_id:
+            #     res['rep_id'] = rep.leader_id.id
+            # elif rep.group_id.name == "RESPONSABLES":
+            #     res['rep_id'] = rep.id
+            # else:
+            #     res['rep_id'] = rep.parent_id and rep.parent_id.id or res.get('rep_id', False)
         return res
 
     def create(self, cr, user, vals, context=None):
         if ('name' not in vals) or (vals.get('name')=='/'):
             seq_obj_name =  'stock.box'
             vals['name'] = self.pool.get('ir.sequence').get(cr, user, seq_obj_name)
-
             partner_obj = self.pool.get('res.partner')
             context = context or {}
-            rep_id = vals['rep_id']
+            rep_id = context['rep_id']
             rep = partner_obj.browse(cr, user, rep_id, context=context)
             rep_shipping_id = partner_obj.address_get(cr, user, [rep_id], ['delivery'])['delivery']
             rep_rep_id = rep.parent_id and rep.parent_id.id or False
@@ -293,7 +314,6 @@ class delivery (osv.osv):
         res = {}
         for d in self.browse(cr, uid, ids, context=context):
             res[d.id] = ', '.join(list(set([b.rep_id and b.rep_id.name or '' for b in d.boxes_ids])))
-        
         return res
         
     _columns = {

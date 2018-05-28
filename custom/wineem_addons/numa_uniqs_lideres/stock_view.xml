@@ -71,6 +71,9 @@
                         <field name="leader_id"/>
                         <field name="campaign" />
                     </field>
+                    <field name="name" position="replace" >
+                        <field name="name" invisible="1"/>
+                    </field>
                 </data>
             </field>
         </record>

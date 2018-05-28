@@ -11,7 +11,7 @@
                     <group>
                         <field name="pick_order_id" invisible="1"/>
                         <field name="rep"/>
-                        <field name="box_id" context="{'rep_id': rep}"
+                        <field name="box_id" context="{'rep_id': rep, 'pick_order_id': pick_order_id}"
                             domain="[('state','=','opened'),('rep_id','=',rep)]"/>
                         <field name="scanned_item" on_change="onchange_scanned_item(scanned_item,lines)"/>
                     </group>

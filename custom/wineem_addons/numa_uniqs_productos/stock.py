@@ -25,8 +25,11 @@ class stock_move(osv.osv):
     _inherit = 'stock.move'
     
     _columns = {
-        'so_price': fields.related('sale_line_id', 'price_unit', 
+        'sale_line_id': fields.many2one('sale.order.line', 'Sales Order Line', ondelete='set null', select=True,
+                                        readonly=True),
+        'so_price': fields.related('sale_line_id', 'price_unit',
                                    string="Sales Price", type="float"),
+
     }
 
 stock_move()
