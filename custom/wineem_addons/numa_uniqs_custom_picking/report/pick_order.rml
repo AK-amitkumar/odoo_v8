@@ -232,7 +232,7 @@
           <para style="P2">Partner:</para>
         </td>
         <td>
-          <para style="P2">[[ po.partner.name ]]</para>
+          <para style="P2">[[ po.partner_id.name ]]</para>
         </td>
         <td>
           <para style="P10">State: [[ {'draft': 'Borrador', 'planned': 'Planificada', 'done':'Confirmada', 'canceled': 'Cancelada'}.get(po.state, 'Desconocido') ]]</para>
@@ -246,7 +246,7 @@
           <para style="P2">Rep/Leader:</para>
         </td>
         <td>
-          <para style="P2"><font face="Helvetica">[[ po.partner.parent_id and po.partner.parent_id.name or '' ]]</font>[[ po.partner.leader_id and ' / %s' % po.partner.leader_id.name or '' ]]</para>
+          <para style="P2"><font face="Helvetica">[[ po.partner_id.parent_id and po.partner_id.parent_id.name or '' ]]</font>[[ po.partner_id.leader_id and ' / %s' % po.partner_id.leader_id.name or '' ]]</para>
         </td>
         <td>
           <para style="P2">
@@ -259,7 +259,7 @@
           <para style="P2">Address:</para>
         </td>
         <td>
-          <para style="P1">[[ get_address(po.rep, 'delivery') ]]</para>
+          <para style="P1">[[ get_address(po.partner_id, 'delivery') ]]</para>
         </td>
         <td>
           <para style="P2">
@@ -293,7 +293,7 @@
     <blockTable colWidths="116.0,94.0,206.0,109.0" style="Tabla5">
       <tr>
         <td>
-          <para style="P4">Saldos</para>
+          <para style="P4">Catálogo de oportunidades</para>
         </td>
         <td>
           <para style="P4">
@@ -313,7 +313,81 @@
       </tr>
       <tr>
         <td>
-          <para style="P14">[[ repeatIn(get_saldos(po), 'm1') ]] [[ m1.product_id.code ]]</para>
+          <para style="P14">[[ repeatIn(get_catalogo_oportunidades(po), 'm1') ]] [[ m1.product_id.code ]]</para>
+        </td>
+        <td>
+          <para style="P14">[[ formatLang(m1.product_qty, digits=0) ]]</para>
+        </td>
+        <td>
+          <para style="P18">[[ m1.product_id.name ]]</para>
+        </td>
+        <td>
+          <para style="P19">[[ m1.picking_id.name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Standard">....</para>
+    <blockTable colWidths="116.0,94.0,206.0,109.0" style="Tabla5">
+      <tr>
+        <td>
+          <para style="P4">Wineem express</para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P14">[[ repeatIn(get_wineem_express(po), 'm1') ]] [[ m1.product_id.code ]]</para>
+        </td>
+        <td>
+          <para style="P14">[[ formatLang(m1.product_qty, digits=0) ]]</para>
+        </td>
+        <td>
+          <para style="P18">[[ m1.product_id.name ]]</para>
+        </td>
+        <td>
+          <para style="P19">[[ m1.picking_id.name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Standard">....</para>
+    <blockTable colWidths="116.0,94.0,206.0,109.0" style="Tabla5">
+      <tr>
+        <td>
+          <para style="P4">Whatsapp</para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P14">[[ repeatIn(get_whatsapp(po), 'm1') ]] [[ m1.product_id.code ]]</para>
         </td>
         <td>
           <para style="P14">[[ formatLang(m1.product_qty, digits=0) ]]</para>
@@ -367,7 +441,44 @@
     <blockTable colWidths="116.0,94.0,206.0,109.0" style="Tabla3">
       <tr>
         <td>
-          <para style="P4">Promoción</para>
+          <para style="P4">Club de amigas</para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P14">[[ repeatIn(get_club_de_amigas(po), 'm3') ]][[ m3.product_id.code ]]</para>
+        </td>
+        <td>
+          <para style="P14">[[ formatLang(m3.product_qty, digits=0) ]]</para>
+        </td>
+        <td>
+          <para style="P18">[[ m3.product_id.name ]]</para>
+        </td>
+        <td>
+          <para style="P19">[[ m3.picking_id.name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">.....</para>
+    <blockTable colWidths="116.0,94.0,206.0,109.0" style="Tabla3">
+      <tr>
+        <td>
+          <para style="P4">Oportunidades</para>
         </td>
         <td>
           <para style="P4">
@@ -388,6 +499,43 @@
       <tr>
         <td>
           <para style="P14">[[ repeatIn(get_oportunidades(po), 'm3') ]][[ m3.product_id.code ]]</para>
+        </td>
+        <td>
+          <para style="P14">[[ formatLang(m3.product_qty, digits=0) ]]</para>
+        </td>
+        <td>
+          <para style="P18">[[ m3.product_id.name ]]</para>
+        </td>
+        <td>
+          <para style="P19">[[ m3.picking_id.name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">.....</para>
+    <blockTable colWidths="116.0,94.0,206.0,109.0" style="Tabla3">
+      <tr>
+        <td>
+          <para style="P4">No Comisionables</para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P14">[[ repeatIn(get_no_comisionables(po), 'm3') ]][[ m3.product_id.code ]]</para>
         </td>
         <td>
           <para style="P14">[[ formatLang(m3.product_qty, digits=0) ]]</para>

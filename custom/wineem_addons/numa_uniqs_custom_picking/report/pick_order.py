@@ -20,8 +20,10 @@
 ##############################################################################
 
 import time
+
 from openerp.osv import osv
 from openerp.report import report_sxw
+
 
 class pick_order_report(report_sxw.rml_parse):
     def __init__(self, cr, uid, name, context):
@@ -30,33 +32,55 @@ class pick_order_report(report_sxw.rml_parse):
             'time': time,
             'get_moves': self._get_moves,
             'get_address': self._get_address,
-            'get_saldos': self._get_saldos,
+            'get_catalogo_oportunidades': self._get_catalogo_oportunidades,
+            'get_wineem_express': self._get_wineem_express,
+            'get_whatsapp': self._get_whatsapp,
             'get_normal': self._get_normal,
+            'get_club_de_amigas': self._get_club_de_amigas,
             'get_oportunidades': self._get_oportunidades,
+            'get_no_comisionables': self._get_no_comisionables,
         })
 
     def _get_moves(self, po):
-        return sorted(po.move_ids, key=lambda x: x.product_id.code)
+        return sorted(po.moves, key=lambda x: x.product_id.code)
 
-    def _get_saldos(self, po):
-        return sorted(filter(lambda m: m.product_id.categ_id.name in ['Saldos'], po.move_ids),
+    def _get_catalogo_oportunidades(self, po):
+        return sorted(filter(lambda m: m.product_id.categ_id.name in ['Catalogo de Oportunidades'], po.move_ids),
+                      key=lambda x: x.product_id.code)
+
+    def _get_wineem_express(self, po):
+        return sorted(filter(lambda m: m.product_id.categ_id.name in ['Wineem Express'], po.move_ids),
+                      key=lambda x: x.product_id.code)
+
+    def _get_whatsapp(self, po):
+        return sorted(filter(lambda m: m.product_id.categ_id.name in ['Whatsapp'], po.move_ids),
                       key=lambda x: x.product_id.code)
 
     def _get_normal(self, po):
-        return sorted(filter(lambda m: m.product_id.categ_id.name not in ['Oportunidades','Club de Amigas','Saldos'], po.move_ids),
+        return sorted(filter(lambda m: m.product_id.categ_id.name not in ['Catalogo de Oportunidades', 'Wineem Express',
+                                                                          'Whatsapp', 'Club de Amigas', 'Oportunidades',
+                                                                          'NO COMISIONABLES'], po.move_ids),
+                      key=lambda x: x.product_id.code)
+
+    def _get_club_de_amigas(self, po):
+        return sorted(filter(lambda m: m.product_id.categ_id.name in ['Club de Amigas'], po.move_ids),
                       key=lambda x: x.product_id.code)
 
     def _get_oportunidades(self, po):
-        return sorted(filter(lambda m: m.product_id.categ_id.name in ['Oportunidades','Club de Amigas'], po.move_ids),
+        return sorted(filter(lambda m: m.product_id.categ_id.name in ['Oportunidades'], po.move_ids),
+                      key=lambda x: x.product_id.code)
+
+    def _get_no_comisionables(self, po):
+        return sorted(filter(lambda m: m.product_id.categ_id.name in ['NO COMISIONABLES'], po.move_ids),
                       key=lambda x: x.product_id.code)
 
     def _get_address(self, partner, atype):
         atype = atype or 'default'
 
-        # r = partner.address_get(atype) [atype]
-        r = partner
-        a = "%s%s" %(r.street, r.street2)
+        r = partner  # .address_get(atype) [atype]
+        a = "%s%s" % (r.street, r.street2)
         return a
+
 
 report_sxw.report_sxw(
     'report.pick_order_report',

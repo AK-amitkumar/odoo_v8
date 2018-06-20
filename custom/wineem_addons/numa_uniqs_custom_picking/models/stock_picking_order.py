@@ -153,6 +153,20 @@ class StockPickingOrder(osv.osv):
                 'nodestroy': True
             }
 
+    def action_print_picking_list(self, cr, uid, ids, context=None):
+
+        assert ids and len(ids) == 1, 'One at the time'
+        pick_order = self.browse(cr, uid, ids[0], context=context)
+
+        datas = {
+            'model': 'stock.picking.order',
+            'ids': list(set([m.picking_id.id for m in pick_order.move_ids])),
+        }
+
+        return {'type': 'ir.actions.report.xml',
+                'report_name': 'picking_packing_list_print',
+                'datas': datas,
+                'nodestroy': True}
 
 
 class stock_move(osv.osv):

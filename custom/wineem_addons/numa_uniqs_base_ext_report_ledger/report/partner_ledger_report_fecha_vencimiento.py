@@ -102,16 +102,24 @@ class partner_ledger_report_fecha_vencimiento(report_sxw.rml_parse, common_repor
 #             print "FACTURA ======= %s" % (m.invoice.date_due)
 #             date = self.docs_on_maturity and (m.date_maturity or m.date) or m.date
             
-            # Agregado
-            date_due = self.docs_on_maturity and (m.date_maturity or m.invoice.date_due) or m.invoice.date_due
-#             date_due = m.date_maturity
-#             date = self.docs_on_maturity and (m.date_maturity or m.date) or m.date
-            partner_id = (m.partner_id.id in self.partner_ids) and m.partner_id or m.partner_id.parent_id
+#             # Agregado
+#             date_due = self.docs_on_maturity and (m.date_maturity or m.invoice.date_due) or m.invoice.date_due
+# #             date_due = m.date_maturity
+# #             date = self.docs_on_maturity and (m.date_maturity or m.date) or m.date
 
+            # todo liricus saco esto por la otra linea comentada
+            date_due = self.docs_on_maturity and (m.date_maturity or m.invoice.date_due) or m.invoice.date_due
+            # print date_due
+            if not date_due:
+                date_due = self.docs_on_maturity and (m.date_maturity or m.date) or m.date
+            # print date_due
+            partner_id = (m.partner_id.id in self.partner_ids) and m.partner_id or m.partner_id.parent_id
             partner_changed = (not current_partner) or current_partner.id != partner_id.id
             date_changed = partner_changed or (not current_date_due) or current_date_due != date_due
             doc_changed = date_changed or (not current_doc) or \
                           ((not (current_doc_type == 'Ventas' and m.account_id.type == 'receivable' and m.debit > 0)) and current_doc != m.ref)
+
+            # print date_due, partner_id, partner_changed, date_changed, doc_changed
 
             if date_due >= self.start_date:
                 if start_balance == None:
@@ -216,6 +224,7 @@ class partner_ledger_report_fecha_vencimiento(report_sxw.rml_parse, common_repor
         aml_obj = self.pool.get('account.move.line')
         partner_obj = self.pool.get('res.partner')
 
+
         l = {p: {'entries': [], 'start_balance':0.0, 'close_balance': 0.0,
                  'dp_entries': [], 'dp_start_balance':0.0, 'dp_close_balance': 0.0}
                  for p in partner_obj.browse(self.cr, self.uid, self.partner_ids, self.localcontext)}
@@ -255,7 +264,8 @@ class partner_ledger_report_fecha_vencimiento(report_sxw.rml_parse, common_repor
         m_ids = aml_obj.search(self.cr, self.uid, sc)
         
         moves = aml_obj.browse(self.cr, self.uid, m_ids)
-        
+
+
 #         moves = sorted(moves, key=lambda m: (m.partner_id.id in self.partner_ids and m.partner_id.id or m.partner_id.parent_id.id,
 #                                              self.docs_on_maturity and (m.date_maturity or m.date) or m.date,
 #                                              m.ref))

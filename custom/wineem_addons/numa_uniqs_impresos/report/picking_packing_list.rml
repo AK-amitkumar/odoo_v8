@@ -183,7 +183,7 @@
     <blockTable colWidths="272.0,272.0" style="Table1">
       <tr>
         <td>
-          <para style="terp_default_Bold_9"><font face="Helvetica">Dirección de envíosssss</font> :</para>
+          <para style="terp_default_Bold_9"><font face="Helvetica">Dirección de envío</font> :</para>
           <para style="terp_default_9">[[ (picking.partner_id and picking.partner_id.parent_id and picking.partner_id.parent_id.title.name) or '' ]] [[ picking.partner_id and picking.partner_id.parent_id and picking.partner_id.parent_id.name ]]</para>
           <para style="terp_default_9">[[ picking.partner_id and picking_id.partner_id.parent_id.street or '' ]]</para>
           <para style="terp_default_9">[[ (picking.partner_id and picking_id.partner_id.parent_id.street2) or removeParentNode('para') ]]</para>

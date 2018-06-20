@@ -33,7 +33,9 @@
                         <button name="action_confirm" type="object" string="Confirm" states="planned" class="oe_highlight" />
                         <button name="action_cancel" type="object" string="Cancel" states="planned" />
                         <button name="action_print" type="object" string="Print"/>
-                        <button name="%(numa_uniqs_custom_picking.action_picking_list)d" type="action" string="Print Picking List"
+                        <!--<button name="%(numa_uniqs_custom_picking.action_picking_list)" type="action" string="Print Picking List"-->
+                            <!--states="done" class="oe_highlight"/>-->
+                        <button name="action_print_picking_list" type="object" string="Print Packing List"
                             states="done" class="oe_highlight"/>
                         <field name="state" widget="statusbar" readonly="1" nolabel="1"/>
                     </header>

@@ -106,6 +106,7 @@ class report_box(report_sxw.rml_parse):
 class ddata ():
     pass
 
+
 class report_detailed_box(report_sxw.rml_parse):
     def __init__(self, cr, uid, name, context):
         super(report_detailed_box, self).__init__(cr, uid, name, context)
@@ -222,14 +223,15 @@ class report_detailed_box(report_sxw.rml_parse):
                         if pvi.base == -1:
                             base_pricelist = pvi.base_pricelist_id
                 pl_data[so.pricelist_id] = base_pricelist
+
             base_price = pl_data[so.pricelist_id].price_get(
-                            row['product_id'], row ['delivered_qty'], None, {
+                            row['product_id'], row['delivered_qty'], partner=None, context={
                                 'uom': row['uom_id'],
                                 'date': so.date_order,
                             })[pl_data[so.pricelist_id].id]
             price_unit = base_price 
-            discount   = row ['list_price'] and (row ['list_price'] - base_price) / row ['list_price'] * 100.0 or 0.0,
-            price_subtotal = base_price * row ['delivered_qty'],                                    
+            discount = row['list_price'] and (row ['list_price'] - base_price) / row['list_price'] * 100.0 or 0.0
+            price_subtotal = base_price * row ['delivered_qty']
                 
             new_line = ddata()
             new_line.so_number = row ['so_number']
@@ -261,7 +263,7 @@ class report_detailed_box(report_sxw.rml_parse):
             current_rep.ordered_qty = troq
             current_rep.delivered_qty = trdq
             current_rep.subtotal = trs
-            
+
         return result
 
 report_sxw.report_sxw(

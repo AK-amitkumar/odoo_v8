@@ -23,12 +23,12 @@
         />
         
         <report 
-            string="Picking List" 
+            string="Picking Listssssssss"
             id="action_picking_list" 
             model="stock.picking.order" 
             report_type="qweb-pdf"
-            name="numa_uniqs_custom_picking.report_picking_list" 
-            file="numa_uniqs_custom_picking.report_picking_list" 
+            name="numa_uniqs_custom_picking.report_picking_list"
+            file="numa_uniqs_custom_picking.report_picking_list"
         />
     </data>
 </openerp>

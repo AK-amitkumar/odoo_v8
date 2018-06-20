@@ -196,7 +196,7 @@ class report_detailed_box(report_sxw.rml_parse):
                         break
 
                 base_pl_price = base_pricelist.price_get(
-                                sol.product_id.id, row ['delivered_qty'], None, {
+                                sol.product_id.id, row ['delivered_qty'], partner=None, context={
                                     'uom': sol.product_uom.id,
                                     'date': sol.order_id.date_order,
                                 })[base_pricelist.id]
